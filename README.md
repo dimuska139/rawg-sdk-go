@@ -4,6 +4,7 @@
 [![codecov](https://codecov.io/gh/dimuska139/rawg-sdk-go/branch/master/graph/badge.svg)](https://codecov.io/gh/dimuska139/rawg-sdk-go)
 [![Go Report Card](https://goreportcard.com/badge/github.com/dimuska139/rawg-sdk-go)](https://goreportcard.com/report/github.com/dimuska139/rawg-sdk-go)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/dimuska139/rawg-sdk-go/blob/master/LICENSE)
+[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go) 
 
 This is unofficial RAWG SDK GO. This library contains methods for interacting with [RAWG API](https://rawg.io/).
 
