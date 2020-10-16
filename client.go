@@ -2,6 +2,7 @@ package rawg
 
 import (
 	"bytes"
+	"context"
 	"fmt"
 	"golang.org/x/time/rate"
 	"io/ioutil"
@@ -58,6 +59,12 @@ func (api *Client) newRequest(path string, method string, data map[string]interf
 
 	method = strings.ToUpper(method)
 	fullPath := apiBaseUrl + path
+
+	ctx := context.Background()
+	if err := api.rateLimiter.Wait(ctx); err != nil {
+		return nil, err
+	}
+
 	req, e := http.NewRequest(method, fullPath, bytes.NewBufferString(q.Encode()))
 	if e != nil {
 		return nil, e
