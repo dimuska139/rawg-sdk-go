@@ -1,0 +1,97 @@
+{
+  "count": 19,
+  "next": "https://api.rawg.io/api/genres?page=2&page_size=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 4,
+      "name": "Action",
+      "slug": "action",
+      "games_count": 98964,
+      "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg",
+      "games": [
+        {
+          "id": 3498,
+          "slug": "grand-theft-auto-v",
+          "name": "Grand Theft Auto V",
+          "added": 13067
+        },
+        {
+          "id": 3328,
+          "slug": "the-witcher-3-wild-hunt",
+          "name": "The Witcher 3: Wild Hunt",
+          "added": 11238
+        },
+        {
+          "id": 5286,
+          "slug": "tomb-raider",
+          "name": "Tomb Raider (2013)",
+          "added": 10356
+        },
+        {
+          "id": 5679,
+          "slug": "the-elder-scrolls-v-skyrim",
+          "name": "The Elder Scrolls V: Skyrim",
+          "added": 10241
+        },
+        {
+          "id": 12020,
+          "slug": "left-4-dead-2",
+          "name": "Left 4 Dead 2",
+          "added": 9882
+        },
+        {
+          "id": 802,
+          "slug": "borderlands-2",
+          "name": "Borderlands 2",
+          "added": 9818
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Indie",
+      "slug": "indie",
+      "games_count": 32668,
+      "image_background": "https://media.rawg.io/media/screenshots/f2f/f2f3c93d6153da7aee590f3ab8ccd803.jpg",
+      "games": [
+        {
+          "id": 1030,
+          "slug": "limbo",
+          "name": "Limbo",
+          "added": 8902
+        },
+        {
+          "id": 3272,
+          "slug": "rocket-league",
+          "name": "Rocket League",
+          "added": 7618
+        },
+        {
+          "id": 422,
+          "slug": "terraria",
+          "name": "Terraria",
+          "added": 6991
+        },
+        {
+          "id": 3612,
+          "slug": "hotline-miami",
+          "name": "Hotline Miami",
+          "added": 6556
+        },
+        {
+          "id": 13668,
+          "slug": "amnesia-the-dark-descent",
+          "name": "Amnesia: The Dark Descent",
+          "added": 6545
+        },
+        {
+          "id": 3790,
+          "slug": "outlast",
+          "name": "Outlast",
+          "added": 6413
+        }
+      ]
+    }
+  ]
+}

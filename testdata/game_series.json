@@ -1,0 +1,544 @@
+{
+  "count": 8,
+  "next": "https://api.rawg.io/api/games/21/game-series?page=2&page_size=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 440079,
+      "slug": "dirt-5",
+      "name": "DiRT 5",
+      "released": "2020-11-06",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/games/9c7/9c7dd09596246993169b356d7c1facf0.jpg",
+      "rating": 0,
+      "rating_top": 0,
+      "ratings": [
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 2,
+          "percent": 50
+        },
+        {
+          "id": 1,
+          "title": "skip",
+          "count": 2,
+          "percent": 50
+        }
+      ],
+      "ratings_count": 4,
+      "reviews_text_count": 0,
+      "added": 56,
+      "added_by_status": {
+        "yet": 8,
+        "owned": 19,
+        "toplay": 27,
+        "playing": 2
+      },
+      "metacritic": null,
+      "playtime": 1,
+      "suggestions_count": 368,
+      "user_game": null,
+      "reviews_count": 4,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 186,
+            "name": "Xbox Series S/X",
+            "slug": "xbox-series-x",
+            "image": null,
+            "year_end": null,
+            "year_start": 2020,
+            "games_count": 86,
+            "image_background": "https://media.rawg.io/media/games/a8b/a8bf6f31bfbdaf7d4b86c1953c62cee0.jpg"
+          },
+          "released_at": "2020-11-06",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 187,
+            "name": "PlayStation 5",
+            "slug": "playstation5",
+            "image": null,
+            "year_end": null,
+            "year_start": 2020,
+            "games_count": 90,
+            "image_background": "https://media.rawg.io/media/games/f39/f3971e0dfde68f234c56ae789433b219.jpg"
+          },
+          "released_at": "2020-11-06",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5163,
+            "image_background": "https://media.rawg.io/media/games/709/709bf81f874ce5d25d625b37b014cb63.jpg"
+          },
+          "released_at": "2020-11-06",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2020-11-06",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 3875,
+            "image_background": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg"
+          },
+          "released_at": "2020-11-06",
+          "requirements_en": null,
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 2,
+            "name": "PlayStation",
+            "slug": "playstation"
+          }
+        },
+        {
+          "platform": {
+            "id": 3,
+            "name": "Xbox",
+            "slug": "xbox"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "Racing",
+          "slug": "racing",
+          "games_count": 16056,
+          "image_background": "https://media.rawg.io/media/games/8a7/8a75028028592f9323d1e6e86668bb91.jpg"
+        }
+      ],
+      "stores": [
+        {
+          "id": 459828,
+          "store": {
+            "id": 3,
+            "name": "PlayStation Store",
+            "slug": "playstation-store",
+            "domain": "store.playstation.com",
+            "games_count": 6809,
+            "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+          },
+          "url_en": "https://store.playstation.com/en-us/product/UP4001-CUSA16195_00-9363196383898358",
+          "url_ru": ""
+        },
+        {
+          "id": 446747,
+          "store": {
+            "id": 2,
+            "name": "Xbox Store",
+            "slug": "xbox-store",
+            "domain": "microsoft.com",
+            "games_count": 3493,
+            "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+          },
+          "url_en": "https://www.microsoft.com/en-us/p/dirt-5/9mvn0w2374dd?cid=msft_web_chart",
+          "url_ru": ""
+        },
+        {
+          "id": 431251,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "https://store.steampowered.com/app/1038250/DIRT_5/",
+          "url_ru": null
+        }
+      ],
+      "clip": {
+        "clip": "https://media.rawg.io/media/stories-640/ccd/ccd81b9b3022a21b8c3afffc48d64ad6.mp4",
+        "clips": {
+          "320": "https://media.rawg.io/media/stories-320/c04/c0455301501f4a71edea7e7eec253472.mp4",
+          "640": "https://media.rawg.io/media/stories-640/ccd/ccd81b9b3022a21b8c3afffc48d64ad6.mp4",
+          "full": "https://media.rawg.io/media/stories/cb6/cb6c1c4c33e3f8a03abbd2d1e4f18f55.mp4"
+        },
+        "video": "YWqWXlS2NxM",
+        "preview": "https://media.rawg.io/media/stories-previews/5ad/5ad547b29fe5f9463ea613e168301fc7.jpg"
+      },
+      "tags": [],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/games/9c7/9c7dd09596246993169b356d7c1facf0.jpg"
+        },
+        {
+          "id": 2374825,
+          "image": "https://media.rawg.io/media/screenshots/b90/b904a9a15000048652c0263986ba8bd9.jpg"
+        },
+        {
+          "id": 2374826,
+          "image": "https://media.rawg.io/media/screenshots/629/6294f1800c35d61cb687cc322cfbf9f5_tdzE9JU.jpg"
+        },
+        {
+          "id": 2374827,
+          "image": "https://media.rawg.io/media/screenshots/a5e/a5edd368d05fbb617bc4c97efe50e522.jpg"
+        },
+        {
+          "id": 2374828,
+          "image": "https://media.rawg.io/media/screenshots/772/7725a9df5b6c180cc969ce6caf13fcc4.jpg"
+        },
+        {
+          "id": 2374829,
+          "image": "https://media.rawg.io/media/screenshots/4e0/4e0a7719e2a33db7d2e085ce75c43826.jpg"
+        },
+        {
+          "id": 2374830,
+          "image": "https://media.rawg.io/media/screenshots/f5c/f5c0cd9bb3c45afda9f64a6e400c768d.jpg"
+        }
+      ]
+    },
+    {
+      "id": 244716,
+      "slug": "dirt-rally-20",
+      "name": "DiRT Rally 2.0",
+      "released": "2019-02-26",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/games/8f3/8f306808c45a4dbe0cd698e0b142af08.jpg",
+      "rating": 3.5,
+      "rating_top": 4,
+      "ratings": [
+        {
+          "id": 4,
+          "title": "recommended",
+          "count": 56,
+          "percent": 44.09
+        },
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 39,
+          "percent": 30.71
+        },
+        {
+          "id": 5,
+          "title": "exceptional",
+          "count": 18,
+          "percent": 14.17
+        },
+        {
+          "id": 1,
+          "title": "skip",
+          "count": 14,
+          "percent": 11.02
+        }
+      ],
+      "ratings_count": 126,
+      "reviews_text_count": 0,
+      "added": 1654,
+      "added_by_status": {
+        "yet": 84,
+        "owned": 1387,
+        "beaten": 9,
+        "toplay": 60,
+        "dropped": 85,
+        "playing": 29
+      },
+      "metacritic": 83,
+      "playtime": 2,
+      "suggestions_count": 334,
+      "user_game": null,
+      "reviews_count": 127,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2019-02-26",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> 64bit Versions of Windows 7, Windows 8, Windows 10<br></li><li><strong>Processor:</strong> Intel Core i3 2130 or AMD FX 4300<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia GT 650Ti or AMD HD 7750<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 50 GB available space<br></li><li><strong>Sound Card:</strong> DirectX Compatible Soundcard</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+          },
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 3875,
+            "image_background": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg"
+          },
+          "released_at": "2019-02-26",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5163,
+            "image_background": "https://media.rawg.io/media/games/709/709bf81f874ce5d25d625b37b014cb63.jpg"
+          },
+          "released_at": "2019-02-26",
+          "requirements_en": null,
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 2,
+            "name": "PlayStation",
+            "slug": "playstation"
+          }
+        },
+        {
+          "platform": {
+            "id": 3,
+            "name": "Xbox",
+            "slug": "xbox"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 14,
+          "name": "Simulation",
+          "slug": "simulation",
+          "games_count": 39582,
+          "image_background": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg"
+        },
+        {
+          "id": 15,
+          "name": "Sports",
+          "slug": "sports",
+          "games_count": 15502,
+          "image_background": "https://media.rawg.io/media/games/5eb/5eb49eb2fa0738fdb5bacea557b1bc57.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Racing",
+          "slug": "racing",
+          "games_count": 16056,
+          "image_background": "https://media.rawg.io/media/games/8a7/8a75028028592f9323d1e6e86668bb91.jpg"
+        }
+      ],
+      "stores": [
+        {
+          "id": 299396,
+          "store": {
+            "id": 2,
+            "name": "Xbox Store",
+            "slug": "xbox-store",
+            "domain": "microsoft.com",
+            "games_count": 3493,
+            "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+          },
+          "url_en": "https://www.microsoft.com/en-us/p/dirt-rally-20/brpgp6h8p26f?cid=msft_web_chart",
+          "url_ru": null
+        },
+        {
+          "id": 242055,
+          "store": {
+            "id": 3,
+            "name": "PlayStation Store",
+            "slug": "playstation-store",
+            "domain": "store.playstation.com",
+            "games_count": 6809,
+            "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+          },
+          "url_en": "https://store.playstation.com/en-us/product/UP4001-CUSA12819_00-DIRTRALLY2US0001",
+          "url_ru": null
+        },
+        {
+          "id": 242011,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "https://store.steampowered.com/app/690790/",
+          "url_ru": null
+        }
+      ],
+      "clip": {
+        "clip": "https://media.rawg.io/media/stories-640/869/869bd74c7094d4182f9c6305d76efc4d.mp4",
+        "clips": {
+          "320": "https://media.rawg.io/media/stories-320/e9d/e9d359b7a293dad96fa26d2a1e0bb200.mp4",
+          "640": "https://media.rawg.io/media/stories-640/869/869bd74c7094d4182f9c6305d76efc4d.mp4",
+          "full": "https://media.rawg.io/media/stories/3b6/3b63ca74579eb2f34263e898fc1b9894.mp4"
+        },
+        "video": "icL-qEqd67U",
+        "preview": "https://media.rawg.io/media/stories-previews/1c0/1c0ccc878917cd4ff9fb363505c8e92f.jpg"
+      },
+      "tags": [
+        {
+          "id": 133,
+          "name": "3D Vision",
+          "slug": "3d-vision",
+          "language": "eng",
+          "games_count": 131,
+          "image_background": "https://media.rawg.io/media/games/b5a/b5a1ee231afc407b49cc5f9716980b2d.jpg"
+        },
+        {
+          "id": 40836,
+          "name": "Full controller support",
+          "slug": "full-controller-support",
+          "language": "eng",
+          "games_count": 9272,
+          "image_background": "https://media.rawg.io/media/games/ad2/ad2ffdf80ba993654f31da045bc02456.jpg"
+        },
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 19692,
+          "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+        },
+        {
+          "id": 40849,
+          "name": "Steam Cloud",
+          "slug": "steam-cloud",
+          "language": "eng",
+          "games_count": 9201,
+          "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 21930,
+          "image_background": "https://media.rawg.io/media/games/d69/d69810315bd7e226ea2d21f9156af629.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 129,
+          "name": "TrackIR",
+          "slug": "trackir",
+          "language": "eng",
+          "games_count": 36,
+          "image_background": "https://media.rawg.io/media/games/8f3/8f306808c45a4dbe0cd698e0b142af08.jpg"
+        },
+        {
+          "id": 33,
+          "name": "VR",
+          "slug": "vr",
+          "language": "eng",
+          "games_count": 7576,
+          "image_background": "https://media.rawg.io/media/screenshots/f34/f34c86335d0c51baa582aa93fa2d3f55.jpg"
+        },
+        {
+          "id": 397,
+          "name": "Online multiplayer",
+          "slug": "online-multiplayer",
+          "language": "eng",
+          "games_count": 3790,
+          "image_background": "https://media.rawg.io/media/games/1e5/1e5e33b88be978f451196a751424a72e.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/games/8f3/8f306808c45a4dbe0cd698e0b142af08.jpg"
+        },
+        {
+          "id": 1652167,
+          "image": "https://media.rawg.io/media/screenshots/5d7/5d71df667fd9feb28dd31aaaef0adc26.jpg"
+        },
+        {
+          "id": 1652168,
+          "image": "https://media.rawg.io/media/screenshots/ce0/ce0e9ce9a3625f66e2069aae7af623ec.jpg"
+        },
+        {
+          "id": 1652169,
+          "image": "https://media.rawg.io/media/screenshots/e46/e46db7aa084936cb970c21e4eb286647.jpg"
+        },
+        {
+          "id": 1652170,
+          "image": "https://media.rawg.io/media/screenshots/e14/e14ef6a95c85d4728a23256e7ac17f93_HQ955c9.jpg"
+        },
+        {
+          "id": 1652171,
+          "image": "https://media.rawg.io/media/screenshots/088/0885896b2446d72b64c1c21d97bd1aab.jpg"
+        },
+        {
+          "id": 1652172,
+          "image": "https://media.rawg.io/media/screenshots/5b9/5b9c6da047cf824bdb38be555bf6254f.jpg"
+        }
+      ]
+    }
+  ]
+}

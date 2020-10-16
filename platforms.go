@@ -35,7 +35,7 @@ func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Pla
 	return response.Results, response.Count, nil
 }
 
-func (api *Client) GetParentPlatforms(page int, pageSize int, ordering string) ([]*Platform, int, error) {
+func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) ([]*Platform, int, error) {
 	path := "/platforms/lists/parents"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),

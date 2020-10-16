@@ -12,8 +12,8 @@ func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error)
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.NewRequest(path, http.MethodGet, data)
 
+	body, err := api.NewRequest(path, http.MethodGet, data)
 	if err != nil {
 		return nil, 0, err
 	}

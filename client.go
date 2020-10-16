@@ -30,7 +30,8 @@ type Client struct {
 	rateLimiter *rate.Limiter
 }
 
-func NewClient(client *http.Client, config *Config, rps int) *Client {
+func NewClient(client *http.Client, config *Config) *Client {
+	rps := config.Rps
 	if rps == 0 {
 		rps = 5
 	}
@@ -42,17 +43,17 @@ func NewClient(client *http.Client, config *Config, rps int) *Client {
 	}
 }
 
-func (c *Client) NewRequest(path string, method string, data map[string]interface{}) ([]byte, error) {
+func (api *Client) NewRequest(path string, method string, data map[string]interface{}) ([]byte, error) {
 	q := url.Values{}
 	for param, value := range data {
 		q.Add(param, fmt.Sprintf("%v", value))
 	}
 
-	q.Add("lang", c.config.Language)
+	q.Add("lang", api.config.Language)
 
 	method = strings.ToUpper(method)
-
 	fullPath := apiBaseUrl + path
+	fmt.Println(q.Encode())
 	req, e := http.NewRequest(method, fullPath, bytes.NewBufferString(q.Encode()))
 	if e != nil {
 		return nil, e
@@ -65,9 +66,9 @@ func (c *Client) NewRequest(path string, method string, data map[string]interfac
 		req.Header.Set("Content-Type", "application/x-www-form-urlencoded; param=value")
 	}
 
-	req.Header.Add("User-Agent", c.config.AppName)
+	req.Header.Add("User-Agent", api.config.AppName)
 
-	resp, err := c.client.Do(req)
+	resp, err := api.client.Do(req)
 	if err != nil {
 		return nil, &RawgError{http.StatusServiceUnavailable, path, "", err.Error()}
 	}

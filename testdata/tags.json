@@ -1,0 +1,99 @@
+{
+  "count": 6378,
+  "next": "https://api.rawg.io/api/tags?page=2&page_size=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 31,
+      "name": "Singleplayer",
+      "slug": "singleplayer",
+      "games_count": 89197,
+      "image_background": "https://media.rawg.io/media/games/d82/d82990b9c67ba0d2d09d4e6fa88885a7.jpg",
+      "language": "eng",
+      "games": [
+        {
+          "id": 3498,
+          "slug": "grand-theft-auto-v",
+          "name": "Grand Theft Auto V",
+          "added": 13067
+        },
+        {
+          "id": 4200,
+          "slug": "portal-2",
+          "name": "Portal 2",
+          "added": 11436
+        },
+        {
+          "id": 3328,
+          "slug": "the-witcher-3-wild-hunt",
+          "name": "The Witcher 3: Wild Hunt",
+          "added": 11238
+        },
+        {
+          "id": 5286,
+          "slug": "tomb-raider",
+          "name": "Tomb Raider (2013)",
+          "added": 10356
+        },
+        {
+          "id": 5679,
+          "slug": "the-elder-scrolls-v-skyrim",
+          "name": "The Elder Scrolls V: Skyrim",
+          "added": 10241
+        },
+        {
+          "id": 12020,
+          "slug": "left-4-dead-2",
+          "name": "Left 4 Dead 2",
+          "added": 9882
+        }
+      ]
+    },
+    {
+      "id": 40847,
+      "name": "Steam Achievements",
+      "slug": "steam-achievements",
+      "games_count": 19761,
+      "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg",
+      "language": "eng",
+      "games": [
+        {
+          "id": 3498,
+          "slug": "grand-theft-auto-v",
+          "name": "Grand Theft Auto V",
+          "added": 13067
+        },
+        {
+          "id": 4200,
+          "slug": "portal-2",
+          "name": "Portal 2",
+          "added": 11436
+        },
+        {
+          "id": 5679,
+          "slug": "the-elder-scrolls-v-skyrim",
+          "name": "The Elder Scrolls V: Skyrim",
+          "added": 10241
+        },
+        {
+          "id": 12020,
+          "slug": "left-4-dead-2",
+          "name": "Left 4 Dead 2",
+          "added": 9882
+        },
+        {
+          "id": 802,
+          "slug": "borderlands-2",
+          "name": "Borderlands 2",
+          "added": 9818
+        },
+        {
+          "id": 4062,
+          "slug": "bioshock-infinite",
+          "name": "BioShock Infinite",
+          "added": 9747
+        }
+      ]
+    }
+  ]
+}

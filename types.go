@@ -15,10 +15,13 @@ func (d *DateTime) UnmarshalJSON(b []byte) error {
 		d.Time = time.Time{}
 		return nil
 	}
-
 	format := "2006-01-02T15:04:05"
-	if strings.HasSuffix(string(b), "Z") {
+	if strings.HasSuffix(s, "Z") {
 		format = "2006-01-02T15:04:05Z"
+	}
+
+	if len(s) == 10 {
+		format = "2006-01-02"
 	}
 
 	t, err := time.Parse(format, s)

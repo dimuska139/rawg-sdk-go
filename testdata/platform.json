@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "name": "Xbox One",
+  "slug": "xbox-one",
+  "games_count": 3896,
+  "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg",
+  "description": "<p>Xbox One is a home video game console released by Microsoft in 2013. Unlike its main competitor — PlayStation 4, the accent in the development was made in multitasking and using a console as a home media player to watch TV, listen to music and play the games. There is three hardware option available to gamers: original console, One S version (with a smaller body, no external power supply, and native HDR/4k support) and One X (pro-gamer-oriented system with updated hardware and 4k rendering in real time). While PS4 is known for exclusive-orientation, Xbox One&#39;s games are mostly multi-platform titles. This supports Microsoft&#39;s initial idea to prevent selling used games between the players. However, given the competition from the Sony side, the corporation quickly gave up. Among the notable exclusive games, there are Sunset Overdrive, Halo 5: Guardians and Forza Motorsport 5.</p>",
+  "image": null,
+  "year_start": null,
+  "year_end": null
+}

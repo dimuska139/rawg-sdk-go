@@ -1,0 +1,1953 @@
+{
+  "count": 5,
+  "next": "https://api.rawg.io/api/games/4019/development-team?page=2&page_size=3",
+  "previous": null,
+  "results": [
+    {
+      "id": 6768,
+      "name": "Keisuke Kikuchi",
+      "slug": "keisuke-kikuchi",
+      "image": null,
+      "image_background": "https://media.rawg.io/media/screenshots/4a5/4a55dde45c12dd9f10f6a269fcc0c166.jpg",
+      "games_count": 11,
+      "games": [
+        {
+          "id": 2612,
+          "slug": "nights-of-azure",
+          "name": "Nights of Azure",
+          "released": "2015-10-01",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/screenshots/d72/d72de483ddd5095e09dde2ee5e4cc6a9.jpg",
+          "rating": 3.27,
+          "rating_top": 4,
+          "ratings": [
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 10,
+              "percent": 45.45
+            },
+            {
+              "id": 3,
+              "title": "meh",
+              "count": 6,
+              "percent": 27.27
+            },
+            {
+              "id": 1,
+              "title": "skip",
+              "count": 4,
+              "percent": 18.18
+            },
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 2,
+              "percent": 9.09
+            }
+          ],
+          "ratings_count": 22,
+          "reviews_text_count": 0,
+          "added": 145,
+          "added_by_status": {
+            "yet": 7,
+            "owned": 111,
+            "beaten": 12,
+            "toplay": 5,
+            "dropped": 5,
+            "playing": 5
+          },
+          "metacritic": 64,
+          "playtime": 3,
+          "suggestions_count": 484,
+          "user_game": null,
+          "reviews_count": 22,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 4,
+                "name": "PC",
+                "slug": "pc",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 263806,
+                "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+              },
+              "released_at": "2017-02-07",
+              "requirements_en": {
+                "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows® 7, Windows® 8.1, Windows® 10 (64bit required)<br></li><li><strong>Processor:</strong> Core i5  2.6GHz<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX550Ti<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 6 GB available space<br></li><li><strong>Sound Card:</strong> On board<br></li><li><strong>Additional Notes:</strong> Graphics: 960x540</li></ul>",
+                "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows® 7, Windows® 8.1, Windows® 10 (64bit required)<br></li><li><strong>Processor:</strong> Core i7 3.4GHz<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX960<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 6 GB available space<br></li><li><strong>Sound Card:</strong> On board<br></li><li><strong>Additional Notes:</strong> Graphics: 1920x1080</li></ul>"
+              },
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 18,
+                "name": "PlayStation 4",
+                "slug": "playstation4",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 5164,
+                "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+              },
+              "released_at": "2015-10-01",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 1,
+                "name": "PC",
+                "slug": "pc"
+              }
+            },
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 5,
+              "name": "RPG",
+              "slug": "role-playing-games-rpg",
+              "games_count": 31042,
+              "image_background": "https://media.rawg.io/media/games/6cd/6cd653e0aaef5ff8bbd295bf4bcb12eb.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 2743,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP4108-CUSA04111_00-DARK000MASTER000",
+              "url_ru": null
+            },
+            {
+              "id": 13120,
+              "store": {
+                "id": 1,
+                "name": "Steam",
+                "slug": "steam",
+                "domain": "store.steampowered.com",
+                "games_count": 45492,
+                "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+              },
+              "url_en": "http://store.steampowered.com/app/527280/",
+              "url_ru": null
+            }
+          ],
+          "clip": null,
+          "tags": [
+            {
+              "id": 40845,
+              "name": "Partial Controller Support",
+              "slug": "partial-controller-support",
+              "language": "eng",
+              "games_count": 6706,
+              "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+            },
+            {
+              "id": 134,
+              "name": "Anime",
+              "slug": "anime",
+              "language": "eng",
+              "games_count": 4818,
+              "image_background": "https://media.rawg.io/media/screenshots/ddb/ddbcf3f1330e146094b0ce211e33090a.jpg"
+            },
+            {
+              "id": 40847,
+              "name": "Steam Achievements",
+              "slug": "steam-achievements",
+              "language": "eng",
+              "games_count": 19692,
+              "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+            },
+            {
+              "id": 189,
+              "name": "Female Protagonist",
+              "slug": "female-protagonist",
+              "language": "eng",
+              "games_count": 4683,
+              "image_background": "https://media.rawg.io/media/games/bce/bce62fbc7cf74bf6a1a37340993ec148.jpg"
+            },
+            {
+              "id": 42,
+              "name": "Great Soundtrack",
+              "slug": "great-soundtrack",
+              "language": "eng",
+              "games_count": 3081,
+              "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+            },
+            {
+              "id": 68,
+              "name": "Hack and Slash",
+              "slug": "hack-and-slash",
+              "language": "eng",
+              "games_count": 1410,
+              "image_background": "https://media.rawg.io/media/games/0c3/0c3e6ab8e4cb7c579cbb3b4e26a60142.jpg"
+            },
+            {
+              "id": 233,
+              "name": "JRPG",
+              "slug": "jrpg",
+              "language": "eng",
+              "games_count": 1708,
+              "image_background": "https://media.rawg.io/media/games/826/82626e2d7ee7d96656fb9838c2ef7302.jpg"
+            },
+            {
+              "id": 44,
+              "name": "Nudity",
+              "slug": "nudity",
+              "language": "eng",
+              "games_count": 2132,
+              "image_background": "https://media.rawg.io/media/games/470/470d21d6971de8f13ec0e1664a120cc0.jpg"
+            },
+            {
+              "id": 24,
+              "name": "RPG",
+              "slug": "rpg",
+              "language": "eng",
+              "games_count": 10367,
+              "image_background": "https://media.rawg.io/media/games/91c/91c4f377c1e09755b60a0102c5252843.jpg"
+            },
+            {
+              "id": 50,
+              "name": "Sexual Content",
+              "slug": "sexual-content",
+              "language": "eng",
+              "games_count": 1717,
+              "image_background": "https://media.rawg.io/media/games/b32/b32735e3f7d95959cc39265f555f2aa8.jpg"
+            },
+            {
+              "id": 31,
+              "name": "Singleplayer",
+              "slug": "singleplayer",
+              "language": "eng",
+              "games_count": 88747,
+              "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/screenshots/d72/d72de483ddd5095e09dde2ee5e4cc6a9.jpg"
+            },
+            {
+              "id": 23848,
+              "image": "https://media.rawg.io/media/screenshots/1fd/1fd8937643c21e4e573526af632b6ab8.jpg"
+            },
+            {
+              "id": 23849,
+              "image": "https://media.rawg.io/media/screenshots/402/402087410ffa8a4c76d3b9e8023c79b4.jpg"
+            },
+            {
+              "id": 23851,
+              "image": "https://media.rawg.io/media/screenshots/69f/69f57a5e86d0c9a02b7e87301fd0ec68.jpg"
+            },
+            {
+              "id": 23853,
+              "image": "https://media.rawg.io/media/screenshots/0e1/0e1f09bed46b3855e100484a83b137e4.jpg"
+            },
+            {
+              "id": 23854,
+              "image": "https://media.rawg.io/media/screenshots/e74/e749379c8ba604cac0c79300de1dff60.jpg"
+            },
+            {
+              "id": 23855,
+              "image": "https://media.rawg.io/media/screenshots/0ca/0cafdf1c9d58c4b19ee7b6b1322cbc04.jpg"
+            }
+          ]
+        },
+        {
+          "id": 4019,
+          "slug": "fatal-frame-ii-crimson-butterfly",
+          "name": "Fatal Frame II: Crimson Butterfly",
+          "released": "2003-11-27",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/screenshots/4a5/4a55dde45c12dd9f10f6a269fcc0c166.jpg",
+          "rating": 4.34,
+          "rating_top": 5,
+          "ratings": [
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 22,
+              "percent": 62.86
+            },
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 9,
+              "percent": 25.71
+            },
+            {
+              "id": 1,
+              "title": "skip",
+              "count": 3,
+              "percent": 8.57
+            },
+            {
+              "id": 3,
+              "title": "meh",
+              "count": 1,
+              "percent": 2.86
+            }
+          ],
+          "ratings_count": 33,
+          "reviews_text_count": 2,
+          "added": 102,
+          "added_by_status": {
+            "yet": 9,
+            "owned": 17,
+            "beaten": 33,
+            "toplay": 34,
+            "dropped": 6,
+            "playing": 3
+          },
+          "metacritic": 84,
+          "playtime": 0,
+          "suggestions_count": 484,
+          "user_game": null,
+          "reviews_count": 35,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 15,
+                "name": "PlayStation 2",
+                "slug": "playstation2",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 1834,
+                "image_background": "https://media.rawg.io/media/games/dd7/dd72d8a527cd9245c7eb7cd05aa53efa.jpg"
+              },
+              "released_at": "2003-11-27",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 16,
+                "name": "PlayStation 3",
+                "slug": "playstation3",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3605,
+                "image_background": "https://media.rawg.io/media/games/1bb/1bb86c35ffa3eb0d299b01a7c65bf908.jpg"
+              },
+              "released_at": "2003-11-27",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 4,
+              "name": "Action",
+              "slug": "action",
+              "games_count": 98679,
+              "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+              "id": 3,
+              "name": "Adventure",
+              "slug": "adventure",
+              "games_count": 69224,
+              "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 4338,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP9000-NPUD20766_00-0000000000000000",
+              "url_ru": null
+            }
+          ],
+          "clip": null,
+          "tags": [
+            {
+              "id": 37796,
+              "name": "exclusive",
+              "slug": "exclusive",
+              "language": "eng",
+              "games_count": 4453,
+              "image_background": "https://media.rawg.io/media/games/786/7863e587bac630de82fca50d799236a9.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/screenshots/4a5/4a55dde45c12dd9f10f6a269fcc0c166.jpg"
+            },
+            {
+              "id": 594968,
+              "image": "https://media.rawg.io/media/screenshots/8d2/8d29301d578b0a02127e52e315e65c5b.jpg"
+            },
+            {
+              "id": 594969,
+              "image": "https://media.rawg.io/media/screenshots/187/187804759797e1e6f0f5b2217f1c09e8.jpg"
+            },
+            {
+              "id": 594970,
+              "image": "https://media.rawg.io/media/screenshots/058/058ce1785f56de50e3d63d64a80b44c8.jpg"
+            },
+            {
+              "id": 594971,
+              "image": "https://media.rawg.io/media/screenshots/3eb/3ebf90a12fac2254d5519b25fccae5eb.jpg"
+            },
+            {
+              "id": 594972,
+              "image": "https://media.rawg.io/media/screenshots/8df/8dfa8b83f5975bb2989ca68e7b0f9f73.jpg"
+            },
+            {
+              "id": 594973,
+              "image": "https://media.rawg.io/media/screenshots/c57/c57ce9947ab00e2a49858917ccaca6f3.jpg"
+            }
+          ]
+        },
+        {
+          "id": 4050,
+          "slug": "fatal-frame",
+          "name": "Fatal Frame",
+          "released": "2001-12-13",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/games/7b3/7b3c6973cf8867c00cc4d74bc7ecc4ab.jpg",
+          "rating": 4.25,
+          "rating_top": 4,
+          "ratings": [
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 13,
+              "percent": 46.43
+            },
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 11,
+              "percent": 39.29
+            },
+            {
+              "id": 3,
+              "title": "meh",
+              "count": 4,
+              "percent": 14.29
+            }
+          ],
+          "ratings_count": 27,
+          "reviews_text_count": 1,
+          "added": 93,
+          "added_by_status": {
+            "yet": 13,
+            "owned": 13,
+            "beaten": 22,
+            "toplay": 30,
+            "dropped": 12,
+            "playing": 3
+          },
+          "metacritic": 77,
+          "playtime": 0,
+          "suggestions_count": 420,
+          "user_game": null,
+          "reviews_count": 28,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 80,
+                "name": "Xbox",
+                "slug": "xbox-old",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 670,
+                "image_background": "https://media.rawg.io/media/games/9c4/9c47f320eb73c9a02d462e12f6206b26.jpg"
+              },
+              "released_at": "2001-12-13",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 16,
+                "name": "PlayStation 3",
+                "slug": "playstation3",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3605,
+                "image_background": "https://media.rawg.io/media/games/1bb/1bb86c35ffa3eb0d299b01a7c65bf908.jpg"
+              },
+              "released_at": "2001-12-13",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 15,
+                "name": "PlayStation 2",
+                "slug": "playstation2",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 1834,
+                "image_background": "https://media.rawg.io/media/games/dd7/dd72d8a527cd9245c7eb7cd05aa53efa.jpg"
+              },
+              "released_at": "2001-12-13",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            },
+            {
+              "platform": {
+                "id": 3,
+                "name": "Xbox",
+                "slug": "xbox"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 4,
+              "name": "Action",
+              "slug": "action",
+              "games_count": 98679,
+              "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+              "id": 3,
+              "name": "Adventure",
+              "slug": "adventure",
+              "games_count": 69224,
+              "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 4370,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP9000-NPUD20388_00-0000000000000000",
+              "url_ru": null
+            }
+          ],
+          "clip": null,
+          "tags": [
+            {
+              "id": 663,
+              "name": "Ghosts",
+              "slug": "ghosts",
+              "language": "eng",
+              "games_count": 1755,
+              "image_background": "https://media.rawg.io/media/games/d1d/d1d60b2fce4d651bab8fc108432b5ec0.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/games/7b3/7b3c6973cf8867c00cc4d74bc7ecc4ab.jpg"
+            },
+            {
+              "id": 807118,
+              "image": "https://media.rawg.io/media/screenshots/4e9/4e9c2ad9dd0a8dbfb242a4bd104e9e16.jpg"
+            },
+            {
+              "id": 807119,
+              "image": "https://media.rawg.io/media/screenshots/995/9953ea08de9b1d11bcf579a00520401b.jpg"
+            },
+            {
+              "id": 807120,
+              "image": "https://media.rawg.io/media/screenshots/819/8190e7f3456634247bcfa29c29272721.jpg"
+            },
+            {
+              "id": 807121,
+              "image": "https://media.rawg.io/media/screenshots/d9c/d9cc64af1031b6ef63db6bb7987ba231.jpg"
+            },
+            {
+              "id": 807122,
+              "image": "https://media.rawg.io/media/screenshots/c21/c21d6d9231b731d6a8570d13166fe4c0.jpg"
+            },
+            {
+              "id": 807123,
+              "image": "https://media.rawg.io/media/screenshots/fed/fed4154ff78ceffa535fedd4bebdd98b.jpg"
+            }
+          ]
+        }
+      ],
+      "positions": [
+        {
+          "id": 5,
+          "name": "producer",
+          "slug": "producer"
+        }
+      ]
+    },
+    {
+      "id": 2987,
+      "name": "Makoto Shibata",
+      "slug": "makoto-shibata",
+      "image": null,
+      "image_background": "https://media.rawg.io/media/screenshots/77a/77a4a4e3d1d15d8eee73ea9d683c02d7.jpg",
+      "games_count": 10,
+      "games": [
+        {
+          "id": 401,
+          "slug": "nioh",
+          "name": "Nioh",
+          "released": "2017-02-07",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/games/f84/f84c7c45e074117fb81fecf427f8b41f.jpg",
+          "rating": 3.88,
+          "rating_top": 4,
+          "ratings": [
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 220,
+              "percent": 50.93
+            },
+            {
+              "id": 3,
+              "title": "meh",
+              "count": 102,
+              "percent": 23.61
+            },
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 95,
+              "percent": 21.99
+            },
+            {
+              "id": 1,
+              "title": "skip",
+              "count": 15,
+              "percent": 3.47
+            }
+          ],
+          "ratings_count": 432,
+          "reviews_text_count": 0,
+          "added": 2140,
+          "added_by_status": {
+            "yet": 135,
+            "owned": 1461,
+            "beaten": 149,
+            "toplay": 111,
+            "dropped": 209,
+            "playing": 75
+          },
+          "metacritic": 88,
+          "playtime": 0,
+          "suggestions_count": 654,
+          "user_game": null,
+          "reviews_count": 432,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 16,
+                "name": "PlayStation 3",
+                "slug": "playstation3",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3605,
+                "image_background": "https://media.rawg.io/media/games/1bb/1bb86c35ffa3eb0d299b01a7c65bf908.jpg"
+              },
+              "released_at": "2017-02-07",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 4,
+                "name": "PC",
+                "slug": "pc",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 263806,
+                "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+              },
+              "released_at": "2017-02-07",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 18,
+                "name": "PlayStation 4",
+                "slug": "playstation4",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 5164,
+                "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+              },
+              "released_at": "2017-02-07",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 1,
+                "name": "PC",
+                "slug": "pc"
+              }
+            },
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 4,
+              "name": "Action",
+              "slug": "action",
+              "games_count": 98679,
+              "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+              "id": 5,
+              "name": "RPG",
+              "slug": "role-playing-games-rpg",
+              "games_count": 31042,
+              "image_background": "https://media.rawg.io/media/games/6cd/6cd653e0aaef5ff8bbd295bf4bcb12eb.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 404,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP9000-CUSA07113_00-NIOH000000000000",
+              "url_ru": null
+            }
+          ],
+          "clip": null,
+          "tags": [
+            {
+              "id": 97,
+              "name": "Action RPG",
+              "slug": "action-rpg",
+              "language": "eng",
+              "games_count": 2747,
+              "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+            },
+            {
+              "id": 13,
+              "name": "Atmospheric",
+              "slug": "atmospheric",
+              "language": "eng",
+              "games_count": 9799,
+              "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg"
+            },
+            {
+              "id": 233,
+              "name": "JRPG",
+              "slug": "jrpg",
+              "language": "eng",
+              "games_count": 1708,
+              "image_background": "https://media.rawg.io/media/games/826/82626e2d7ee7d96656fb9838c2ef7302.jpg"
+            },
+            {
+              "id": 24,
+              "name": "RPG",
+              "slug": "rpg",
+              "language": "eng",
+              "games_count": 10367,
+              "image_background": "https://media.rawg.io/media/games/91c/91c4f377c1e09755b60a0102c5252843.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/games/f84/f84c7c45e074117fb81fecf427f8b41f.jpg"
+            },
+            {
+              "id": 3402,
+              "image": "https://media.rawg.io/media/screenshots/c9e/c9eae5e15cc7fe12846dfe069e9a14ed.jpg"
+            },
+            {
+              "id": 3404,
+              "image": "https://media.rawg.io/media/screenshots/f13/f139a7e0152dc9025d3fed4fa08def4f.jpg"
+            },
+            {
+              "id": 3405,
+              "image": "https://media.rawg.io/media/screenshots/a99/a99a28e5a9330a5471be992290b64057.jpg"
+            },
+            {
+              "id": 3406,
+              "image": "https://media.rawg.io/media/screenshots/e2a/e2a526eee19e295c8fdca07e0c8de762.jpg"
+            },
+            {
+              "id": 3408,
+              "image": "https://media.rawg.io/media/screenshots/578/578a8f8810c8fd6e74e7dbd4d5f3578c.jpg"
+            },
+            {
+              "id": 626183,
+              "image": "https://media.rawg.io/media/screenshots/a31/a31665e5d587304ecc637e11fb90df1c.jpg"
+            }
+          ]
+        },
+        {
+          "id": 4019,
+          "slug": "fatal-frame-ii-crimson-butterfly",
+          "name": "Fatal Frame II: Crimson Butterfly",
+          "released": "2003-11-27",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/screenshots/4a5/4a55dde45c12dd9f10f6a269fcc0c166.jpg",
+          "rating": 4.34,
+          "rating_top": 5,
+          "ratings": [
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 22,
+              "percent": 62.86
+            },
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 9,
+              "percent": 25.71
+            },
+            {
+              "id": 1,
+              "title": "skip",
+              "count": 3,
+              "percent": 8.57
+            },
+            {
+              "id": 3,
+              "title": "meh",
+              "count": 1,
+              "percent": 2.86
+            }
+          ],
+          "ratings_count": 33,
+          "reviews_text_count": 2,
+          "added": 102,
+          "added_by_status": {
+            "yet": 9,
+            "owned": 17,
+            "beaten": 33,
+            "toplay": 34,
+            "dropped": 6,
+            "playing": 3
+          },
+          "metacritic": 84,
+          "playtime": 0,
+          "suggestions_count": 484,
+          "user_game": null,
+          "reviews_count": 35,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 15,
+                "name": "PlayStation 2",
+                "slug": "playstation2",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 1834,
+                "image_background": "https://media.rawg.io/media/games/dd7/dd72d8a527cd9245c7eb7cd05aa53efa.jpg"
+              },
+              "released_at": "2003-11-27",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 16,
+                "name": "PlayStation 3",
+                "slug": "playstation3",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3605,
+                "image_background": "https://media.rawg.io/media/games/1bb/1bb86c35ffa3eb0d299b01a7c65bf908.jpg"
+              },
+              "released_at": "2003-11-27",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 4,
+              "name": "Action",
+              "slug": "action",
+              "games_count": 98679,
+              "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+              "id": 3,
+              "name": "Adventure",
+              "slug": "adventure",
+              "games_count": 69224,
+              "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 4338,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP9000-NPUD20766_00-0000000000000000",
+              "url_ru": null
+            }
+          ],
+          "clip": null,
+          "tags": [
+            {
+              "id": 37796,
+              "name": "exclusive",
+              "slug": "exclusive",
+              "language": "eng",
+              "games_count": 4453,
+              "image_background": "https://media.rawg.io/media/games/786/7863e587bac630de82fca50d799236a9.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/screenshots/4a5/4a55dde45c12dd9f10f6a269fcc0c166.jpg"
+            },
+            {
+              "id": 594968,
+              "image": "https://media.rawg.io/media/screenshots/8d2/8d29301d578b0a02127e52e315e65c5b.jpg"
+            },
+            {
+              "id": 594969,
+              "image": "https://media.rawg.io/media/screenshots/187/187804759797e1e6f0f5b2217f1c09e8.jpg"
+            },
+            {
+              "id": 594970,
+              "image": "https://media.rawg.io/media/screenshots/058/058ce1785f56de50e3d63d64a80b44c8.jpg"
+            },
+            {
+              "id": 594971,
+              "image": "https://media.rawg.io/media/screenshots/3eb/3ebf90a12fac2254d5519b25fccae5eb.jpg"
+            },
+            {
+              "id": 594972,
+              "image": "https://media.rawg.io/media/screenshots/8df/8dfa8b83f5975bb2989ca68e7b0f9f73.jpg"
+            },
+            {
+              "id": 594973,
+              "image": "https://media.rawg.io/media/screenshots/c57/c57ce9947ab00e2a49858917ccaca6f3.jpg"
+            }
+          ]
+        },
+        {
+          "id": 4050,
+          "slug": "fatal-frame",
+          "name": "Fatal Frame",
+          "released": "2001-12-13",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/games/7b3/7b3c6973cf8867c00cc4d74bc7ecc4ab.jpg",
+          "rating": 4.25,
+          "rating_top": 4,
+          "ratings": [
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 13,
+              "percent": 46.43
+            },
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 11,
+              "percent": 39.29
+            },
+            {
+              "id": 3,
+              "title": "meh",
+              "count": 4,
+              "percent": 14.29
+            }
+          ],
+          "ratings_count": 27,
+          "reviews_text_count": 1,
+          "added": 93,
+          "added_by_status": {
+            "yet": 13,
+            "owned": 13,
+            "beaten": 22,
+            "toplay": 30,
+            "dropped": 12,
+            "playing": 3
+          },
+          "metacritic": 77,
+          "playtime": 0,
+          "suggestions_count": 420,
+          "user_game": null,
+          "reviews_count": 28,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 80,
+                "name": "Xbox",
+                "slug": "xbox-old",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 670,
+                "image_background": "https://media.rawg.io/media/games/9c4/9c47f320eb73c9a02d462e12f6206b26.jpg"
+              },
+              "released_at": "2001-12-13",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 16,
+                "name": "PlayStation 3",
+                "slug": "playstation3",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3605,
+                "image_background": "https://media.rawg.io/media/games/1bb/1bb86c35ffa3eb0d299b01a7c65bf908.jpg"
+              },
+              "released_at": "2001-12-13",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 15,
+                "name": "PlayStation 2",
+                "slug": "playstation2",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 1834,
+                "image_background": "https://media.rawg.io/media/games/dd7/dd72d8a527cd9245c7eb7cd05aa53efa.jpg"
+              },
+              "released_at": "2001-12-13",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            },
+            {
+              "platform": {
+                "id": 3,
+                "name": "Xbox",
+                "slug": "xbox"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 4,
+              "name": "Action",
+              "slug": "action",
+              "games_count": 98679,
+              "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+              "id": 3,
+              "name": "Adventure",
+              "slug": "adventure",
+              "games_count": 69224,
+              "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 4370,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP9000-NPUD20388_00-0000000000000000",
+              "url_ru": null
+            }
+          ],
+          "clip": null,
+          "tags": [
+            {
+              "id": 663,
+              "name": "Ghosts",
+              "slug": "ghosts",
+              "language": "eng",
+              "games_count": 1755,
+              "image_background": "https://media.rawg.io/media/games/d1d/d1d60b2fce4d651bab8fc108432b5ec0.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/games/7b3/7b3c6973cf8867c00cc4d74bc7ecc4ab.jpg"
+            },
+            {
+              "id": 807118,
+              "image": "https://media.rawg.io/media/screenshots/4e9/4e9c2ad9dd0a8dbfb242a4bd104e9e16.jpg"
+            },
+            {
+              "id": 807119,
+              "image": "https://media.rawg.io/media/screenshots/995/9953ea08de9b1d11bcf579a00520401b.jpg"
+            },
+            {
+              "id": 807120,
+              "image": "https://media.rawg.io/media/screenshots/819/8190e7f3456634247bcfa29c29272721.jpg"
+            },
+            {
+              "id": 807121,
+              "image": "https://media.rawg.io/media/screenshots/d9c/d9cc64af1031b6ef63db6bb7987ba231.jpg"
+            },
+            {
+              "id": 807122,
+              "image": "https://media.rawg.io/media/screenshots/c21/c21d6d9231b731d6a8570d13166fe4c0.jpg"
+            },
+            {
+              "id": 807123,
+              "image": "https://media.rawg.io/media/screenshots/fed/fed4154ff78ceffa535fedd4bebdd98b.jpg"
+            }
+          ]
+        }
+      ],
+      "positions": [
+        {
+          "id": 2,
+          "name": "director",
+          "slug": "director"
+        }
+      ]
+    },
+    {
+      "id": 9217,
+      "name": "Ayako Toyoda",
+      "slug": "ayako-toyoda",
+      "image": null,
+      "image_background": "https://media.rawg.io/media/screenshots/e5d/e5dda4ec96f67888ed392848b253828c.jpg",
+      "games_count": 6,
+      "games": [
+        {
+          "id": 51320,
+          "slug": "attack-on-titan-2",
+          "name": "Attack on Titan 2",
+          "released": "2018-03-14",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/games/371/37133fe0f8b21f0fb0f3a201b33b7c1a.jpg",
+          "rating": 3.86,
+          "rating_top": 4,
+          "ratings": [
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 21,
+              "percent": 72.41
+            },
+            {
+              "id": 3,
+              "title": "meh",
+              "count": 4,
+              "percent": 13.79
+            },
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 3,
+              "percent": 10.34
+            },
+            {
+              "id": 1,
+              "title": "skip",
+              "count": 1,
+              "percent": 3.45
+            }
+          ],
+          "ratings_count": 29,
+          "reviews_text_count": 0,
+          "added": 137,
+          "added_by_status": {
+            "yet": 14,
+            "owned": 66,
+            "beaten": 21,
+            "toplay": 14,
+            "dropped": 18,
+            "playing": 4
+          },
+          "metacritic": 75,
+          "playtime": 17,
+          "suggestions_count": 618,
+          "user_game": null,
+          "reviews_count": 29,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 4,
+                "name": "PC",
+                "slug": "pc",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 263806,
+                "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+              },
+              "released_at": "2018-03-14",
+              "requirements_en": {
+                "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Win 7/8.1/10 64bit<br></li><li><strong>Processor:</strong> Core I5 2400 or over<br></li><li><strong>Memory:</strong> 6 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 660 VRAM 1GB or over<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 30 GB available space<br></li><li><strong>Sound Card:</strong> 16bit Stereo 48kHzWAVE</li></ul>",
+                "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Win 7/8.1/10 64bit<br></li><li><strong>Processor:</strong> Core i7 3770 or over<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 960 VRAM 2GB or over<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 30 GB available space<br></li><li><strong>Sound Card:</strong> 16bit 5.1ch surround 48KHzWAVE</li></ul>"
+              },
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 19,
+                "name": "PS Vita",
+                "slug": "ps-vita",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 1926,
+                "image_background": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg"
+              },
+              "released_at": "2018-03-20",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 1,
+                "name": "Xbox One",
+                "slug": "xbox-one",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3876,
+                "image_background": "https://media.rawg.io/media/games/91c/91c4f377c1e09755b60a0102c5252843.jpg"
+              },
+              "released_at": "2018-03-20",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 18,
+                "name": "PlayStation 4",
+                "slug": "playstation4",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 5164,
+                "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+              },
+              "released_at": "2018-03-20",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 7,
+                "name": "Nintendo Switch",
+                "slug": "nintendo-switch",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3426,
+                "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+              },
+              "released_at": "2018-03-20",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 1,
+                "name": "PC",
+                "slug": "pc"
+              }
+            },
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            },
+            {
+              "platform": {
+                "id": 3,
+                "name": "Xbox",
+                "slug": "xbox"
+              }
+            },
+            {
+              "platform": {
+                "id": 7,
+                "name": "Nintendo",
+                "slug": "nintendo"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 4,
+              "name": "Action",
+              "slug": "action",
+              "games_count": 98679,
+              "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 45724,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP4108-CUSA08956_00-AT2NAHDDGAME0000",
+              "url_ru": null
+            },
+            {
+              "id": 48844,
+              "store": {
+                "id": 1,
+                "name": "Steam",
+                "slug": "steam",
+                "domain": "store.steampowered.com",
+                "games_count": 45492,
+                "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+              },
+              "url_en": "https://store.steampowered.com/app/601050/",
+              "url_ru": null
+            },
+            {
+              "id": 47002,
+              "store": {
+                "id": 2,
+                "name": "Xbox Store",
+                "slug": "xbox-store",
+                "domain": "microsoft.com",
+                "games_count": 3493,
+                "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+              },
+              "url_en": "https://www.microsoft.com/en-us/store/p/attack-on-titan-2/c596v0p64dd6?cid=msft_web_chart",
+              "url_ru": null
+            },
+            {
+              "id": 46386,
+              "store": {
+                "id": 6,
+                "name": "Nintendo Store",
+                "slug": "nintendo",
+                "domain": "nintendo.com",
+                "games_count": 7807,
+                "image_background": "https://media.rawg.io/media/screenshots/88b/88b5f27f07d6ca2f8a3cd0b36e03a670.jpg"
+              },
+              "url_en": "https://www.nintendo.com/games/detail/attack-on-titan-2-switch",
+              "url_ru": null
+            }
+          ],
+          "clip": {
+            "clip": "https://media.rawg.io/media/stories-640/10a/10a63ebc35188866fe0f44522eb5f357.mp4",
+            "clips": {
+              "320": "https://media.rawg.io/media/stories-320/5ac/5ac87426a5965c666a88377ced022d93.mp4",
+              "640": "https://media.rawg.io/media/stories-640/10a/10a63ebc35188866fe0f44522eb5f357.mp4",
+              "full": "https://media.rawg.io/media/stories/8be/8be95774e96a2cc64a1c0e55fa4a8bdb.mp4"
+            },
+            "video": "jX7hi3pfAdw",
+            "preview": "https://media.rawg.io/media/stories-previews/f1c/f1c3433e6feac41bcc6e6fbd19bf006c.jpg"
+          },
+          "tags": [
+            {
+              "id": 40845,
+              "name": "Partial Controller Support",
+              "slug": "partial-controller-support",
+              "language": "eng",
+              "games_count": 6706,
+              "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+            },
+            {
+              "id": 134,
+              "name": "Anime",
+              "slug": "anime",
+              "language": "eng",
+              "games_count": 4818,
+              "image_background": "https://media.rawg.io/media/screenshots/ddb/ddbcf3f1330e146094b0ce211e33090a.jpg"
+            },
+            {
+              "id": 40847,
+              "name": "Steam Achievements",
+              "slug": "steam-achievements",
+              "language": "eng",
+              "games_count": 19692,
+              "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+            },
+            {
+              "id": 40849,
+              "name": "Steam Cloud",
+              "slug": "steam-cloud",
+              "language": "eng",
+              "games_count": 9201,
+              "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+            },
+            {
+              "id": 121,
+              "name": "Character Customization",
+              "slug": "character-customization",
+              "language": "eng",
+              "games_count": 1003,
+              "image_background": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg"
+            },
+            {
+              "id": 18,
+              "name": "Co-op",
+              "slug": "co-op",
+              "language": "eng",
+              "games_count": 5760,
+              "image_background": "https://media.rawg.io/media/games/c6b/c6bfece1daf8d06bc0a60632ac78e5bf.jpg"
+            },
+            {
+              "id": 26,
+              "name": "Gore",
+              "slug": "gore",
+              "language": "eng",
+              "games_count": 3388,
+              "image_background": "https://media.rawg.io/media/games/806/8060a7663364ac23e15480728938d6f3.jpg"
+            },
+            {
+              "id": 16,
+              "name": "Horror",
+              "slug": "horror",
+              "language": "eng",
+              "games_count": 16145,
+              "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+            },
+            {
+              "id": 7,
+              "name": "Multiplayer",
+              "slug": "multiplayer",
+              "language": "eng",
+              "games_count": 21930,
+              "image_background": "https://media.rawg.io/media/games/d69/d69810315bd7e226ea2d21f9156af629.jpg"
+            },
+            {
+              "id": 44,
+              "name": "Nudity",
+              "slug": "nudity",
+              "language": "eng",
+              "games_count": 2132,
+              "image_background": "https://media.rawg.io/media/games/470/470d21d6971de8f13ec0e1664a120cc0.jpg"
+            },
+            {
+              "id": 9,
+              "name": "Online Co-Op",
+              "slug": "online-co-op",
+              "language": "eng",
+              "games_count": 2289,
+              "image_background": "https://media.rawg.io/media/games/88c/88c5b4d7c80276c03ff62aebb1a99ad4.jpg"
+            },
+            {
+              "id": 36,
+              "name": "Open World",
+              "slug": "open-world",
+              "language": "eng",
+              "games_count": 2988,
+              "image_background": "https://media.rawg.io/media/games/84d/84da2ac3fdfc6507807a1808595afb12.jpg"
+            },
+            {
+              "id": 24,
+              "name": "RPG",
+              "slug": "rpg",
+              "language": "eng",
+              "games_count": 10367,
+              "image_background": "https://media.rawg.io/media/games/91c/91c4f377c1e09755b60a0102c5252843.jpg"
+            },
+            {
+              "id": 31,
+              "name": "Singleplayer",
+              "slug": "singleplayer",
+              "language": "eng",
+              "games_count": 88747,
+              "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+            },
+            {
+              "id": 397,
+              "name": "Online multiplayer",
+              "slug": "online-multiplayer",
+              "language": "eng",
+              "games_count": 3790,
+              "image_background": "https://media.rawg.io/media/games/1e5/1e5e33b88be978f451196a751424a72e.jpg"
+            },
+            {
+              "id": 411,
+              "name": "cooperative",
+              "slug": "cooperative",
+              "language": "eng",
+              "games_count": 2465,
+              "image_background": "https://media.rawg.io/media/games/d69/d69810315bd7e226ea2d21f9156af629.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/games/371/37133fe0f8b21f0fb0f3a201b33b7c1a.jpg"
+            },
+            {
+              "id": 824532,
+              "image": "https://media.rawg.io/media/screenshots/36a/36a591df4dcc4956fd6324fbfb8edb16.jpg"
+            },
+            {
+              "id": 824533,
+              "image": "https://media.rawg.io/media/screenshots/26f/26f7b64672666a4e00c4d2146ac09860.jpg"
+            },
+            {
+              "id": 824534,
+              "image": "https://media.rawg.io/media/screenshots/c40/c40b0cf52af8e9c26da99b2211b84ebb.jpg"
+            },
+            {
+              "id": 824535,
+              "image": "https://media.rawg.io/media/screenshots/2b6/2b61ea7f53f83a8ef362e7753f211cde.jpg"
+            },
+            {
+              "id": 824536,
+              "image": "https://media.rawg.io/media/screenshots/1f2/1f223b793ea1d90bb658ef946284451a.jpg"
+            },
+            {
+              "id": 713721,
+              "image": "https://media.rawg.io/media/screenshots/cf2/cf2d7e37acd38c01b075186e2b4dd6b0.jpg"
+            }
+          ]
+        },
+        {
+          "id": 4019,
+          "slug": "fatal-frame-ii-crimson-butterfly",
+          "name": "Fatal Frame II: Crimson Butterfly",
+          "released": "2003-11-27",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/screenshots/4a5/4a55dde45c12dd9f10f6a269fcc0c166.jpg",
+          "rating": 4.34,
+          "rating_top": 5,
+          "ratings": [
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 22,
+              "percent": 62.86
+            },
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 9,
+              "percent": 25.71
+            },
+            {
+              "id": 1,
+              "title": "skip",
+              "count": 3,
+              "percent": 8.57
+            },
+            {
+              "id": 3,
+              "title": "meh",
+              "count": 1,
+              "percent": 2.86
+            }
+          ],
+          "ratings_count": 33,
+          "reviews_text_count": 2,
+          "added": 102,
+          "added_by_status": {
+            "yet": 9,
+            "owned": 17,
+            "beaten": 33,
+            "toplay": 34,
+            "dropped": 6,
+            "playing": 3
+          },
+          "metacritic": 84,
+          "playtime": 0,
+          "suggestions_count": 484,
+          "user_game": null,
+          "reviews_count": 35,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 15,
+                "name": "PlayStation 2",
+                "slug": "playstation2",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 1834,
+                "image_background": "https://media.rawg.io/media/games/dd7/dd72d8a527cd9245c7eb7cd05aa53efa.jpg"
+              },
+              "released_at": "2003-11-27",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 16,
+                "name": "PlayStation 3",
+                "slug": "playstation3",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3605,
+                "image_background": "https://media.rawg.io/media/games/1bb/1bb86c35ffa3eb0d299b01a7c65bf908.jpg"
+              },
+              "released_at": "2003-11-27",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 4,
+              "name": "Action",
+              "slug": "action",
+              "games_count": 98679,
+              "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+              "id": 3,
+              "name": "Adventure",
+              "slug": "adventure",
+              "games_count": 69224,
+              "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 4338,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP9000-NPUD20766_00-0000000000000000",
+              "url_ru": null
+            }
+          ],
+          "clip": null,
+          "tags": [
+            {
+              "id": 37796,
+              "name": "exclusive",
+              "slug": "exclusive",
+              "language": "eng",
+              "games_count": 4453,
+              "image_background": "https://media.rawg.io/media/games/786/7863e587bac630de82fca50d799236a9.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/screenshots/4a5/4a55dde45c12dd9f10f6a269fcc0c166.jpg"
+            },
+            {
+              "id": 594968,
+              "image": "https://media.rawg.io/media/screenshots/8d2/8d29301d578b0a02127e52e315e65c5b.jpg"
+            },
+            {
+              "id": 594969,
+              "image": "https://media.rawg.io/media/screenshots/187/187804759797e1e6f0f5b2217f1c09e8.jpg"
+            },
+            {
+              "id": 594970,
+              "image": "https://media.rawg.io/media/screenshots/058/058ce1785f56de50e3d63d64a80b44c8.jpg"
+            },
+            {
+              "id": 594971,
+              "image": "https://media.rawg.io/media/screenshots/3eb/3ebf90a12fac2254d5519b25fccae5eb.jpg"
+            },
+            {
+              "id": 594972,
+              "image": "https://media.rawg.io/media/screenshots/8df/8dfa8b83f5975bb2989ca68e7b0f9f73.jpg"
+            },
+            {
+              "id": 594973,
+              "image": "https://media.rawg.io/media/screenshots/c57/c57ce9947ab00e2a49858917ccaca6f3.jpg"
+            }
+          ]
+        },
+        {
+          "id": 3896,
+          "slug": "fatal-frame-iii-the-tormented",
+          "name": "Fatal Frame III: The Tormented",
+          "released": "2005-07-28",
+          "tba": false,
+          "background_image": "https://media.rawg.io/media/games/014/01415fd69465c25ca33b9c0428b5a3ae.jpg",
+          "rating": 4.5,
+          "rating_top": 5,
+          "ratings": [
+            {
+              "id": 5,
+              "title": "exceptional",
+              "count": 5,
+              "percent": 50
+            },
+            {
+              "id": 4,
+              "title": "recommended",
+              "count": 5,
+              "percent": 50
+            }
+          ],
+          "ratings_count": 10,
+          "reviews_text_count": 0,
+          "added": 60,
+          "added_by_status": {
+            "yet": 13,
+            "owned": 5,
+            "beaten": 12,
+            "toplay": 23,
+            "dropped": 4,
+            "playing": 3
+          },
+          "metacritic": 78,
+          "playtime": 0,
+          "suggestions_count": 562,
+          "user_game": null,
+          "reviews_count": 10,
+          "saturated_color": "0f0f0f",
+          "dominant_color": "0f0f0f",
+          "platforms": [
+            {
+              "platform": {
+                "id": 16,
+                "name": "PlayStation 3",
+                "slug": "playstation3",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 3605,
+                "image_background": "https://media.rawg.io/media/games/1bb/1bb86c35ffa3eb0d299b01a7c65bf908.jpg"
+              },
+              "released_at": "2005-07-28",
+              "requirements_en": null,
+              "requirements_ru": null
+            },
+            {
+              "platform": {
+                "id": 15,
+                "name": "PlayStation 2",
+                "slug": "playstation2",
+                "image": null,
+                "year_end": null,
+                "year_start": null,
+                "games_count": 1834,
+                "image_background": "https://media.rawg.io/media/games/dd7/dd72d8a527cd9245c7eb7cd05aa53efa.jpg"
+              },
+              "released_at": "2005-07-28",
+              "requirements_en": null,
+              "requirements_ru": null
+            }
+          ],
+          "parent_platforms": [
+            {
+              "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+              }
+            }
+          ],
+          "genres": [
+            {
+              "id": 4,
+              "name": "Action",
+              "slug": "action",
+              "games_count": 98679,
+              "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+              "id": 3,
+              "name": "Adventure",
+              "slug": "adventure",
+              "games_count": 69224,
+              "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+            }
+          ],
+          "stores": [
+            {
+              "id": 4213,
+              "store": {
+                "id": 3,
+                "name": "PlayStation Store",
+                "slug": "playstation-store",
+                "domain": "store.playstation.com",
+                "games_count": 6809,
+                "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+              },
+              "url_en": "https://store.playstation.com/en-us/product/UP9000-NPUD21244_00-0000000000000000",
+              "url_ru": null
+            }
+          ],
+          "clip": null,
+          "tags": [
+            {
+              "id": 820,
+              "name": "secrets",
+              "slug": "secrets",
+              "language": "eng",
+              "games_count": 2231,
+              "image_background": "https://media.rawg.io/media/games/d9d/d9d6c3327fea9e830b17985f72db64e6.jpg"
+            }
+          ],
+          "short_screenshots": [
+            {
+              "id": -1,
+              "image": "https://media.rawg.io/media/games/014/01415fd69465c25ca33b9c0428b5a3ae.jpg"
+            },
+            {
+              "id": 807126,
+              "image": "https://media.rawg.io/media/screenshots/33a/33ad7959f787d9db0b91badc2a60d003.jpg"
+            },
+            {
+              "id": 807127,
+              "image": "https://media.rawg.io/media/screenshots/732/732007a690b493d1f5ebb4319cc02120.jpg"
+            },
+            {
+              "id": 807128,
+              "image": "https://media.rawg.io/media/screenshots/40d/40d7cd7c9df7c3dc60c663aac0b4999f.jpg"
+            },
+            {
+              "id": 807129,
+              "image": "https://media.rawg.io/media/screenshots/77f/77f05c7320af385ec4f1a60397c8ba57.jpg"
+            },
+            {
+              "id": 807130,
+              "image": "https://media.rawg.io/media/screenshots/794/79433f05b436d23afb5daf0b774c52d1.jpg"
+            },
+            {
+              "id": 807131,
+              "image": "https://media.rawg.io/media/screenshots/855/855e11be3d5c9113691f9495d439c375.jpg"
+            }
+          ]
+        }
+      ],
+      "positions": [
+        {
+          "id": 3,
+          "name": "composer",
+          "slug": "composer"
+        }
+      ]
+    }
+  ]
+}

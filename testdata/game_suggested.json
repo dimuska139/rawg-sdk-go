@@ -1,0 +1,2544 @@
+{
+  "count": 241,
+  "next": "https://api.rawg.io/api/games/23/suggested?page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 11813,
+      "slug": "maize",
+      "name": "Maize",
+      "released": "2016-11-30",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/a7b/a7bc2df0cc8da280bbd7203a52cc56bf.jpg",
+      "rating": 2.7,
+      "rating_top": 3,
+      "ratings": [
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 11,
+          "percent": 40.74
+        },
+        {
+          "id": 4,
+          "title": "recommended",
+          "count": 8,
+          "percent": 29.63
+        },
+        {
+          "id": 1,
+          "title": "skip",
+          "count": 8,
+          "percent": 29.63
+        }
+      ],
+      "ratings_count": 27,
+      "reviews_text_count": 0,
+      "added": 520,
+      "added_by_status": {
+        "yet": 31,
+        "owned": 460,
+        "beaten": 15,
+        "toplay": 8,
+        "dropped": 4,
+        "playing": 2
+      },
+      "metacritic": 65,
+      "playtime": 1,
+      "suggestions_count": 420,
+      "user_game": null,
+      "reviews_count": 27,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2016-12-01",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or above, 64 bit<br></li><li><strong>Processor:</strong> Dual-core Intel or AMD, 2.0 GHz or higher<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce 460 GTX | AMD Radeon 6870 HD series or higher<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 11 GB available space</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or above, 64 bit<br></li><li><strong>Processor:</strong> Quad-core Intel or AMD, 3.0 GHz or higher<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> AMD Radeon RX 480 | NVIDIA GeForce GTX 760 or higher<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 11 GB available space<br></li><li><strong>Additional Notes:</strong> SSD Drive</li></ul>"
+          },
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5164,
+            "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+          },
+          "released_at": "2017-09-12",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 3876,
+            "image_background": "https://media.rawg.io/media/games/91c/91c4f377c1e09755b60a0102c5252843.jpg"
+          },
+          "released_at": "2017-09-12",
+          "requirements_en": null,
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 2,
+            "name": "PlayStation",
+            "slug": "playstation"
+          }
+        },
+        {
+          "platform": {
+            "id": 3,
+            "name": "Xbox",
+            "slug": "xbox"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 38613,
+          "store": {
+            "id": 3,
+            "name": "PlayStation Store",
+            "slug": "playstation-store",
+            "domain": "store.playstation.com",
+            "games_count": 6809,
+            "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+          },
+          "url_en": "https://store.playstation.com/en-us/product/UP2119-CUSA03283_00-00000000MAIZEPS4",
+          "url_ru": null
+        },
+        {
+          "id": 38621,
+          "store": {
+            "id": 2,
+            "name": "Xbox Store",
+            "slug": "xbox-store",
+            "domain": "microsoft.com",
+            "games_count": 3493,
+            "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+          },
+          "url_en": "https://www.microsoft.com/en-us/p/maize/c496d5d6ms5h?cid=msft_web_chart",
+          "url_ru": null
+        },
+        {
+          "id": 26867,
+          "store": {
+            "id": 5,
+            "name": "GOG",
+            "slug": "gog",
+            "domain": "gog.com",
+            "games_count": 2874,
+            "image_background": "https://media.rawg.io/media/games/14a/14a83c56ff668baaced6e8c8704b6391.jpg"
+          },
+          "url_en": "http://www.gog.com/game/maize",
+          "url_ru": null
+        },
+        {
+          "id": 12960,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "http://store.steampowered.com/app/284240/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 40845,
+          "name": "Partial Controller Support",
+          "slug": "partial-controller-support",
+          "language": "eng",
+          "games_count": 6706,
+          "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+        },
+        {
+          "id": 123,
+          "name": "Comedy",
+          "slug": "comedy",
+          "language": "eng",
+          "games_count": 5056,
+          "image_background": "https://media.rawg.io/media/games/85c/85c8ae70e7cdf0105f06ef6bdce63b8b.jpg"
+        },
+        {
+          "id": 8,
+          "name": "First-Person",
+          "slug": "first-person",
+          "language": "eng",
+          "games_count": 8941,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Funny",
+          "slug": "funny",
+          "language": "eng",
+          "games_count": 10295,
+          "image_background": "https://media.rawg.io/media/games/10d/10d19e52e5e8415d16a4d344fe711874.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Horror",
+          "slug": "horror",
+          "language": "eng",
+          "games_count": 16145,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 141,
+          "name": "Point & Click",
+          "slug": "point-click",
+          "language": "eng",
+          "games_count": 5496,
+          "image_background": "https://media.rawg.io/media/games/df2/df20fd77db56ae7b0a26a7ff4baa9ccc.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 118,
+          "name": "Story Rich",
+          "slug": "story-rich",
+          "language": "eng",
+          "games_count": 7564,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 91,
+          "name": "Walking Simulator",
+          "slug": "walking-simulator",
+          "language": "eng",
+          "games_count": 3084,
+          "image_background": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/a7b/a7bc2df0cc8da280bbd7203a52cc56bf.jpg"
+        },
+        {
+          "id": 97258,
+          "image": "https://media.rawg.io/media/screenshots/014/014bb99a286f809e8fc262fea81e2c09.jpg"
+        },
+        {
+          "id": 97259,
+          "image": "https://media.rawg.io/media/screenshots/4d7/4d7d8946c876014ac47223e45618322a.jpg"
+        },
+        {
+          "id": 97260,
+          "image": "https://media.rawg.io/media/screenshots/8aa/8aa2afc9acddce80715a258bfa739a1f.jpg"
+        },
+        {
+          "id": 97261,
+          "image": "https://media.rawg.io/media/screenshots/8a9/8a978f97ebd9dd27870305f274830a15.jpg"
+        },
+        {
+          "id": 97262,
+          "image": "https://media.rawg.io/media/screenshots/9af/9afff615ae99c04575624fadea6e18fe.jpg"
+        },
+        {
+          "id": 97263,
+          "image": "https://media.rawg.io/media/screenshots/4f6/4f68675a15429ccb7446a7d0e3b70947.jpg"
+        }
+      ],
+      "short_description": "Maize is an indie adventure game developed by Finish Line Games. It was originally released in 2016. It was published by Finish Line Games. Maize has a Metascore of 65, based on professional reviews. Most rawgers rated the game as \"Meh\". \nYou can play Maize on PC, PlayStation 4 and Xbox One. The game is sold via PlayStation Store, Xbox Store, GOG and Steam. \nIt was produced by Finish Line Games. \n"
+    },
+    {
+      "id": 428748,
+      "slug": "palladium-adventure-in-greece",
+      "name": "Palladium: Adventure in Greece",
+      "released": "2020-08-28",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/de5/de56592cd96b737dc67d618198cf2070.jpg",
+      "rating": 0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 2,
+      "added_by_status": {
+        "toplay": 2
+      },
+      "metacritic": null,
+      "playtime": 0,
+      "suggestions_count": 349,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 41132,
+            "image_background": "https://media.rawg.io/media/games/ed5/ed5b7d01dd68fd8d598c91ad61f153af.jpg"
+          },
+          "released_at": "2020-08-28",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Ubuntu 14.04+<br></li><li><strong>Processor:</strong> Intel Pentium 3 / Athlon 64 or later<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Radeon HD6670 1 GB VRAM or similar<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>Sound Card:</strong> Any sound card</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Ubuntu 14.04+<br></li><li><strong>Processor:</strong> Intel Pentium 3 / Athlon 64 or later<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 960 4 GB VRAM or similar<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>Sound Card:</strong> Any sound card</li></ul>"
+          },
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 59460,
+            "image_background": "https://media.rawg.io/media/games/88c/88c5b4d7c80276c03ff62aebb1a99ad4.jpg"
+          },
+          "released_at": "2020-08-28",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Mac OS X 10.13 or later<br></li><li><strong>Processor:</strong> Intel CPU 1 Ghz or higher<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Integrated graphics<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>Sound Card:</strong> Any sound card</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Mac OS X 10.13 or later<br></li><li><strong>Processor:</strong> Intel CPU 1 Ghz or higher<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Integrated graphics<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>Sound Card:</strong> Any sound card</li></ul>"
+          },
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2020-08-28",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7<br></li><li><strong>Processor:</strong> CPU 1 Ghz or higher<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Radeon HD6670 1 GB VRAM or similar<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>Sound Card:</strong> Any sound card</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10<br></li><li><strong>Processor:</strong> CPU 1 Ghz or higher<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 960 4 GB VRAM or similar<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>Sound Card:</strong> Any sound card</li></ul>"
+          },
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 419827,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "https://store.steampowered.com/app/1137270/",
+          "url_ru": ""
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 19692,
+          "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+        },
+        {
+          "id": 40849,
+          "name": "Steam Cloud",
+          "slug": "steam-cloud",
+          "language": "eng",
+          "games_count": 9201,
+          "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Atmospheric",
+          "slug": "atmospheric",
+          "language": "eng",
+          "games_count": 9799,
+          "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg"
+        },
+        {
+          "id": 145,
+          "name": "Choices Matter",
+          "slug": "choices-matter",
+          "language": "eng",
+          "games_count": 685,
+          "image_background": "https://media.rawg.io/media/screenshots/8f0/8f0b94922ad5e59968852649697b2643.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Exploration",
+          "slug": "exploration",
+          "language": "eng",
+          "games_count": 7675,
+          "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg"
+        },
+        {
+          "id": 107,
+          "name": "Family Friendly",
+          "slug": "family-friendly",
+          "language": "eng",
+          "games_count": 1386,
+          "image_background": "https://media.rawg.io/media/games/f15/f15e1dbda32b588a981bbc6b222a4b4c.jpg"
+        },
+        {
+          "id": 8,
+          "name": "First-Person",
+          "slug": "first-person",
+          "language": "eng",
+          "games_count": 8941,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 89,
+          "name": "Historical",
+          "slug": "historical",
+          "language": "eng",
+          "games_count": 806,
+          "image_background": "https://media.rawg.io/media/games/59f/59fc1c5de1d29cb9234741c97d250150.jpg"
+        },
+        {
+          "id": 151,
+          "name": "Modern",
+          "slug": "modern",
+          "language": "eng",
+          "games_count": 227,
+          "image_background": "https://media.rawg.io/media/screenshots/02c/02c492df578b8eedbde3e4379f9f536a.jpg"
+        },
+        {
+          "id": 117,
+          "name": "Mystery",
+          "slug": "mystery",
+          "language": "eng",
+          "games_count": 5549,
+          "image_background": "https://media.rawg.io/media/games/7ba/7baf4663962bad7197e2470d59a6e322.jpg"
+        },
+        {
+          "id": 108,
+          "name": "Mythology",
+          "slug": "mythology",
+          "language": "eng",
+          "games_count": 637,
+          "image_background": "https://media.rawg.io/media/games/33d/33df5a032898b8ab7e3773c7a5f1d336.jpg"
+        },
+        {
+          "id": 200,
+          "name": "Narration",
+          "slug": "narration",
+          "language": "eng",
+          "games_count": 337,
+          "image_background": "https://media.rawg.io/media/screenshots/6ef/6ef29fa65f8e13a67cc3f2c78215a068.jpg"
+        },
+        {
+          "id": 206,
+          "name": "Party-Based RPG",
+          "slug": "party-based-rpg",
+          "language": "eng",
+          "games_count": 175,
+          "image_background": "https://media.rawg.io/media/games/789/7896837ec22a83e4007018ddd55e8c9a.jpg"
+        },
+        {
+          "id": 141,
+          "name": "Point & Click",
+          "slug": "point-click",
+          "language": "eng",
+          "games_count": 5496,
+          "image_background": "https://media.rawg.io/media/games/df2/df20fd77db56ae7b0a26a7ff4baa9ccc.jpg"
+        },
+        {
+          "id": 194,
+          "name": "Real-Time with Pause",
+          "slug": "real-time-with-pause",
+          "language": "eng",
+          "games_count": 145,
+          "image_background": "https://media.rawg.io/media/screenshots/e0a/e0abaefbcc99ef995be57d857806f2d2.jpeg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 311,
+          "name": "Underground",
+          "slug": "underground",
+          "language": "eng",
+          "games_count": 91,
+          "image_background": "https://media.rawg.io/media/screenshots/7e7/7e79d7f4f5431e14c23b1883f8cbd50f.jpg"
+        },
+        {
+          "id": 91,
+          "name": "Walking Simulator",
+          "slug": "walking-simulator",
+          "language": "eng",
+          "games_count": 3084,
+          "image_background": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg"
+        },
+        {
+          "id": 575,
+          "name": "Logic",
+          "slug": "logic",
+          "language": "eng",
+          "games_count": 908,
+          "image_background": "https://media.rawg.io/media/screenshots/5c1/5c126e1fc9bab269e9065072e195a3d8.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/de5/de56592cd96b737dc67d618198cf2070.jpg"
+        },
+        {
+          "id": 2343400,
+          "image": "https://media.rawg.io/media/screenshots/fb0/fb0838f816c918ac5ddc5b88f535a13b.jpg"
+        },
+        {
+          "id": 2343401,
+          "image": "https://media.rawg.io/media/screenshots/850/850e8ea833e79b65891fc316f6d2206b.jpg"
+        },
+        {
+          "id": 2343402,
+          "image": "https://media.rawg.io/media/screenshots/b0a/b0ad4c3acb3747fca38d92569b0384fc.jpg"
+        },
+        {
+          "id": 2343403,
+          "image": "https://media.rawg.io/media/screenshots/710/7106e00775dd497ff3a5348e7d799cdd.jpg"
+        },
+        {
+          "id": 2343404,
+          "image": "https://media.rawg.io/media/screenshots/657/657ead493015289d3356e85edeef9c33.jpg"
+        },
+        {
+          "id": 2343405,
+          "image": "https://media.rawg.io/media/screenshots/de5/de56592cd96b737dc67d618198cf2070.jpg"
+        }
+      ],
+      "short_description": "Palladium: Adventure in Greece is an indie adventure game developed by NLB project. It was originally released in 2020. It was published by NLB project. \nPalladium: Adventure in Greece is available on Linux, macOS and PC. You can purchase the game on Steam. \n\n"
+    },
+    {
+      "id": 16402,
+      "slug": "house-of-caravan",
+      "name": "House of Caravan",
+      "released": "2015-04-16",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/f44/f44c3c517d591f4e07978ef59ea02a38.jpg",
+      "rating": 2.19,
+      "rating_top": 1,
+      "ratings": [
+        {
+          "id": 1,
+          "title": "skip",
+          "count": 8,
+          "percent": 50
+        },
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 6,
+          "percent": 37.5
+        },
+        {
+          "id": 5,
+          "title": "exceptional",
+          "count": 1,
+          "percent": 6.25
+        },
+        {
+          "id": 4,
+          "title": "recommended",
+          "count": 1,
+          "percent": 6.25
+        }
+      ],
+      "ratings_count": 16,
+      "reviews_text_count": 0,
+      "added": 419,
+      "added_by_status": {
+        "yet": 14,
+        "owned": 397,
+        "beaten": 4,
+        "toplay": 1,
+        "dropped": 2,
+        "playing": 1
+      },
+      "metacritic": null,
+      "playtime": 3,
+      "suggestions_count": 406,
+      "user_game": null,
+      "reviews_count": 16,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2015-04-16",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows XP SP2 or higher<br></li><li><strong>Processor:</strong> Quadcore 2.40GHz<br></li><li><strong>Memory:</strong> 3 GB RAM<br></li><li><strong>Graphics:</strong> Video card with 512MB of VRAM<br></li><li><strong>DirectX:</strong> Version 9.0c<br></li><li><strong>Storage:</strong> 1 GB available space</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or higher<br></li><li><strong>Processor:</strong> Quadcore 3.2GHz<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Video card Nvidia or ATI with 1024MB of VRAM<br></li><li><strong>DirectX:</strong> Version 9.0c<br></li><li><strong>Storage:</strong> 1 GB available space</li></ul>"
+          },
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 59460,
+            "image_background": "https://media.rawg.io/media/games/88c/88c5b4d7c80276c03ff62aebb1a99ad4.jpg"
+          },
+          "released_at": "2015-04-16",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> MAC OSX v10.6 Snow Leopard or higher<br></li><li><strong>Processor:</strong> Quadcore 2.40GHz<br></li><li><strong>Memory:</strong> 3 GB RAM<br></li><li><strong>Graphics:</strong> Video card with 512MB of VRAM<br></li><li><strong>Storage:</strong> 1 GB available space</li></ul>"
+          },
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action",
+          "games_count": 98679,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 5,
+          "name": "RPG",
+          "slug": "role-playing-games-rpg",
+          "games_count": 31042,
+          "image_background": "https://media.rawg.io/media/games/6cd/6cd653e0aaef5ff8bbd295bf4bcb12eb.jpg"
+        },
+        {
+          "id": 10,
+          "name": "Strategy",
+          "slug": "strategy",
+          "games_count": 32214,
+          "image_background": "https://media.rawg.io/media/games/fd9/fd92f105dcd6491bc5d61135033d1f19.jpg"
+        },
+        {
+          "id": 14,
+          "name": "Simulation",
+          "slug": "simulation",
+          "games_count": 39582,
+          "image_background": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg"
+        },
+        {
+          "id": 15,
+          "name": "Sports",
+          "slug": "sports",
+          "games_count": 15502,
+          "image_background": "https://media.rawg.io/media/games/5eb/5eb49eb2fa0738fdb5bacea557b1bc57.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Racing",
+          "slug": "racing",
+          "games_count": 16056,
+          "image_background": "https://media.rawg.io/media/games/8a7/8a75028028592f9323d1e6e86668bb91.jpg"
+        },
+        {
+          "id": 40,
+          "name": "Casual",
+          "slug": "casual",
+          "games_count": 27849,
+          "image_background": "https://media.rawg.io/media/screenshots/112/112c9ecfe850e318bb999660361782bb.jpeg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 18139,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "http://store.steampowered.com/app/353550/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 40833,
+          "name": "Captions available",
+          "slug": "captions-available",
+          "language": "eng",
+          "games_count": 1003,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 40845,
+          "name": "Partial Controller Support",
+          "slug": "partial-controller-support",
+          "language": "eng",
+          "games_count": 6706,
+          "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+        },
+        {
+          "id": 134,
+          "name": "Anime",
+          "slug": "anime",
+          "language": "eng",
+          "games_count": 4818,
+          "image_background": "https://media.rawg.io/media/screenshots/ddb/ddbcf3f1330e146094b0ce211e33090a.jpg"
+        },
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 19692,
+          "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Atmospheric",
+          "slug": "atmospheric",
+          "language": "eng",
+          "games_count": 9799,
+          "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg"
+        },
+        {
+          "id": 49,
+          "name": "Difficult",
+          "slug": "difficult",
+          "language": "eng",
+          "games_count": 7141,
+          "image_background": "https://media.rawg.io/media/games/78d/78dfae12fb8c5b16cd78648553071e0a.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Exploration",
+          "slug": "exploration",
+          "language": "eng",
+          "games_count": 7675,
+          "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg"
+        },
+        {
+          "id": 107,
+          "name": "Family Friendly",
+          "slug": "family-friendly",
+          "language": "eng",
+          "games_count": 1386,
+          "image_background": "https://media.rawg.io/media/games/f15/f15e1dbda32b588a981bbc6b222a4b4c.jpg"
+        },
+        {
+          "id": 8,
+          "name": "First-Person",
+          "slug": "first-person",
+          "language": "eng",
+          "games_count": 8941,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Funny",
+          "slug": "funny",
+          "language": "eng",
+          "games_count": 10295,
+          "image_background": "https://media.rawg.io/media/games/10d/10d19e52e5e8415d16a4d344fe711874.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Horror",
+          "slug": "horror",
+          "language": "eng",
+          "games_count": 16145,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 74,
+          "name": "Retro",
+          "slug": "retro",
+          "language": "eng",
+          "games_count": 16453,
+          "image_background": "https://media.rawg.io/media/screenshots/221/2212e35101efc688edd596e0ab96840e.jpg"
+        },
+        {
+          "id": 24,
+          "name": "RPG",
+          "slug": "rpg",
+          "language": "eng",
+          "games_count": 10367,
+          "image_background": "https://media.rawg.io/media/games/91c/91c4f377c1e09755b60a0102c5252843.jpg"
+        },
+        {
+          "id": 32,
+          "name": "Sci-fi",
+          "slug": "sci-fi",
+          "language": "eng",
+          "games_count": 8012,
+          "image_background": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 118,
+          "name": "Story Rich",
+          "slug": "story-rich",
+          "language": "eng",
+          "games_count": 7564,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 91,
+          "name": "Walking Simulator",
+          "slug": "walking-simulator",
+          "language": "eng",
+          "games_count": 3084,
+          "image_background": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg"
+        },
+        {
+          "id": 7808,
+          "name": "steam-trading-cards",
+          "slug": "steam-trading-cards",
+          "language": "eng",
+          "games_count": 7605,
+          "image_background": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/f44/f44c3c517d591f4e07978ef59ea02a38.jpg"
+        },
+        {
+          "id": 147095,
+          "image": "https://media.rawg.io/media/screenshots/ce5/ce541f2289d7186710e9ea92f6473d85.jpg"
+        },
+        {
+          "id": 147096,
+          "image": "https://media.rawg.io/media/screenshots/8eb/8eb43dfdccb70e7afd4a1ddddcfb053b.jpg"
+        },
+        {
+          "id": 147097,
+          "image": "https://media.rawg.io/media/screenshots/911/911685862a89d78783bf70222ee3290f.jpg"
+        },
+        {
+          "id": 147098,
+          "image": "https://media.rawg.io/media/screenshots/73a/73a8800a2f633cf2f6f562614d0f9020.jpg"
+        },
+        {
+          "id": 147099,
+          "image": "https://media.rawg.io/media/screenshots/323/323f6c4a4556c1acf47f35387dc31d04.jpg"
+        },
+        {
+          "id": 147100,
+          "image": "https://media.rawg.io/media/screenshots/6a9/6a931ea58050b6b595508614315621a3.jpg"
+        }
+      ],
+      "short_description": "House of Caravan is a casual, action, adventure and RPG game developed by Rosebud Games. It was originally released in 2015. It was published by Rosebud Games. Most rawgers rated the game as \"Skip\". \nHouse of Caravan is available on PC and macOS. You can purchase the game on Steam. \n\n"
+    },
+    {
+      "id": 12495,
+      "slug": "the-grand-canyon-vr-experience",
+      "name": "The Grand Canyon VR Experience",
+      "released": "2017-01-13",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/84a/84acb142da4d23345dff0ab7a955f6f2.jpg",
+      "rating": 0,
+      "rating_top": 0,
+      "ratings": [
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 1,
+          "percent": 100
+        }
+      ],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 7,
+      "added_by_status": {
+        "yet": 1,
+        "owned": 5,
+        "beaten": 1
+      },
+      "metacritic": null,
+      "playtime": 1,
+      "suggestions_count": 309,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2017-01-13",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or higher<br></li><li><strong>Processor:</strong> Intel Core i5 (or equivalent)<br></li><li><strong>Graphics:</strong> GeForce GTX 970 GPU (or equivalent)<br></li><li><strong>Storage:</strong> 2000 MB available space<br></li><li><strong>Additional Notes:</strong> Requires an HTC VIVE /Oculus Rift + touch controllers</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or higher<br></li><li><strong>Processor:</strong> Intel Core i5 (or equivalent)<br></li><li><strong>Graphics:</strong> GeForce GTX 980 GPU (or equivalent)<br></li><li><strong>Storage:</strong> 2000 MB available space<br></li><li><strong>Additional Notes:</strong> Requires an HTC VIVE /Oculus Rift + touch controllers</li></ul>"
+          },
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 14,
+          "name": "Simulation",
+          "slug": "simulation",
+          "games_count": 39582,
+          "image_background": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg"
+        },
+        {
+          "id": 40,
+          "name": "Casual",
+          "slug": "casual",
+          "games_count": 27849,
+          "image_background": "https://media.rawg.io/media/screenshots/112/112c9ecfe850e318bb999660361782bb.jpeg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 13750,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "http://store.steampowered.com/app/407710/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 40845,
+          "name": "Partial Controller Support",
+          "slug": "partial-controller-support",
+          "language": "eng",
+          "games_count": 6706,
+          "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 33,
+          "name": "VR",
+          "slug": "vr",
+          "language": "eng",
+          "games_count": 7576,
+          "image_background": "https://media.rawg.io/media/screenshots/f34/f34c86335d0c51baa582aa93fa2d3f55.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/84a/84acb142da4d23345dff0ab7a955f6f2.jpg"
+        },
+        {
+          "id": 104916,
+          "image": "https://media.rawg.io/media/screenshots/a1e/a1ee7ac9484d51a76ddc11c203155eb1.jpg"
+        },
+        {
+          "id": 104917,
+          "image": "https://media.rawg.io/media/screenshots/bba/bba646969df034f59c37f96431d9131c.jpg"
+        },
+        {
+          "id": 104918,
+          "image": "https://media.rawg.io/media/screenshots/5e0/5e0085dde17bee937f82c0a3af14bca9.jpg"
+        },
+        {
+          "id": 104919,
+          "image": "https://media.rawg.io/media/screenshots/6ff/6ff105f1732dce5316cce4fe8d8f9e48.jpg"
+        },
+        {
+          "id": 104920,
+          "image": "https://media.rawg.io/media/screenshots/db9/db9d5413d7d177339911ae4afa5a837a.jpg"
+        },
+        {
+          "id": 104921,
+          "image": "https://media.rawg.io/media/screenshots/c29/c295fad02e62b3ff9fe3186135b97c7c.jpg"
+        }
+      ],
+      "short_description": "The Grand Canyon VR Experience is a casual adventure-simulation game developed by Immersive Entertainment, Inc.. It was originally released in 2017. It was published by Immersive Entertainment, Inc. Most rawgers rated the game as \"Meh\". \nThe Grand Canyon VR Experience is available on PC. You can purchase the game on Steam. \n\n"
+    },
+    {
+      "id": 22022,
+      "slug": "ovivo",
+      "name": "OVIVO",
+      "released": "2017-05-12",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/94c/94c464617fa15daffecd95cc221a816b.jpg",
+      "rating": 3.92,
+      "rating_top": 4,
+      "ratings": [
+        {
+          "id": 4,
+          "title": "recommended",
+          "count": 9,
+          "percent": 75
+        },
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 2,
+          "percent": 16.67
+        },
+        {
+          "id": 5,
+          "title": "exceptional",
+          "count": 1,
+          "percent": 8.33
+        }
+      ],
+      "ratings_count": 12,
+      "reviews_text_count": 0,
+      "added": 135,
+      "added_by_status": {
+        "yet": 10,
+        "owned": 112,
+        "beaten": 5,
+        "toplay": 4,
+        "dropped": 3,
+        "playing": 1
+      },
+      "metacritic": 71,
+      "playtime": 2,
+      "suggestions_count": 206,
+      "user_game": null,
+      "reviews_count": 12,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 59460,
+            "image_background": "https://media.rawg.io/media/games/88c/88c5b4d7c80276c03ff62aebb1a99ad4.jpg"
+          },
+          "released_at": "2017-05-12",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Mac OS X 10.8<br></li><li><strong>Processor:</strong> 1 Ghz<br></li><li><strong>Memory:</strong> 1 GB RAM<br></li><li><strong>Graphics:</strong> 512 MB<br></li><li><strong>Storage:</strong> 300 MB available space</li></ul>"
+          },
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2017-05-12",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows XP<br></li><li><strong>Processor:</strong> 1 Ghz<br></li><li><strong>Memory:</strong> 1 GB RAM<br></li><li><strong>Graphics:</strong> 512 MB<br></li><li><strong>Storage:</strong> 300 MB available space</li></ul>"
+          },
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 3,
+            "name": "iOS",
+            "slug": "ios",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 67204,
+            "image_background": "https://media.rawg.io/media/games/d1f/d1f872a48286b6b751670817d5c1e1be.jpg"
+          },
+          "released_at": "2018-03-28",
+          "requirements_en": {
+            "minimum": "iPhone 5s, iPad Air, iPad Air Cellular, iPad Mini Retina, iPad Mini Retina Cellular, iPhone 6, iPhone 6 Plus, iPad Air 2, iPad Air 2 Cellular, iPad Mini 3, iPad Mini 3 Cellular, iPod Touch Sixth Gen, iPhone 6s, iPhone 6s Plus, iPad Mini 4, iPad Mini 4 Cellular, iPad Pro, iPad Pro Cellular, iPad Pro 9.7, iPad Pro 9.7 Cellular, iPhone SE, iPhone 7, iPhone 7 Plus, iPad 6 1 1, iPad 6 1 2, iPad 7 1, iPad 7 2, iPad 7 3, iPad 7 4, iPhone 8, iPhone 8 Plus, iPhone X, iPad 7 5, iPad 7 6, iPhone X S, iPhone X S Max, iPhone X R, iPad 8 1 2, iPad 8 3 4, iPad 8 5 6, iPad 8 7 8, iPad Mini 5, iPad Mini 5 Cellular, iPad Air 3, iPad Air 3 Cellular, iPod Touch Seventh Gen, iPhone 1 1, iPhone 1 1 Pro, iPad Seventh Gen, iPad Seventh Gen Cellular, iPhone 1 1 Pro Max"
+          },
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 7,
+            "name": "Nintendo Switch",
+            "slug": "nintendo-switch",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 3426,
+            "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+          },
+          "released_at": "2019-07-03",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 3876,
+            "image_background": "https://media.rawg.io/media/games/91c/91c4f377c1e09755b60a0102c5252843.jpg"
+          },
+          "released_at": "2017-05-12",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5164,
+            "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+          },
+          "released_at": "2017-05-12",
+          "requirements_en": null,
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 2,
+            "name": "PlayStation",
+            "slug": "playstation"
+          }
+        },
+        {
+          "platform": {
+            "id": 3,
+            "name": "Xbox",
+            "slug": "xbox"
+          }
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "iOS",
+            "slug": "ios"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        },
+        {
+          "platform": {
+            "id": 7,
+            "name": "Nintendo",
+            "slug": "nintendo"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action",
+          "games_count": 98679,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 11,
+          "name": "Arcade",
+          "slug": "arcade",
+          "games_count": 22212,
+          "image_background": "https://media.rawg.io/media/games/c80/c8050355992f431d0efd10a19630b6ea.jpg"
+        },
+        {
+          "id": 40,
+          "name": "Casual",
+          "slug": "casual",
+          "games_count": 27849,
+          "image_background": "https://media.rawg.io/media/screenshots/112/112c9ecfe850e318bb999660361782bb.jpeg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 381503,
+          "store": {
+            "id": 6,
+            "name": "Nintendo Store",
+            "slug": "nintendo",
+            "domain": "nintendo.com",
+            "games_count": 7807,
+            "image_background": "https://media.rawg.io/media/screenshots/88b/88b5f27f07d6ca2f8a3cd0b36e03a670.jpg"
+          },
+          "url_en": "https://www.nintendo.com/games/detail/ovivo-switch/",
+          "url_ru": ""
+        },
+        {
+          "id": 46868,
+          "store": {
+            "id": 4,
+            "name": "App Store",
+            "slug": "apple-appstore",
+            "domain": "apps.apple.com",
+            "games_count": 65652,
+            "image_background": "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg"
+          },
+          "url_en": "https://apps.apple.com/us/app/ovivo/id1185071881?mt=8&uo=4",
+          "url_ru": null
+        },
+        {
+          "id": 334812,
+          "store": {
+            "id": 2,
+            "name": "Xbox Store",
+            "slug": "xbox-store",
+            "domain": "microsoft.com",
+            "games_count": 3493,
+            "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+          },
+          "url_en": "https://www.microsoft.com/en-us/p/ovivo/9nd4dmps8j7j?cid=msft_web_chart",
+          "url_ru": null
+        },
+        {
+          "id": 333940,
+          "store": {
+            "id": 3,
+            "name": "PlayStation Store",
+            "slug": "playstation-store",
+            "domain": "store.playstation.com",
+            "games_count": 6809,
+            "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+          },
+          "url_en": "https://store.playstation.com/en-us/product/UP1675-CUSA15113_00-SYPS4OVIVO000000",
+          "url_ru": null
+        },
+        {
+          "id": 24783,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "http://store.steampowered.com/app/597700/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 79335,
+          "image_background": "https://media.rawg.io/media/games/d1f/d1f872a48286b6b751670817d5c1e1be.jpg"
+        },
+        {
+          "id": 40836,
+          "name": "Full controller support",
+          "slug": "full-controller-support",
+          "language": "eng",
+          "games_count": 9272,
+          "image_background": "https://media.rawg.io/media/games/ad2/ad2ffdf80ba993654f31da045bc02456.jpg"
+        },
+        {
+          "id": 84,
+          "name": "Abstract",
+          "slug": "abstract",
+          "language": "eng",
+          "games_count": 4113,
+          "image_background": "https://media.rawg.io/media/screenshots/0da/0dab7553a533264235d77719bd83a5b2.jpg"
+        },
+        {
+          "id": 40845,
+          "name": "Partial Controller Support",
+          "slug": "partial-controller-support",
+          "language": "eng",
+          "games_count": 6706,
+          "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+        },
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 19692,
+          "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+        },
+        {
+          "id": 40849,
+          "name": "Steam Cloud",
+          "slug": "steam-cloud",
+          "language": "eng",
+          "games_count": 9201,
+          "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Atmospheric",
+          "slug": "atmospheric",
+          "language": "eng",
+          "games_count": 9799,
+          "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg"
+        },
+        {
+          "id": 115,
+          "name": "Controller",
+          "slug": "controller",
+          "language": "eng",
+          "games_count": 4712,
+          "image_background": "https://media.rawg.io/media/games/fd8/fd882c8267a44621a0de6f9cec77ae90.jpg"
+        },
+        {
+          "id": 49,
+          "name": "Difficult",
+          "slug": "difficult",
+          "language": "eng",
+          "games_count": 7141,
+          "image_background": "https://media.rawg.io/media/games/78d/78dfae12fb8c5b16cd78648553071e0a.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Exploration",
+          "slug": "exploration",
+          "language": "eng",
+          "games_count": 7675,
+          "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg"
+        },
+        {
+          "id": 42,
+          "name": "Great Soundtrack",
+          "slug": "great-soundtrack",
+          "language": "eng",
+          "games_count": 3081,
+          "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+        },
+        {
+          "id": 112,
+          "name": "Minimalist",
+          "slug": "minimalist",
+          "language": "eng",
+          "games_count": 6542,
+          "image_background": "https://media.rawg.io/media/screenshots/72f/72f1e176e1affdf7a6c0e49e167080d7.jpg"
+        },
+        {
+          "id": 117,
+          "name": "Mystery",
+          "slug": "mystery",
+          "language": "eng",
+          "games_count": 5549,
+          "image_background": "https://media.rawg.io/media/games/7ba/7baf4663962bad7197e2470d59a6e322.jpg"
+        },
+        {
+          "id": 114,
+          "name": "Physics",
+          "slug": "physics",
+          "language": "eng",
+          "games_count": 10667,
+          "image_background": "https://media.rawg.io/media/games/bda/bdab2603c0dc67268d0610449bc7df16.jpg"
+        },
+        {
+          "id": 286,
+          "name": "Psychedelic",
+          "slug": "psychedelic",
+          "language": "eng",
+          "games_count": 633,
+          "image_background": "https://media.rawg.io/media/games/572/572b6e48e589b7a1513d447480efbc5b.jpg"
+        },
+        {
+          "id": 83,
+          "name": "Puzzle-Platformer",
+          "slug": "puzzle-platformer",
+          "language": "eng",
+          "games_count": 5822,
+          "image_background": "https://media.rawg.io/media/games/929/9295e55ce69cf5337c567983cf8b4137.jpeg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 46,
+          "name": "Surreal",
+          "slug": "surreal",
+          "language": "eng",
+          "games_count": 2182,
+          "image_background": "https://media.rawg.io/media/games/e3b/e3b7454bbfc93922f9a3ff9a9bfe922c.jpg"
+        },
+        {
+          "id": 7808,
+          "name": "steam-trading-cards",
+          "slug": "steam-trading-cards",
+          "language": "eng",
+          "games_count": 7605,
+          "image_background": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/94c/94c464617fa15daffecd95cc221a816b.jpg"
+        },
+        {
+          "id": 210247,
+          "image": "https://media.rawg.io/media/screenshots/e7c/e7c2185233eab1c952a34a8c81ad759d.jpg"
+        },
+        {
+          "id": 210248,
+          "image": "https://media.rawg.io/media/screenshots/b8e/b8e139ea8d71b31b15bd8a9b726b112e.jpg"
+        },
+        {
+          "id": 210249,
+          "image": "https://media.rawg.io/media/screenshots/da8/da8c4e6d378071f1d875785b0206379c.jpg"
+        },
+        {
+          "id": 210250,
+          "image": "https://media.rawg.io/media/screenshots/67b/67b70dee920359b5449bb030cf367494.jpg"
+        },
+        {
+          "id": 210251,
+          "image": "https://media.rawg.io/media/screenshots/771/77152d8b1086351140b4337cbe8f72d9.jpg"
+        },
+        {
+          "id": 210252,
+          "image": "https://media.rawg.io/media/screenshots/ea3/ea350b805640745c5297942cc1dfd288.jpg"
+        }
+      ],
+      "short_description": "OVIVO is a casual, action, adventure and arcade game developed by Sometimes You, IzHard and Evgeniy Kolpakov t/a Sometimes You. It came out on 12-05-2017. Alex Vilassak published the game. On review aggregator Metacritic, OVIVO has a score of 71. Most rawgers rated the game as \"Recommended\". \nOVIVO is available on macOS, PC, iOS and Nintendo Switch. You can purchase the game on Nintendo eShop, App Store, Xbox Store and PlayStation Store. \n\n"
+    },
+    {
+      "id": 50106,
+      "slug": "the-naked-game",
+      "name": "The Naked Game",
+      "released": null,
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/dd8/dd8a9e6898d0d80a1176fd964fa79465.jpg",
+      "rating": 0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 3,
+      "added_by_status": {
+        "owned": 3
+      },
+      "metacritic": null,
+      "playtime": 0,
+      "suggestions_count": 186,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": null,
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 64-bit<br></li><li><strong>Processor:</strong> Intel i5<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia GeForce GT 650M<br></li><li><strong>DirectX:</strong> Version 12<br></li><li><strong>Storage:</strong> 3 GB available space</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10 64-bit<br></li><li><strong>Processor:</strong> Intel i7<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia GeForce GTX 1050 Ti<br></li><li><strong>DirectX:</strong> Version 12<br></li><li><strong>Storage:</strong> 3 GB available space</li></ul>"
+          },
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 43717,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "http://store.steampowered.com/app/635220/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 26,
+          "name": "Gore",
+          "slug": "gore",
+          "language": "eng",
+          "games_count": 3388,
+          "image_background": "https://media.rawg.io/media/games/806/8060a7663364ac23e15480728938d6f3.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Horror",
+          "slug": "horror",
+          "language": "eng",
+          "games_count": 16145,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 44,
+          "name": "Nudity",
+          "slug": "nudity",
+          "language": "eng",
+          "games_count": 2132,
+          "image_background": "https://media.rawg.io/media/games/470/470d21d6971de8f13ec0e1664a120cc0.jpg"
+        },
+        {
+          "id": 50,
+          "name": "Sexual Content",
+          "slug": "sexual-content",
+          "language": "eng",
+          "games_count": 1717,
+          "image_background": "https://media.rawg.io/media/games/b32/b32735e3f7d95959cc39265f555f2aa8.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 34,
+          "name": "Violent",
+          "slug": "violent",
+          "language": "eng",
+          "games_count": 4002,
+          "image_background": "https://media.rawg.io/media/games/aa3/aa36ba4b486a03ddfaef274fb4f5afd4.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/dd8/dd8a9e6898d0d80a1176fd964fa79465.jpg"
+        },
+        {
+          "id": 703850,
+          "image": "https://media.rawg.io/media/screenshots/31b/31beeab1ff56cd3fa902684f81d45f99.jpg"
+        },
+        {
+          "id": 703851,
+          "image": "https://media.rawg.io/media/screenshots/fe5/fe5675777a2ef62316159bf3294c0237.jpg"
+        },
+        {
+          "id": 703852,
+          "image": "https://media.rawg.io/media/screenshots/fe2/fe2a7da522ae224bbfb22bc43327ec15.jpg"
+        },
+        {
+          "id": 703853,
+          "image": "https://media.rawg.io/media/screenshots/cff/cffb76b043c3e744636b5a493e9291f0.jpg"
+        },
+        {
+          "id": 703854,
+          "image": "https://media.rawg.io/media/screenshots/dd8/dd8a9e6898d0d80a1176fd964fa79465.jpg"
+        }
+      ],
+      "short_description": "The Naked Game is an indie adventure game developed by SiCzech Arts. \nThe Naked Game is available on PC. You can purchase the game on Steam. \n\n"
+    },
+    {
+      "id": 264758,
+      "slug": "darq",
+      "name": "DARQ",
+      "released": "2019-08-14",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/d13/d1332cc15e18bef78d64ce46e50bc2e4.jpg",
+      "rating": 4.04,
+      "rating_top": 4,
+      "ratings": [
+        {
+          "id": 4,
+          "title": "recommended",
+          "count": 14,
+          "percent": 56
+        },
+        {
+          "id": 5,
+          "title": "exceptional",
+          "count": 6,
+          "percent": 24
+        },
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 5,
+          "percent": 20
+        }
+      ],
+      "ratings_count": 25,
+      "reviews_text_count": 0,
+      "added": 136,
+      "added_by_status": {
+        "yet": 9,
+        "owned": 71,
+        "beaten": 18,
+        "toplay": 32,
+        "dropped": 6
+      },
+      "metacritic": 70,
+      "playtime": 2,
+      "suggestions_count": 335,
+      "user_game": null,
+      "reviews_count": 25,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2019-08-14",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows  7 / 8 / 10, 64-bits<br></li><li><strong>Processor:</strong> Intel Core i3-530<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia GTX 460</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows  7 / 8 / 10, 64-bits<br></li><li><strong>Processor:</strong> Intel Core i7<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia GPU GeForce GTX 660</li></ul>"
+          },
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action",
+          "games_count": 98679,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 353689,
+          "store": {
+            "id": 5,
+            "name": "GOG",
+            "slug": "gog",
+            "domain": "gog.com",
+            "games_count": 2874,
+            "image_background": "https://media.rawg.io/media/games/14a/14a83c56ff668baaced6e8c8704b6391.jpg"
+          },
+          "url_en": "http://www.gog.com/game/darq",
+          "url_ru": ""
+        },
+        {
+          "id": 262978,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "https://store.steampowered.com/app/433550/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 40845,
+          "name": "Partial Controller Support",
+          "slug": "partial-controller-support",
+          "language": "eng",
+          "games_count": 6706,
+          "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+        },
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 19692,
+          "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Horror",
+          "slug": "horror",
+          "language": "eng",
+          "games_count": 16145,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 571,
+          "name": "3D",
+          "slug": "3d",
+          "language": "eng",
+          "games_count": 26421,
+          "image_background": "https://media.rawg.io/media/screenshots/5a3/5a335ee04477c97d393e8ba03f8e6d91.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/d13/d1332cc15e18bef78d64ce46e50bc2e4.jpg"
+        },
+        {
+          "id": 1732266,
+          "image": "https://media.rawg.io/media/screenshots/e2c/e2c9c6072d910295c3ecdbd50215aaea.jpg"
+        },
+        {
+          "id": 1732267,
+          "image": "https://media.rawg.io/media/screenshots/7fc/7fc7477c7f3e7a8baff7a0d84a668ccd.jpg"
+        },
+        {
+          "id": 1732268,
+          "image": "https://media.rawg.io/media/screenshots/c25/c2511f598378acec5c3d2245cbf08221.jpg"
+        },
+        {
+          "id": 1732269,
+          "image": "https://media.rawg.io/media/screenshots/9a9/9a95408a5bf99b3d280995a8decac90a.jpg"
+        },
+        {
+          "id": 1732270,
+          "image": "https://media.rawg.io/media/screenshots/21a/21a824837e6f0aa991f5b79abf623a9c.jpg"
+        },
+        {
+          "id": 1732271,
+          "image": "https://media.rawg.io/media/screenshots/d13/d1332cc15e18bef78d64ce46e50bc2e4.jpg"
+        }
+      ],
+      "short_description": "DARQ is an indie action-adventure game developed by Unfold Games. It came out on 14-08-2019. Unfold Games published the game. DARQ has a Metascore of 70, based on professional reviews. Most rawgers rated the game as \"Recommended\". \nDARQ is available on PC. You can purchase the game on GOG and Steam. \n\n"
+    },
+    {
+      "id": 12601,
+      "slug": "orc-hunter-vr",
+      "name": "Orc Hunter VR",
+      "released": "2016-12-27",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/196/196916d4489634f722923ee07a6befff.jpg",
+      "rating": 0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 25,
+      "added_by_status": {
+        "owned": 25
+      },
+      "metacritic": null,
+      "playtime": 0,
+      "suggestions_count": 376,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2017-07-24",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or higher<br></li><li><strong>Processor:</strong> Intel i5-4590<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> GTX 970<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 6 GB available space<br></li><li><strong>Additional Notes:</strong> a large tracking area is recommended</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or higher<br></li><li><strong>Processor:</strong> Intel i5-4590<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> GTX 980<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 6 GB available space<br></li><li><strong>Additional Notes:</strong> a large tracking area is recommended</li></ul>"
+          },
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action",
+          "games_count": 98679,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 13868,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "http://store.steampowered.com/app/494530/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 14,
+          "name": "Early Access",
+          "slug": "early-access",
+          "language": "eng",
+          "games_count": 6884,
+          "image_background": "https://media.rawg.io/media/screenshots/ef8/ef8201008461d1c102b6c11c4114d08e.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Online Co-Op",
+          "slug": "online-co-op",
+          "language": "eng",
+          "games_count": 2289,
+          "image_background": "https://media.rawg.io/media/games/88c/88c5b4d7c80276c03ff62aebb1a99ad4.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 34,
+          "name": "Violent",
+          "slug": "violent",
+          "language": "eng",
+          "games_count": 4002,
+          "image_background": "https://media.rawg.io/media/games/aa3/aa36ba4b486a03ddfaef274fb4f5afd4.jpg"
+        },
+        {
+          "id": 33,
+          "name": "VR",
+          "slug": "vr",
+          "language": "eng",
+          "games_count": 7576,
+          "image_background": "https://media.rawg.io/media/screenshots/f34/f34c86335d0c51baa582aa93fa2d3f55.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/196/196916d4489634f722923ee07a6befff.jpg"
+        },
+        {
+          "id": 106040,
+          "image": "https://media.rawg.io/media/screenshots/7e4/7e49fb4d68f31f5f42c04451ca0d9bcf.jpg"
+        },
+        {
+          "id": 106041,
+          "image": "https://media.rawg.io/media/screenshots/bf0/bf0ef18f608d1d790db3b98068663a5e.jpg"
+        },
+        {
+          "id": 106042,
+          "image": "https://media.rawg.io/media/screenshots/86e/86eb6d512d974db3a3417e7d2222375d.jpg"
+        },
+        {
+          "id": 106043,
+          "image": "https://media.rawg.io/media/screenshots/0ab/0ab3317d48e8162155b6b3ee45222152.jpg"
+        },
+        {
+          "id": 106044,
+          "image": "https://media.rawg.io/media/screenshots/bd7/bd76e5379c29335d309076d0f77ed2ab.jpg"
+        },
+        {
+          "id": 106045,
+          "image": "https://media.rawg.io/media/screenshots/7e4/7e4c8cd70a1b8b4655c1546e1555ff57.jpg"
+        }
+      ],
+      "short_description": "Orc Hunter VR is an indie action-adventure game developed by Orc Hunter Developer Team. It was originally released in 2016. It was published by Orc Hunter Developer Team. \nYou can play Orc Hunter VR on PC. The game is sold via Steam. \n\n"
+    },
+    {
+      "id": 44388,
+      "slug": "seduction",
+      "name": "Seduction",
+      "released": "2017-07-22",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/a54/a54b0e20e537c49dde7289d528903c39.jpg",
+      "rating": 0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 2,
+      "added_by_status": {
+        "owned": 2
+      },
+      "metacritic": null,
+      "playtime": 0,
+      "suggestions_count": 248,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2017-07-22",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or better<br></li><li><strong>Processor:</strong> Intel Core i5-4590 (or equivalent)<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> GeForce GTX 970 (or equivalent)<br></li><li><strong>Storage:</strong> 3800 MB available space</li></ul>"
+          },
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 14,
+          "name": "Simulation",
+          "slug": "simulation",
+          "games_count": 39582,
+          "image_background": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg"
+        },
+        {
+          "id": 40,
+          "name": "Casual",
+          "slug": "casual",
+          "games_count": 27849,
+          "image_background": "https://media.rawg.io/media/screenshots/112/112c9ecfe850e318bb999660361782bb.jpeg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 35901,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "http://store.steampowered.com/app/660180/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 134,
+          "name": "Anime",
+          "slug": "anime",
+          "language": "eng",
+          "games_count": 4818,
+          "image_background": "https://media.rawg.io/media/screenshots/ddb/ddbcf3f1330e146094b0ce211e33090a.jpg"
+        },
+        {
+          "id": 88,
+          "name": "Cute",
+          "slug": "cute",
+          "language": "eng",
+          "games_count": 11172,
+          "image_background": "https://media.rawg.io/media/games/f15/f15e1dbda32b588a981bbc6b222a4b4c.jpg"
+        },
+        {
+          "id": 64,
+          "name": "Fantasy",
+          "slug": "fantasy",
+          "language": "eng",
+          "games_count": 10040,
+          "image_background": "https://media.rawg.io/media/screenshots/88b/88b5f27f07d6ca2f8a3cd0b36e03a670.jpg"
+        },
+        {
+          "id": 192,
+          "name": "Mature",
+          "slug": "mature",
+          "language": "eng",
+          "games_count": 694,
+          "image_background": "https://media.rawg.io/media/games/a34/a348e613424260bc7e034fb6031c762e.jpg"
+        },
+        {
+          "id": 120,
+          "name": "Memes",
+          "slug": "memes",
+          "language": "eng",
+          "games_count": 896,
+          "image_background": "https://media.rawg.io/media/games/c88/c88463dcf1b3fc79c54a59c30076344a.jpg"
+        },
+        {
+          "id": 44,
+          "name": "Nudity",
+          "slug": "nudity",
+          "language": "eng",
+          "games_count": 2132,
+          "image_background": "https://media.rawg.io/media/games/470/470d21d6971de8f13ec0e1664a120cc0.jpg"
+        },
+        {
+          "id": 50,
+          "name": "Sexual Content",
+          "slug": "sexual-content",
+          "language": "eng",
+          "games_count": 1717,
+          "image_background": "https://media.rawg.io/media/games/b32/b32735e3f7d95959cc39265f555f2aa8.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 33,
+          "name": "VR",
+          "slug": "vr",
+          "language": "eng",
+          "games_count": 7576,
+          "image_background": "https://media.rawg.io/media/screenshots/f34/f34c86335d0c51baa582aa93fa2d3f55.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/a54/a54b0e20e537c49dde7289d528903c39.jpg"
+        },
+        {
+          "id": 640250,
+          "image": "https://media.rawg.io/media/screenshots/b6b/b6b8d60da82d6c2efb83a77435797f9c.jpg"
+        },
+        {
+          "id": 640251,
+          "image": "https://media.rawg.io/media/screenshots/28c/28c77cec3c47efe56d3e198153db5f0f.jpg"
+        },
+        {
+          "id": 640252,
+          "image": "https://media.rawg.io/media/screenshots/fed/fed738033af9caa3352790347ab7bda2.jpg"
+        },
+        {
+          "id": 640253,
+          "image": "https://media.rawg.io/media/screenshots/548/548d17bb3114ad670e18cb96ba852f88.jpg"
+        },
+        {
+          "id": 640254,
+          "image": "https://media.rawg.io/media/screenshots/a54/a54b0e20e537c49dde7289d528903c39.jpg"
+        }
+      ],
+      "short_description": "Seduction is a casual adventure-simulation game developed by Gnioto VR. It was originally released in 2017. It was published by Gnioto VR. \nYou can play Seduction on PC. The game is sold via Steam. \n\n"
+    },
+    {
+      "id": 13474,
+      "slug": "enki",
+      "name": "ENKI",
+      "released": "2015-07-31",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/408/408845013b8b1b16c46a6352679bab79.jpg",
+      "rating": 0,
+      "rating_top": 0,
+      "ratings": [
+        {
+          "id": 1,
+          "title": "skip",
+          "count": 1,
+          "percent": 100
+        }
+      ],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 76,
+      "added_by_status": {
+        "yet": 1,
+        "owned": 74,
+        "toplay": 1
+      },
+      "metacritic": 43,
+      "playtime": 4,
+      "suggestions_count": 371,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 263806,
+            "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+          },
+          "released_at": "2015-07-31",
+          "requirements_en": {
+            "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7<br></li><li><strong>Processor:</strong> Intel® Core™ i3-530 @ 2.93GHz<br></li><li><strong>Memory:</strong> 2 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA® GeForce® GTS 450 @ 1GB<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 6 GB available space</li></ul>",
+            "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7, 8 / 64-Bit<br></li><li><strong>Processor:</strong> Intel Core i5-2500K @ 3.30GHz<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA® GeForce® GTX 760 @ 4GB<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 6 GB available space</li></ul>"
+          },
+          "requirements_ru": null
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure",
+          "games_count": 69224,
+          "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie",
+          "games_count": 32546,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        }
+      ],
+      "stores": [
+        {
+          "id": 14818,
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam",
+            "domain": "store.steampowered.com",
+            "games_count": 45492,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+          },
+          "url_en": "http://store.steampowered.com/app/377470/",
+          "url_ru": null
+        }
+      ],
+      "clip": null,
+      "tags": [
+        {
+          "id": 40833,
+          "name": "Captions available",
+          "slug": "captions-available",
+          "language": "eng",
+          "games_count": 1003,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 40836,
+          "name": "Full controller support",
+          "slug": "full-controller-support",
+          "language": "eng",
+          "games_count": 9272,
+          "image_background": "https://media.rawg.io/media/games/ad2/ad2ffdf80ba993654f31da045bc02456.jpg"
+        },
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 19692,
+          "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Horror",
+          "slug": "horror",
+          "language": "eng",
+          "games_count": 16145,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 88747,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 7808,
+          "name": "steam-trading-cards",
+          "slug": "steam-trading-cards",
+          "language": "eng",
+          "games_count": 7605,
+          "image_background": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg"
+        }
+      ],
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/408/408845013b8b1b16c46a6352679bab79.jpg"
+        },
+        {
+          "id": 115159,
+          "image": "https://media.rawg.io/media/screenshots/b83/b83272b7d5e7ea9757ed75111363efeb.jpg"
+        },
+        {
+          "id": 115160,
+          "image": "https://media.rawg.io/media/screenshots/958/958a3928243c015449e35a8c0ae89638.jpg"
+        },
+        {
+          "id": 115161,
+          "image": "https://media.rawg.io/media/screenshots/5eb/5ebc7709d0301592b403bf79cfd0805c.jpg"
+        },
+        {
+          "id": 115162,
+          "image": "https://media.rawg.io/media/screenshots/1a4/1a4bc841f5d2a6f5aa7d5b11a134d817.jpg"
+        },
+        {
+          "id": 115163,
+          "image": "https://media.rawg.io/media/screenshots/4f9/4f9bc1db323b7784d9e3eeb5df9366c7.jpg"
+        },
+        {
+          "id": 115164,
+          "image": "https://media.rawg.io/media/screenshots/c1e/c1e4b3e34c106b3a255ec70ee4b499c5.jpg"
+        }
+      ],
+      "short_description": "ENKI is an indie adventure game developed by Storm in a Teacup. It came out on 31-07-2015. It was published by SOEDESCO Publishing. On review aggregator Metacritic, ENKI has a score of 43. The game is rated as \"Skip\" on RAWG. \nENKI is available on PC. The game is sold via Steam. \n\n"
+    }
+  ],
+  "updated": "2019-12-07T13:12:47",
+  "seo_text": "If you want to find games like Golem, we've got you covered. This is a list of games similar to Golem. If you are looking for something like that, you'll likely enjoy some of these games."
+}

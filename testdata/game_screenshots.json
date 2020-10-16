@@ -1,0 +1,21 @@
+{
+  "count": 6,
+  "next": "https://api.rawg.io/api/games/4019/screenshots?page=2&page_size=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 594968,
+      "image": "https://media.rawg.io/media/screenshots/8d2/8d29301d578b0a02127e52e315e65c5b.jpg",
+      "width": 814,
+      "height": 450,
+      "is_deleted": false
+    },
+    {
+      "id": 594969,
+      "image": "https://media.rawg.io/media/screenshots/187/187804759797e1e6f0f5b2217f1c09e8.jpg",
+      "width": 814,
+      "height": 450,
+      "is_deleted": false
+    }
+  ]
+}

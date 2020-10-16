@@ -1,0 +1,436 @@
+{
+  "id": 43,
+  "slug": "full-throttle-remastered",
+  "name": "Full Throttle Remastered",
+  "name_original": "Full Throttle Remastered",
+  "description": "<p>One minute you’re on the road, riding, not a care in the world. Then some guy in a suit comes along and says he’s got a deal for you and your gang. But when you come to, you’ve got a lump on your head, the law on your back, and a feeling in your gut that the road you’re on is about to get a lot rougher…<br />\nOriginally released by LucasArts in 1995, Full Throttle is a classic graphic adventure game from industry legend Tim Schafer, telling the story of Ben Throttle; butt-kicking leader of biker gang the Polecats, who gets caught up in a tale of Motorcycles, Mayhem and Murder.<br />\nNow over 20 years later, Full Throttle is back in a remastered edition that features all new hand-drawn and 3D high-resolution artwork with 4k support, and with remastered audio and music. Blow your speakers with movie-quality sound and a full digital score featuring the GONE JACKALS - an authentic hard-hammerin&#39; biker band!<br />\nPlayers will be able to switch back and forth between classic and remastered modes, and mix-n-match audio and graphics options to their heart’s desire. Also included is a concept art browser with work from Peter Chan, and a commentary track with the game’s original creators.<br />\nFull Throttle was the first game with Tim Schafer as sole project lead, and a much beloved cult classic! This special edition has been lovingly restored and remade with the care and attention that can only come from involving the game&#39;s original creators. It’s headed to PS4, PS Vita and PC in 2017.</p>",
+  "metacritic": 77,
+  "metacritic_platforms": [],
+  "released": "2017-04-17",
+  "tba": false,
+  "updated": "2019-09-17T03:40:28",
+  "background_image": "https://media.rawg.io/media/games/ab1/ab1b125c1bf4899c58fe90226b9a1f5b.jpg",
+  "background_image_additional": "https://media.rawg.io/media/screenshots/680/6802912456cbcf708bcd3fee4c8f68c2.jpg",
+  "website": "http://fullthrottle.doublefine.com/",
+  "rating": 4,
+  "rating_top": 5,
+  "ratings": [
+    {
+      "id": 5,
+      "title": "exceptional",
+      "count": 118,
+      "percent": 40.69
+    },
+    {
+      "id": 4,
+      "title": "recommended",
+      "count": 112,
+      "percent": 38.62
+    },
+    {
+      "id": 3,
+      "title": "meh",
+      "count": 31,
+      "percent": 10.69
+    },
+    {
+      "id": 1,
+      "title": "skip",
+      "count": 29,
+      "percent": 10
+    }
+  ],
+  "reactions": {
+    "1": 1,
+    "3": 1,
+    "4": 2,
+    "5": 1,
+    "9": 1,
+    "11": 1,
+    "16": 1,
+    "19": 1
+  },
+  "added": 1810,
+  "added_by_status": {
+    "yet": 230,
+    "owned": 1293,
+    "beaten": 177,
+    "toplay": 60,
+    "dropped": 34,
+    "playing": 16
+  },
+  "playtime": 3,
+  "screenshots_count": 26,
+  "movies_count": 1,
+  "creators_count": 4,
+  "achievements_count": 41,
+  "parent_achievements_count": 1,
+  "reddit_url": "",
+  "reddit_name": "",
+  "reddit_description": "",
+  "reddit_logo": "",
+  "reddit_count": 0,
+  "twitch_count": 0,
+  "youtube_count": 47532,
+  "reviews_text_count": 4,
+  "ratings_count": 286,
+  "suggestions_count": 490,
+  "alternative_names": [],
+  "metacritic_url": "",
+  "parents_count": 0,
+  "additions_count": 0,
+  "game_series_count": 1,
+  "user_game": null,
+  "reviews_count": 290,
+  "saturated_color": "0f0f0f",
+  "dominant_color": "0f0f0f",
+  "parent_platforms": [
+    {
+      "platform": {
+        "id": 1,
+        "name": "PC",
+        "slug": "pc"
+      }
+    },
+    {
+      "platform": {
+        "id": 2,
+        "name": "PlayStation",
+        "slug": "playstation"
+      }
+    },
+    {
+      "platform": {
+        "id": 4,
+        "name": "iOS",
+        "slug": "ios"
+      }
+    },
+    {
+      "platform": {
+        "id": 5,
+        "name": "Apple Macintosh",
+        "slug": "mac"
+      }
+    },
+    {
+      "platform": {
+        "id": 6,
+        "name": "Linux",
+        "slug": "linux"
+      }
+    }
+  ],
+  "platforms": [
+    {
+      "platform": {
+        "id": 6,
+        "name": "Linux",
+        "slug": "linux",
+        "image": null,
+        "year_end": null,
+        "year_start": null,
+        "games_count": 41132,
+        "image_background": "https://media.rawg.io/media/games/ed5/ed5b7d01dd68fd8d598c91ad61f153af.jpg"
+      },
+      "released_at": "2017-04-17",
+      "requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Ubuntu 16.04 or higher<br></li><li><strong>Processor:</strong> Intel® Core™ 2 Duo 2.4 GHz, AMD Athlon™ X2 2.8 GHz, or higher<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 260, ATI Radeon 4870 HD / Intel HD 4000 Graphics, or equivalent<br></li><li><strong>Storage:</strong> 8000 MB available space<br></li><li><strong>Additional Notes:</strong> GPU that supports OpenGL 3.3 or higher</li></ul>"
+      }
+    },
+    {
+      "platform": {
+        "id": 5,
+        "name": "macOS",
+        "slug": "macos",
+        "image": null,
+        "year_end": null,
+        "year_start": null,
+        "games_count": 59460,
+        "image_background": "https://media.rawg.io/media/games/88c/88c5b4d7c80276c03ff62aebb1a99ad4.jpg"
+      },
+      "released_at": "2017-06-02",
+      "requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> 10.10.x or later<br></li><li><strong>Processor:</strong> Intel® Core™ 2 Duo 2.4 GHz, AMD Athlon™ X2 2.8 GHz, or higher<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 260, ATI Radeon 4870 HD / Intel HD 4000 Graphics, or equivalent<br></li><li><strong>Storage:</strong> 8000 MB available space<br></li><li><strong>Additional Notes:</strong> GPU that supports OpenGL 3.3 or higher</li></ul>"
+      }
+    },
+    {
+      "platform": {
+        "id": 3,
+        "name": "iOS",
+        "slug": "ios",
+        "image": null,
+        "year_end": null,
+        "year_start": null,
+        "games_count": 67204,
+        "image_background": "https://media.rawg.io/media/games/d1f/d1f872a48286b6b751670817d5c1e1be.jpg"
+      },
+      "released_at": "2017-07-20",
+      "requirements": {
+        "minimum": "iPhone 5s, iPad Air, iPad Air Cellular, iPad Mini Retina, iPad Mini Retina Cellular, iPhone 6, iPhone 6 Plus, iPad Air 2, iPad Air 2 Cellular, iPad Mini 3, iPad Mini 3 Cellular, iPod Touch Sixth Gen, iPhone 6s, iPhone 6s Plus, iPad Mini 4, iPad Mini 4 Cellular, iPad Pro, iPad Pro Cellular, iPad Pro 9.7, iPad Pro 9.7 Cellular, iPhone SE, iPhone 7, iPhone 7 Plus, iPad 6 1 1, iPad 6 1 2, iPad 7 1, iPad 7 2, iPad 7 3, iPad 7 4, iPhone 8, iPhone 8 Plus, iPhone X, iPad 7 5, iPad 7 6, iPhone X S, iPhone X S Max, iPhone X R, iPad 8 1 2, iPad 8 3 4, iPad 8 5 6, iPad 8 7 8, iPad Mini 5, iPad Mini 5 Cellular, iPad Air 3, iPad Air 3 Cellular, iPod Touch Seventh Gen"
+      }
+    },
+    {
+      "platform": {
+        "id": 4,
+        "name": "PC",
+        "slug": "pc",
+        "image": null,
+        "year_end": null,
+        "year_start": null,
+        "games_count": 263806,
+        "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg"
+      },
+      "released_at": "2017-04-17",
+      "requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 or Later<br></li><li><strong>Processor:</strong> Intel® Core™ 2 Duo 2.4 GHz, AMD Athlon™ X2 2.8 GHz, or higher<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 260, ATI Radeon 4870 HD / Intel HD 4000 Graphics, or equivalent<br></li><li><strong>Storage:</strong> 8000 MB available space<br></li><li><strong>Sound Card:</strong> Windows Compatible Card<br></li><li><strong>Additional Notes:</strong> GPU that supports OpenGL 3.3 or higher</li></ul>"
+      }
+    },
+    {
+      "platform": {
+        "id": 19,
+        "name": "PS Vita",
+        "slug": "ps-vita",
+        "image": null,
+        "year_end": null,
+        "year_start": null,
+        "games_count": 1926,
+        "image_background": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg"
+      },
+      "released_at": "2017-04-17",
+      "requirements": null
+    },
+    {
+      "platform": {
+        "id": 18,
+        "name": "PlayStation 4",
+        "slug": "playstation4",
+        "image": null,
+        "year_end": null,
+        "year_start": null,
+        "games_count": 5164,
+        "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+      },
+      "released_at": "2017-04-17",
+      "requirements": null
+    }
+  ],
+  "stores": [
+    {
+      "id": 43,
+      "url": "https://store.playstation.com/en-us/product/UP2154-CUSA06644_00-FULLTHROTTLE0PS4",
+      "store": {
+        "id": 3,
+        "name": "PlayStation Store",
+        "slug": "playstation-store",
+        "domain": "store.playstation.com",
+        "games_count": 6809,
+        "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+      }
+    },
+    {
+      "id": 36389,
+      "url": "https://apps.apple.com/app/full-throttle-remastered/id1230268291?mt=12&uo=4",
+      "store": {
+        "id": 4,
+        "name": "App Store",
+        "slug": "apple-appstore",
+        "domain": "apps.apple.com",
+        "games_count": 65652,
+        "image_background": "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg"
+      }
+    },
+    {
+      "id": 208113,
+      "url": "https://doublefine.itch.io/full-throttle-remastered",
+      "store": {
+        "id": 9,
+        "name": "itch.io",
+        "slug": "itch",
+        "domain": "itch.io",
+        "games_count": 299427,
+        "image_background": "https://media.rawg.io/media/screenshots/a8f/a8ffc4622cbb7bea0004e504240e3a74.jpeg"
+      }
+    },
+    {
+      "id": 26954,
+      "url": "http://www.gog.com/game/full_throttle_remastered",
+      "store": {
+        "id": 5,
+        "name": "GOG",
+        "slug": "gog",
+        "domain": "gog.com",
+        "games_count": 2874,
+        "image_background": "https://media.rawg.io/media/games/14a/14a83c56ff668baaced6e8c8704b6391.jpg"
+      }
+    },
+    {
+      "id": 25008,
+      "url": "http://store.steampowered.com/app/228360/",
+      "store": {
+        "id": 1,
+        "name": "Steam",
+        "slug": "steam",
+        "domain": "store.steampowered.com",
+        "games_count": 45492,
+        "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+      }
+    }
+  ],
+  "developers": [
+    {
+      "id": 16,
+      "name": "Double Fine Productions",
+      "slug": "double-fine-productions",
+      "games_count": 33,
+      "image_background": "https://media.rawg.io/media/screenshots/00f/00fab9a3c5d62f286f3a269bbd2c7650.jpg"
+    },
+    {
+      "id": 12927,
+      "name": "Shiny Shoe",
+      "slug": "shiny-shoe",
+      "games_count": 2,
+      "image_background": "https://media.rawg.io/media/games/ab1/ab1b125c1bf4899c58fe90226b9a1f5b.jpg"
+    }
+  ],
+  "genres": [
+    {
+      "id": 3,
+      "name": "Adventure",
+      "slug": "adventure",
+      "games_count": 69224,
+      "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+    }
+  ],
+  "tags": [
+    {
+      "id": 45,
+      "name": "2D",
+      "slug": "2d",
+      "language": "eng",
+      "games_count": 79335,
+      "image_background": "https://media.rawg.io/media/games/d1f/d1f872a48286b6b751670817d5c1e1be.jpg"
+    },
+    {
+      "id": 40836,
+      "name": "Full controller support",
+      "slug": "full-controller-support",
+      "language": "eng",
+      "games_count": 9272,
+      "image_background": "https://media.rawg.io/media/games/ad2/ad2ffdf80ba993654f31da045bc02456.jpg"
+    },
+    {
+      "id": 40847,
+      "name": "Steam Achievements",
+      "slug": "steam-achievements",
+      "language": "eng",
+      "games_count": 19692,
+      "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+    },
+    {
+      "id": 40849,
+      "name": "Steam Cloud",
+      "slug": "steam-cloud",
+      "language": "eng",
+      "games_count": 9201,
+      "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+    },
+    {
+      "id": 193,
+      "name": "Classic",
+      "slug": "classic",
+      "language": "eng",
+      "games_count": 1500,
+      "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+    },
+    {
+      "id": 284,
+      "name": "Cult Classic",
+      "slug": "cult-classic",
+      "language": "eng",
+      "games_count": 648,
+      "image_background": "https://media.rawg.io/media/games/cbf/cbf8fea101b56c7d383ddf8cc500ff54.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Great Soundtrack",
+      "slug": "great-soundtrack",
+      "language": "eng",
+      "games_count": 3081,
+      "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+    },
+    {
+      "id": 141,
+      "name": "Point & Click",
+      "slug": "point-click",
+      "language": "eng",
+      "games_count": 5496,
+      "image_background": "https://media.rawg.io/media/games/df2/df20fd77db56ae7b0a26a7ff4baa9ccc.jpg"
+    },
+    {
+      "id": 271,
+      "name": "Remake",
+      "slug": "remake",
+      "language": "eng",
+      "games_count": 941,
+      "image_background": "https://media.rawg.io/media/games/4ba/4ba9b4b68ffcc7019b112174883ba4d6.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Singleplayer",
+      "slug": "singleplayer",
+      "language": "eng",
+      "games_count": 88747,
+      "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+    },
+    {
+      "id": 337,
+      "name": "overlay",
+      "slug": "overlay",
+      "language": "eng",
+      "games_count": 193,
+      "image_background": "https://media.rawg.io/media/games/7a4/7a45e4cdc5b07f316d49cf147b083b27.jpg"
+    },
+    {
+      "id": 338,
+      "name": "cloud saves",
+      "slug": "cloud-saves",
+      "language": "eng",
+      "games_count": 38,
+      "image_background": "https://media.rawg.io/media/screenshots/b2e/b2e76af609a92d9c1555abe9836f1a85.jpg"
+    },
+    {
+      "id": 7808,
+      "name": "steam-trading-cards",
+      "slug": "steam-trading-cards",
+      "language": "eng",
+      "games_count": 7605,
+      "image_background": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg"
+    }
+  ],
+  "publishers": [
+    {
+      "id": 7544,
+      "name": "Double Fine Productions",
+      "slug": "double-fine-productions",
+      "games_count": 28,
+      "image_background": "https://media.rawg.io/media/screenshots/560/560f7bd45d2f8ce3deb42c97fd1d1f49.jpg"
+    }
+  ],
+  "esrb_rating": {
+    "id": 3,
+    "name": "Teen",
+    "slug": "teen"
+  },
+  "clip": {
+    "clip": "https://media.rawg.io/media/stories-640/68a/68aa76d7e88d26bbae5aad5fcd0b96ed.mp4",
+    "clips": {
+      "320": "https://media.rawg.io/media/stories-320/cae/cae78f1b4ab68cd5f52f139cca7dc2e3.mp4",
+      "640": "https://media.rawg.io/media/stories-640/68a/68aa76d7e88d26bbae5aad5fcd0b96ed.mp4",
+      "full": "https://media.rawg.io/media/stories/078/078c9d15050f81389a067c3a97bd5917.mp4"
+    },
+    "video": "VnccoL3DsVU",
+    "preview": "https://media.rawg.io/media/stories-previews/5e7/5e7e90e99f4b9fffebb49a9f84e804f1.jpg"
+  },
+  "description_raw": "One minute you’re on the road, riding, not a care in the world. Then some guy in a suit comes along and says he’s got a deal for you and your gang. But when you come to, you’ve got a lump on your head, the law on your back, and a feeling in your gut that the road you’re on is about to get a lot rougher…\nOriginally released by LucasArts in 1995, Full Throttle is a classic graphic adventure game from industry legend Tim Schafer, telling the story of Ben Throttle; butt-kicking leader of biker gang the Polecats, who gets caught up in a tale of Motorcycles, Mayhem and Murder.\nNow over 20 years later, Full Throttle is back in a remastered edition that features all new hand-drawn and 3D high-resolution artwork with 4k support, and with remastered audio and music. Blow your speakers with movie-quality sound and a full digital score featuring the GONE JACKALS - an authentic hard-hammerin' biker band!\nPlayers will be able to switch back and forth between classic and remastered modes, and mix-n-match audio and graphics options to their heart’s desire. Also included is a concept art browser with work from Peter Chan, and a commentary track with the game’s original creators.\nFull Throttle was the first game with Tim Schafer as sole project lead, and a much beloved cult classic! This special edition has been lovingly restored and remade with the care and attention that can only come from involving the game's original creators. It’s headed to PS4, PS Vita and PC in 2017."
+}

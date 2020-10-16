@@ -1,0 +1,17 @@
+{
+  "count": 7,
+  "next": "https://api.rawg.io/api/creator-roles?page=2&page_size=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 1,
+      "name": "writer",
+      "slug": "writer"
+    },
+    {
+      "id": 2,
+      "name": "director",
+      "slug": "director"
+    }
+  ]
+}

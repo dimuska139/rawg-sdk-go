@@ -1,0 +1,117 @@
+{
+  "count": 11,
+  "next": "https://api.rawg.io/api/games/1/twitch?page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 1275629,
+      "external_id": 51138072,
+      "name": "D/Generation speedrun any% 09:26 WR",
+      "description": "Finally a decent speed run... Sub 9 is the next goal, of course.",
+      "created": "2016-02-27T17:59:52Z",
+      "published": "2016-02-27T17:59:52.266727Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/0f0fac4770_ciscoheat_19859187008_408578432//thumb/thumb51138072-%{width}x%{height}.jpg",
+      "view_count": 161,
+      "language": "eng"
+    },
+    {
+      "id": 1275630,
+      "external_id": 201137487,
+      "name": "D/Generation 100% Run",
+      "description": "",
+      "created": "2017-11-14T05:49:53Z",
+      "published": "2017-11-14T06:31:30Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/quantum_hypercharge/201137487/558b8e91-a2b4-4e46-8e3a-cad5a7c18f5f/thumb/index-0000000000-%{width}x%{height}.jpg",
+      "view_count": 45,
+      "language": "eng"
+    },
+    {
+      "id": 1275638,
+      "external_id": 283582171,
+      "name": "D/Generation (Any%) in 22:51 by tbcrtwitch - Shots Fired: Annihilation",
+      "description": "",
+      "created": "2018-07-12T01:46:24Z",
+      "published": "2018-07-12T01:46:24Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/97e1ad9b071e27b28a2f_shotsfiredmarathon_29420044496_907422944//thumb/thumb283582171-%{width}x%{height}.jpg",
+      "view_count": 9,
+      "language": "eng"
+    },
+    {
+      "id": 1275632,
+      "external_id": 277251088,
+      "name": "Highlight: Practicing 39 min of my life that I will never get back in H I G H  D E F I N I T I O N",
+      "description": "why?",
+      "created": "2018-06-25T01:48:14Z",
+      "published": "2018-06-25T01:48:14Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/fbbfd976d9a4615d6d47_tbcrtwitch_29223690480_895150818//thumb/thumb277251088-%{width}x%{height}.jpg",
+      "view_count": 6,
+      "language": "eng"
+    },
+    {
+      "id": 1275633,
+      "external_id": 48553406,
+      "name": "D/Gen Single Segment Speedrun-21:17.71",
+      "description": "after 6 attempts today, i finally get a good run",
+      "created": "2014-07-02T03:50:21Z",
+      "published": "2014-07-02T03:50:20.564779Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/943d735e29/tbcrtwitch_10107553104_10107553104/thumb/thumb0-%{width}x%{height}.jpg",
+      "view_count": 3,
+      "language": "eng"
+    },
+    {
+      "id": 1275634,
+      "external_id": 186740419,
+      "name": "39 min of your life you are never getting back",
+      "description": "D/Generation HD any% in 38:24.56\r\n\r\nI was completely out of it during this, so apoligies ahead of time.",
+      "created": "2017-11-01T06:17:44Z",
+      "published": "2017-11-01T06:17:44Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/1fd7a59264f48734f783_tbcrtwitch_26620897728_732476299//thumb/thumb186740419-%{width}x%{height}.jpg",
+      "view_count": 3,
+      "language": "eng"
+    },
+    {
+      "id": 1275636,
+      "external_id": 88545585,
+      "name": "D/Gen Any% New PB 13:02 (AGDQ Submission)",
+      "description": "The timer in this video is accidentally stopped for 2 seconds near the end. The actual time was determined from the making of this highlight.\r\n\r\nHoly moly this is a interesting run. So despite using the usual time and date that the typical Any% gives, I was given this item layout. I can't complain, I mean this was 3 min 43 sec faster than my previous PB",
+      "created": "2016-09-10T05:04:37Z",
+      "published": "2016-09-10T05:04:37Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/f1e9005d42_tbcrtwitch_23127260752_514121657//thumb/thumb88545585-%{width}x%{height}.jpg",
+      "view_count": 2,
+      "language": "eng"
+    },
+    {
+      "id": 1275637,
+      "external_id": 282948849,
+      "name": "17min 36 sec of your life you are never getting back",
+      "description": "",
+      "created": "2018-07-10T11:46:16Z",
+      "published": "2018-07-10T11:46:16Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/7ca76db0c3f490695e85_tbcrtwitch_29414002768_907045336//thumb/thumb282948849-%{width}x%{height}.jpg",
+      "view_count": 2,
+      "language": "eng"
+    },
+    {
+      "id": 1275635,
+      "external_id": 278824717,
+      "name": "21 min and 56 sec you are never getting back [HD any% WR]",
+      "description": "screw this game.",
+      "created": "2018-06-29T03:45:03Z",
+      "published": "2018-06-29T03:45:03Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/acd45235666a637254dd_tbcrtwitch_29275999520_898420133//thumb/thumb278824717-%{width}x%{height}.jpg",
+      "view_count": 2,
+      "language": "eng"
+    },
+    {
+      "id": 1275640,
+      "external_id": 149575446,
+      "name": "D/Generation - Gameplay [HD]",
+      "description": "D/Generation is an action adventure/puzzle game. It was released on the PC, Amiga and Atari ST by Mindscape in 1991. It was later ported to the Amiga CD32 in 1993, the new version largely based upon the Amiga version but allowing use of the 6-button CD32 gamepad.\n\nThe game takes place in a slightly cyberpunk futuristic setting in 2021. A French company called Genoq has developed a series of new genetically engineered bioweapons, which have run out of control and taken over Genoq's Singapore lab. The main character is a courier making an emergency delivery by jetpack of an important package to one of Genoq's top researchers, Jean-Paul Derrida (a name likely inspired by the philosopher Jean-Paul Sartre and Jacques Derrida), and who is happily oblivious to the carnage until the lab's doors lock behind him. His customer is ten floors away, all of them crawling with bioweapons. D/Generation's plot begins in Singapore on June 27, 2021 and is told in a \"late to the party\" fashion: the player starts off completely lost at sea, and a picture of past events is gradually built up by examining computer terminals and talking to surviving employees.\n\nThe game presents an isometric point of view of different interconnected, maze-like rooms that the player passes through floor by floor. Each room can require brains, brawn or both. All bioweapons present in a room must be killed and all air duct vents that they enter through sealed before proceeding further. The building's paranoid security system has predictably gone haywire, leaving rotating grenade launcher turrets, land mines, electrified floors and laser fences targeting humans. Less hostile puzzle elements are doors, the switches and computers that control them, keycards, infrared electric eyes and teleporters.\n\nThe courier is soon armed with a laser gun that holds unlimited ammunition and a great puzzle value: its shots bounce off walls, trip switches and travel in teleporters. Finally, surviving Genoq employees and some special items are scattered around the floors. Rescuing a survivor by clearing a room of bioweapons and getting him/her to its entry point in one piece earns an extra life. Bombs are the most prominent item; they can blast through doors and destroy some hazards, making them a kind of a \"get out of puzzle free\" coupon.\nThe number of lives is limited. Losing one restarts the room if any are left, the floor if not. Saving is available, loading returns to the start of the floor.\n\nThe game was ranked the 40th best game of all time by Amiga Power.",
+      "created": "2017-06-04T23:36:51Z",
+      "published": "2017-06-12T01:44:01Z",
+      "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2nvs31859zcd8/olivieo/149575446/1a29b6ce-b796-4150-8e04-791207f44023/thumb/index-0000000000-%{width}x%{height}.jpg",
+      "view_count": 0,
+      "language": "eng"
+    }
+  ]
+}
