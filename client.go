@@ -58,7 +58,6 @@ func (api *Client) newRequest(path string, method string, data map[string]interf
 
 	method = strings.ToUpper(method)
 	fullPath := apiBaseUrl + path
-	fmt.Println(q.Encode())
 	req, e := http.NewRequest(method, fullPath, bytes.NewBufferString(q.Encode()))
 	if e != nil {
 		return nil, e
