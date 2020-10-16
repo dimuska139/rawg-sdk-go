@@ -1,13 +1,13 @@
 package rawg
 
-// Role: Position (job) of the video game creator
+// Role is a position (job) of the video game creator
 type Role struct {
 	ID   int    `json:"id"`
 	Name string `json:"name"`
 	Slug string `json:"slug"`
 }
 
-// Creator: Main information about creator
+// Creator represents main information about creator
 type Creator struct {
 	ID              int    `json:"id"`
 	Name            string `json:"name"`
@@ -17,7 +17,7 @@ type Creator struct {
 	GamesCount      int    `json:"games_count"`
 }
 
-// CreatorDetailed: Detailed information about creator
+// CreatorDetailed represents detailed information about creator
 type CreatorDetailed struct {
 	Creator
 	Description  string   `json:"description"`
@@ -27,7 +27,7 @@ type CreatorDetailed struct {
 	Updated      DateTime `json:"updated"`
 }
 
-// Developer: Main information about video game developer
+// Developer represents main information about video game developer
 type Developer struct {
 	ID              int    `json:"id"`
 	Name            string `json:"name"`
@@ -36,13 +36,13 @@ type Developer struct {
 	ImageBackground string `json:"image_background"`
 }
 
-// DeveloperDetailed: Detailed information about video game developer
+// DeveloperDetailed represents detailed information about video game developer
 type DeveloperDetailed struct {
 	Developer
 	Description string `json:"description"`
 }
 
-// Genre: Game genre
+// Genre represents game genre
 type Genre struct {
 	ID              int    `json:"id"`
 	Name            string `json:"name"`
@@ -51,13 +51,13 @@ type Genre struct {
 	ImageBackground string `json:"image_background"`
 }
 
-// GenreDetailed: Detailed information of video game genre
+// GenreDetailed represents detailed information of video game genre
 type GenreDetailed struct {
 	Genre
 	Description string `json:"description"`
 }
 
-// Platform: Game platform
+// Platform represents game platform
 type Platform struct {
 	ID              int    `json:"id"`
 	Name            string `json:"name"`
@@ -69,13 +69,13 @@ type Platform struct {
 	YearEnd         int    `json:"year_end"`
 }
 
-// PlatformDetailed: Detailed information of video game platform
+// PlatformDetailed represents detailed information of video game platform
 type PlatformDetailed struct {
 	Platform
 	Description string `json:"description"`
 }
 
-// ParentPlatform: Parent video game platform. For instance, for PS2 and PS4 the “parent platform” is PlayStation.
+// ParentPlatform is a parent video game platform. For instance, for PS2 and PS4 the “parent platform” is PlayStation.
 type ParentPlatform struct {
 	Platform struct {
 		ID   int    `json:"id"`
@@ -84,7 +84,7 @@ type ParentPlatform struct {
 	} `json:"platform"`
 }
 
-// Publisher: Main information about video game publisher
+// Publisher represents main information about video game publisher
 type Publisher struct {
 	ID              int    `json:"id"`
 	Name            string `json:"name"`
@@ -93,13 +93,13 @@ type Publisher struct {
 	ImageBackground string `json:"image_background"`
 }
 
-// PublisherDetailed: Detailed information about video game developer
+// PublisherDetailed represents detailed information about video game developer
 type PublisherDetailed struct {
 	Publisher
 	Description string `json:"description"`
 }
 
-// Store: Video game storefront
+// Store is a video game storefront
 type Store struct {
 	ID              int    `json:"id"`
 	Name            string `json:"name"`
@@ -109,13 +109,13 @@ type Store struct {
 	ImageBackground string `json:"image_background"`
 }
 
-// StoreDetailed: Video game storefront (detailed information)
+// StoreDetailed represents video game storefront (detailed information)
 type StoreDetailed struct {
 	Store
 	Description string `json:"description"`
 }
 
-// Tag: Tag of the video game
+// Tag of the video game
 type Tag struct {
 	ID              int    `json:"id"`
 	Name            string `json:"name"`
@@ -125,20 +125,20 @@ type Tag struct {
 	Language        string `json:"language"`
 }
 
-// TagDetailed: Tag of the video game (detailed information)
+// TagDetailed represents detailed information about tag of the video game
 type TagDetailed struct {
 	Tag
 	Description string `json:"description"`
 }
 
-// EsrbRating: Entertainment Software Rating Board
+// EsrbRating is an Entertainment Software Rating Board
 type EsrbRating struct {
 	ID   int    `json:"id"`
 	Slug string `json:"slug"`
 	Name string `json:"name"`
 }
 
-// GameStore: "Video game - storefront" relation
+// GameStore represents "Video game - storefront" relation
 type GameStore struct {
 	ID      int    `json:"id"`
 	GameID  int    `json:"game_id"`
@@ -163,7 +163,7 @@ type Rating struct {
 	Percent float32 `json:"percent"`
 }
 
-// AddedByStatus: Number of games added by status
+// AddedByStatus represents number of games added by status
 type AddedByStatus struct {
 	Yet     int `json:"yet"`
 	Owned   int `json:"owned"`
@@ -173,7 +173,7 @@ type AddedByStatus struct {
 	Playing int `json:"playing"`
 }
 
-// Requirement: Game requirements
+// Requirement represents game requirements
 type Requirement struct {
 	Minimum     string `json:"minimum"`
 	Recommended string `json:"recommended"`
@@ -194,7 +194,7 @@ type Clip struct {
 	Preview string            `json:"preview"`
 }
 
-// MetacriticPlatform: Metascore value of the game
+// MetacriticPlatform represents metascore - metacritic rating of the game
 type MetacriticPlatform struct {
 	Metascore int    `json:"metascore"`
 	Url       string `json:"url"`
@@ -205,7 +205,7 @@ type MetacriticPlatform struct {
 	} `json:"platform"`
 }
 
-// Game: Main information of the game
+// Game represents main information of the game
 type Game struct {
 	ID               int            `json:"id"`
 	Slug             string         `json:"slug"`
@@ -254,7 +254,7 @@ type Game struct {
 	} `json:"short_screenshots"`
 }
 
-// GameDetailed: Detailed information of the game
+// GameDetailed represents detailed information of the game
 type GameDetailed struct {
 	ID                        int                   `json:"id"`
 	Slug                      string                `json:"slug"`
@@ -367,7 +367,7 @@ type Twitch struct {
 	Language    string   `json:"language"`
 }
 
-// YoutubeThumbnail: Thumbnail of the youtube video
+// YoutubeThumbnail represents thumbnail of the youtube video
 type YoutubeThumbnail struct {
 	Url    string `json:"url"`
 	Width  int    `json:"width"`
@@ -396,7 +396,7 @@ type Youtube struct {
 	}
 }
 
-// GameDeveloper: Detailed information of game developer (with games list)
+// GameDeveloper represents detailed information of game developer (with games list)
 type GameDeveloper struct {
 	ID              int         `json:"id"`
 	Name            string      `json:"name"`

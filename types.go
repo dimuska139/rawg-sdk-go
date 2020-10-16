@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// DateTime: special type to unmarshal dates from any formats
+// DateTime is a special type to unmarshal dates from any formats
 type DateTime struct {
 	time.Time
 }

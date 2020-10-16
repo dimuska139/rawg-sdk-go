@@ -12,7 +12,7 @@ type DateRange struct {
 	To   time.Time
 }
 
-// GamesFilter: Filter to search games in RAWG
+// GamesFilter is a filter to search games in RAWG
 type GamesFilter struct {
 	page              int
 	pageSize          int

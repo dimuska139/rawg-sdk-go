@@ -13,7 +13,7 @@ import (
 
 const apiBaseUrl = "https://api.rawg.io/api"
 
-// RawgError: Information about errors
+// RawgError represents information about errors
 type RawgError struct {
 	HttpCode int    // HTTP status code (https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 	Url      string // URL of RAWG endpoint associated with callable function
