@@ -1,4 +1,4 @@
-package rawgSdkGo
+package rawg
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-// Get a list of games
+// GetGames returns a list of games
 func (api *Client) GetGames(filter *GamesFilter) ([]*Game, int, error) {
 	path := "/games"
 	body, err := api.newRequest(path, http.MethodGet, filter.GetParams())
@@ -27,7 +27,7 @@ func (api *Client) GetGames(filter *GamesFilter) ([]*Game, int, error) {
 	return response.Results, response.Count, nil
 }
 
-// Get a list of DLC's for the game, GOTY and other editions, companion apps, etc
+// GetGameAdditions returns a list of DLC's for the game, GOTY and other editions, companion apps, etc
 func (api *Client) GetGameAdditions(gameID int, page int, pageSize int) ([]*Game, int, error) {
 	path := fmt.Sprintf("/games/%d/additions", gameID)
 
@@ -53,7 +53,7 @@ func (api *Client) GetGameAdditions(gameID int, page int, pageSize int) ([]*Game
 	return response.Results, response.Count, nil
 }
 
-// Get a list of individual creators that were part of the development team
+// GetGameDevelopmentTeam returns a list of individual creators that were part of the development team
 func (api *Client) GetGameDevelopmentTeam(gameID int, page int, pageSize int, ordering string) ([]*GameDeveloper, int, error) {
 	path := fmt.Sprintf("/games/%d/development-team", gameID)
 	data := map[string]interface{}{
@@ -83,7 +83,7 @@ func (api *Client) GetGameDevelopmentTeam(gameID int, page int, pageSize int, or
 	return response.Results, response.Count, nil
 }
 
-// Get a list of games that are part of same series
+// GetGameSeries returns a list of games that are part of same series
 func (api *Client) GetGameSeries(gameID int, page int, pageSize int) ([]*Game, int, error) {
 	path := fmt.Sprintf("/games/%d/game-series", gameID)
 
@@ -109,7 +109,7 @@ func (api *Client) GetGameSeries(gameID int, page int, pageSize int) ([]*Game, i
 	return response.Results, response.Count, nil
 }
 
-// Get a list of parent games for DLC's and editions
+// GetParentGames returns a list of parent games for DLC's and editions
 func (api *Client) GetParentGames(gameID int, page int, pageSize int) ([]*Game, int, error) {
 	path := fmt.Sprintf("/games/%d/parent-games", gameID)
 
@@ -135,7 +135,7 @@ func (api *Client) GetParentGames(gameID int, page int, pageSize int) ([]*Game, 
 	return response.Results, response.Count, nil
 }
 
-// Get screenshots for the game
+// GetGameScreenshots returns a screenshots list for the game
 func (api *Client) GetGameScreenshots(gameID int, page int, pageSize int) ([]*Screenshot, int, error) {
 	path := fmt.Sprintf("/games/%d/screenshots", gameID)
 
@@ -161,7 +161,7 @@ func (api *Client) GetGameScreenshots(gameID int, page int, pageSize int) ([]*Sc
 	return response.Results, response.Count, nil
 }
 
-// Get links to the stores that sell the game
+// GetGameStores returns links to the stores that sell the game
 func (api *Client) GetGameStores(gameID int, page int, pageSize int) ([]*GameStore, int, error) {
 	path := fmt.Sprintf("/games/%d/stores", gameID)
 
@@ -187,7 +187,7 @@ func (api *Client) GetGameStores(gameID int, page int, pageSize int) ([]*GameSto
 	return response.Results, response.Count, nil
 }
 
-// Get details of the game
+// GetGame returns details of the game
 func (api *Client) GetGame(id int) (*GameDetailed, error) {
 	path := fmt.Sprintf("/games/%d", id)
 	body, err := api.newRequest(path, http.MethodGet, nil)
@@ -205,7 +205,7 @@ func (api *Client) GetGame(id int) (*GameDetailed, error) {
 	return &platform, nil
 }
 
-// Get a list of game achievements
+// GetGameAchievements returns a list of game achievements
 func (api *Client) GetGameAchievements(id int) ([]*Achievement, error) {
 	path := fmt.Sprintf("/games/%d/achievements", id)
 
@@ -227,7 +227,7 @@ func (api *Client) GetGameAchievements(id int) ([]*Achievement, error) {
 	return response.Results, nil
 }
 
-// Get a list of game trailers
+// GetGameMovies returns a list of game trailers
 func (api *Client) GetGameMovies(id int) ([]*Movie, error) {
 	path := fmt.Sprintf("/games/%d/movies", id)
 
@@ -249,7 +249,7 @@ func (api *Client) GetGameMovies(id int) ([]*Movie, error) {
 	return response.Results, nil
 }
 
-// Get a list of most recent posts from the game's subreddit
+// GetGameReddit returns a list of most recent posts from the game's subreddit
 func (api *Client) GetGameReddit(id int) ([]*Reddit, error) {
 	path := fmt.Sprintf("/games/%d/reddit", id)
 
@@ -271,7 +271,7 @@ func (api *Client) GetGameReddit(id int) ([]*Reddit, error) {
 	return response.Results, nil
 }
 
-// Get a list of visually similar games
+// GetGameSuggested returns a list of visually similar games
 func (api *Client) GetGameSuggested(id int) ([]*Game, error) {
 	path := fmt.Sprintf("/games/%d/suggested", id)
 
@@ -293,7 +293,7 @@ func (api *Client) GetGameSuggested(id int) ([]*Game, error) {
 	return response.Results, nil
 }
 
-// Get streams on Twitch associated with the game
+// GetGameTwitch returns streams on Twitch associated with the game
 func (api *Client) GetGameTwitch(id int) ([]*Twitch, error) {
 	path := fmt.Sprintf("/games/%d/twitch", id)
 
@@ -315,7 +315,7 @@ func (api *Client) GetGameTwitch(id int) ([]*Twitch, error) {
 	return response.Results, nil
 }
 
-// Get videos from YouTube associated with the game
+// GetGameYoutube returns videos from YouTube associated with the game
 func (api *Client) GetGameYoutube(id int) ([]*Youtube, error) {
 	path := fmt.Sprintf("/games/%d/youtube", id)
 

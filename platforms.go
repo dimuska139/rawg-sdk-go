@@ -1,4 +1,4 @@
-package rawgSdkGo
+package rawg
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-// Get a list of video game platforms
+// GetPlatforms returns a list of video game platforms
 func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Platform, int, error) {
 	path := "/platforms"
 	data := map[string]interface{}{
@@ -36,7 +36,7 @@ func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Pla
 	return response.Results, response.Count, nil
 }
 
-// Get a list of parent platforms
+// GetParentsPlatforms returns a list of parent platforms
 func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) ([]*Platform, int, error) {
 	path := "/platforms/lists/parents"
 	data := map[string]interface{}{
@@ -66,7 +66,7 @@ func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) 
 	return response.Results, response.Count, nil
 }
 
-// Get details of the platform
+// GetPlatform returns details of the platform
 func (api *Client) GetPlatform(id int) (*PlatformDetailed, error) {
 	path := fmt.Sprintf("/platforms/%d", id)
 	body, err := api.newRequest(path, http.MethodGet, nil)

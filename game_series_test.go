@@ -1,4 +1,4 @@
-package rawgSdkGo
+package rawg
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package rawgSdkGo
+package rawg
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-// Get a list of creator positions (jobs)
+// GetCreatorRoles returns a list of creator positions (jobs)
 func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error) {
 	path := "/creator-roles"
 	data := map[string]interface{}{
@@ -31,7 +31,7 @@ func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error)
 	return response.Results, response.Count, nil
 }
 
-// Get a list of game creators
+// GetCreators returns a list of game creators
 func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) {
 	path := "/creators"
 	data := map[string]interface{}{
@@ -56,7 +56,7 @@ func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) 
 	return response.Results, response.Count, nil
 }
 
-// Get details of the creator
+// GetCreator returns details of the creator
 func (api *Client) GetCreator(id int) (*CreatorDetailed, error) {
 	path := fmt.Sprintf("/creators/%d", id)
 	body, err := api.newRequest(path, http.MethodGet, nil)

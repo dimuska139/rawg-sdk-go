@@ -1,4 +1,4 @@
-package rawgSdkGo
+package rawg
 
 import (
 	"fmt"
@@ -6,12 +6,13 @@ import (
 	"time"
 )
 
+// DateRange - two dates: from and to
 type DateRange struct {
 	From time.Time
 	To   time.Time
 }
 
-// Filter to search games in RAWG
+// GamesFilter: Filter to search games in RAWG
 type GamesFilter struct {
 	page              int
 	pageSize          int
@@ -33,101 +34,120 @@ type GamesFilter struct {
 	ordering          string
 }
 
-// Creates filter
+// NewGamesFilter creates filter
 func NewGamesFilter() *GamesFilter {
 	return &GamesFilter{}
 }
 
+// SetPage sets "page" parameter
 func (filter *GamesFilter) SetPage(page int) *GamesFilter {
 	filter.page = page
 	return filter
 }
 
+// SetPageSize sets "page_size" parameter
 func (filter *GamesFilter) SetPageSize(pageSize int) *GamesFilter {
 	filter.pageSize = pageSize
 	return filter
 }
 
+// SetSearch sets "search" parameter
 func (filter *GamesFilter) SetSearch(search string) *GamesFilter {
 	filter.search = search
 	return filter
 }
 
+// SetParentPlatforms sets "parent_platforms" parameter
 func (filter *GamesFilter) SetParentPlatforms(parentPlatforms ...int) *GamesFilter {
 	filter.parentPlatforms = parentPlatforms
 	return filter
 }
 
+// SetPlatforms sets "platforms" parameter
 func (filter *GamesFilter) SetPlatforms(platforms ...int) *GamesFilter {
 	filter.platforms = platforms
 	return filter
 }
 
+// SetStores sets "stores" parameter
 func (filter *GamesFilter) SetStores(stores ...int) *GamesFilter {
 	filter.stores = stores
 	return filter
 }
 
+// SetDevelopers sets "developers" parameter
 func (filter *GamesFilter) SetDevelopers(developers ...interface{}) *GamesFilter {
 	filter.developers = developers
 	return filter
 }
 
+// SetPublishers sets "publishers" parameter
 func (filter *GamesFilter) SetPublishers(publishers ...interface{}) *GamesFilter {
 	filter.publishers = publishers
 	return filter
 }
 
+// SetGenres sets "genres" parameter
 func (filter *GamesFilter) SetGenres(genres ...interface{}) *GamesFilter {
 	filter.genres = genres
 	return filter
 }
 
+// SetTags sets "tags" parameter
 func (filter *GamesFilter) SetTags(tags ...interface{}) *GamesFilter {
 	filter.tags = tags
 	return filter
 }
 
+// SetCreators sets "creators" parameter
 func (filter *GamesFilter) SetCreators(creators ...interface{}) *GamesFilter {
 	filter.creators = creators
 	return filter
 }
 
+// SetDates sets "dates" parameter
 func (filter *GamesFilter) SetDates(ranges ...*DateRange) *GamesFilter {
 	filter.dates = ranges
 	return filter
 }
 
+// SetPlatformsCount sets "platforms_count" parameter
 func (filter *GamesFilter) SetPlatformsCount(count int) *GamesFilter {
 	filter.platformsCount = count
 	return filter
 }
 
+// ExcludeCollection sets "exclude_collection" parameter
 func (filter *GamesFilter) ExcludeCollection(collection int) *GamesFilter {
 	filter.excludeCollection = collection
 	return filter
 }
 
+// WithoutAdditions sets "exclude_additions" parameter
 func (filter *GamesFilter) WithoutAdditions() *GamesFilter {
 	filter.excludeAdditions = true
 	return filter
 }
 
+// WithoutParents sets "exclude_parents" parameter
 func (filter *GamesFilter) WithoutParents() *GamesFilter {
 	filter.excludeParents = true
 	return filter
 }
 
+// WithoutGameSeries sets "exclude_game_series" parameter
 func (filter *GamesFilter) WithoutGameSeries() *GamesFilter {
 	filter.excludeGameSeries = true
 	return filter
 }
 
+// SetOrdering sets results ordering
 func (filter *GamesFilter) SetOrdering(ordering string) *GamesFilter {
 	filter.ordering = ordering
 	return filter
 }
 
+// GetParams returns filter parameters as Map
 func (filter *GamesFilter) GetParams() map[string]interface{} {
 	params := make(map[string]interface{})
 

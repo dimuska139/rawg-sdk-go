@@ -1,14 +1,16 @@
-package rawgSdkGo
+package rawg
 
 import (
 	"strings"
 	"time"
 )
 
+// DateTime: special type to unmarshal dates from any formats
 type DateTime struct {
 	time.Time
 }
 
+// UnmarshalJSON converts json to time.Time
 func (d *DateTime) UnmarshalJSON(b []byte) error {
 	s := strings.Trim(string(b), "\"")
 	if s == "null" {

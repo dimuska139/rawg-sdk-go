@@ -1,4 +1,4 @@
-package rawgSdkGo
+package rawg
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-// Get a list of tags
+// GetTags returns a list of tags
 func (api *Client) GetTags(page int, pageSize int) ([]*Tag, int, error) {
 	path := "/tags"
 	data := map[string]interface{}{
@@ -31,7 +31,7 @@ func (api *Client) GetTags(page int, pageSize int) ([]*Tag, int, error) {
 	return response.Results, response.Count, nil
 }
 
-// Get details of the tag
+// GetTag returns details of the tag
 func (api *Client) GetTag(id int) (*TagDetailed, error) {
 	path := fmt.Sprintf("/tags/%d", id)
 	body, err := api.newRequest(path, http.MethodGet, nil)

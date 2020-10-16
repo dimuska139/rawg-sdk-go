@@ -22,7 +22,7 @@ import (
     "fmt"
     "net/http"
     "strings"
-    rawg "github.com/dimuska139/rawg-sdk-go"
+    "github.com/dimuska139/rawg-sdk-go"
 )
 
 func main() {
@@ -50,7 +50,8 @@ The tests should be considered a part of the documentation. Also you can read [o
 
 ## API limitations
 
-Only 5 requests per second allowed from one IP. The "Rps" parameter in configuration performs this limitation.
+Only 5 requests per second allowed from one IP. The "Rps" parameter in configuration performs this limitation. 
+So you don't worry about it.
 
 ## License
 
