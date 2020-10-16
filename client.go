@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"bytes"
@@ -13,13 +13,15 @@ import (
 
 const apiBaseUrl = "https://api.rawg.io/api"
 
+// Information about errors
 type RawgError struct {
-	HttpCode int
-	Url      string
-	Body     string
-	Message  string
+	HttpCode int    // HTTP status code (https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+	Url      string // URL of RAWG endpoint associated with callable function
+	Body     string // Raw body of response
+	Message  string // Any comment
 }
 
+// Converts error to string
 func (e *RawgError) Error() string {
 	return fmt.Sprintf("Http code: %d, url: %s, body: %s, message: %s", e.HttpCode, e.Url, e.Body, e.Message)
 }
@@ -30,6 +32,7 @@ type Client struct {
 	rateLimiter *rate.Limiter
 }
 
+// Creates new Client to interract with RAWG API
 func NewClient(client *http.Client, config *Config) *Client {
 	rps := config.Rps
 	if rps == 0 {
@@ -43,7 +46,8 @@ func NewClient(client *http.Client, config *Config) *Client {
 	}
 }
 
-func (api *Client) NewRequest(path string, method string, data map[string]interface{}) ([]byte, error) {
+// Makes request with appending required params
+func (api *Client) newRequest(path string, method string, data map[string]interface{}) ([]byte, error) {
 	q := url.Values{}
 	for param, value := range data {
 		q.Add(param, fmt.Sprintf("%v", value))
@@ -59,7 +63,7 @@ func (api *Client) NewRequest(path string, method string, data map[string]interf
 		return nil, e
 	}
 
-	if method == "GET" {
+	if method == http.MethodGet {
 		req.URL.RawQuery = q.Encode()
 		req.Body = nil
 	} else {

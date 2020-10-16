@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"encoding/json"
@@ -6,13 +6,14 @@ import (
 	"net/http"
 )
 
+// Get a list of game developers
 func (api *Client) GetDevelopers(page int, pageSize int) ([]*Developer, int, error) {
 	path := "/developers"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.NewRequest(path, http.MethodGet, data)
+	body, err := api.newRequest(path, http.MethodGet, data)
 
 	if err != nil {
 		return nil, 0, err
@@ -30,9 +31,10 @@ func (api *Client) GetDevelopers(page int, pageSize int) ([]*Developer, int, err
 	return response.Results, response.Count, nil
 }
 
+// Get details of the developer
 func (api *Client) GetDeveloper(id int) (*DeveloperDetailed, error) {
 	path := fmt.Sprintf("/developers/%d", id)
-	body, err := api.NewRequest(path, http.MethodGet, nil)
+	body, err := api.newRequest(path, http.MethodGet, nil)
 
 	if err != nil {
 		return nil, err

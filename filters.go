@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"fmt"
@@ -11,6 +11,7 @@ type DateRange struct {
 	To   time.Time
 }
 
+// Filter to search games in RAWG
 type GamesFilter struct {
 	page              int
 	pageSize          int
@@ -32,6 +33,7 @@ type GamesFilter struct {
 	ordering          string
 }
 
+// Creates filter
 func NewGamesFilter() *GamesFilter {
 	return &GamesFilter{}
 }

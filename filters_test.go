@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"github.com/stretchr/testify/assert"

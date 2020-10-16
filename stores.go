@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"encoding/json"
@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// Get a list of video game storefronts
 func (api *Client) GetStores(page int, pageSize int, ordering string) ([]*Store, int, error) {
 	path := "/stores"
 	data := map[string]interface{}{
@@ -17,7 +18,7 @@ func (api *Client) GetStores(page int, pageSize int, ordering string) ([]*Store,
 		data["ordering"] = ordering
 	}
 
-	body, err := api.NewRequest(path, http.MethodGet, data)
+	body, err := api.newRequest(path, http.MethodGet, data)
 
 	if err != nil {
 		return nil, 0, err
@@ -35,9 +36,10 @@ func (api *Client) GetStores(page int, pageSize int, ordering string) ([]*Store,
 	return response.Results, response.Count, nil
 }
 
+// Get details of the store
 func (api *Client) GetStore(id int) (*StoreDetailed, error) {
 	path := fmt.Sprintf("/stores/%d", id)
-	body, err := api.NewRequest(path, http.MethodGet, nil)
+	body, err := api.newRequest(path, http.MethodGet, nil)
 
 	if err != nil {
 		return nil, err

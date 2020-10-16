@@ -19,26 +19,26 @@ go get github.com/dimuska139/rawg-sdk-go
 package main
 
 import (
-	"fmt"
+    "fmt"
     "net/http"
-	"strings"
-	rawg "github.com/dimuska139/rawg-sdk-go"
+    "strings"
+    rawg "github.com/dimuska139/rawg-sdk-go"
 )
 
 func main() {
     config := rawg.Config{
-		AppName:  "YourAppName", // 'YourAppName' will be set as User-Agent header
-		Language: "ru",
-		Rps:      5,
-	}
+        AppName:  "YourAppName", // 'YourAppName' will be set as User-Agent header
+        Language: "ru",
+        Rps:      5,
+    }
     client := rawg.NewClient(http.DefaultClient, &config)
     
     filter := rawg.NewGamesFilter().
         SetSearch("Gta5").
-		SetPage(1).
-		SetPageSize(10).
-		ExcludeCollection(1).
-		WithoutParents()
+        SetPage(1).
+        SetPageSize(10).
+        ExcludeCollection(1).
+        WithoutParents()
     
     data, total, err := client.GetGames(filter)
 

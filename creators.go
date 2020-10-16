@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"encoding/json"
@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// Get a list of creator positions (jobs)
 func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error) {
 	path := "/creator-roles"
 	data := map[string]interface{}{
@@ -13,7 +14,7 @@ func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error)
 		"page_size": fmt.Sprint(pageSize),
 	}
 
-	body, err := api.NewRequest(path, http.MethodGet, data)
+	body, err := api.newRequest(path, http.MethodGet, data)
 	if err != nil {
 		return nil, 0, err
 	}
@@ -30,13 +31,14 @@ func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error)
 	return response.Results, response.Count, nil
 }
 
+// Get a list of game creators
 func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) {
 	path := "/creators"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.NewRequest(path, http.MethodGet, data)
+	body, err := api.newRequest(path, http.MethodGet, data)
 
 	if err != nil {
 		return nil, 0, err
@@ -54,9 +56,10 @@ func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) 
 	return response.Results, response.Count, nil
 }
 
+// Get details of the creator
 func (api *Client) GetCreator(id int) (*CreatorDetailed, error) {
 	path := fmt.Sprintf("/creators/%d", id)
-	body, err := api.NewRequest(path, http.MethodGet, nil)
+	body, err := api.newRequest(path, http.MethodGet, nil)
 
 	if err != nil {
 		return nil, err

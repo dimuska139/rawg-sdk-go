@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"encoding/json"
@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// Get a list of video game platforms
 func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Platform, int, error) {
 	path := "/platforms"
 	data := map[string]interface{}{
@@ -17,7 +18,7 @@ func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Pla
 		data["ordering"] = ordering
 	}
 
-	body, err := api.NewRequest(path, http.MethodGet, data)
+	body, err := api.newRequest(path, http.MethodGet, data)
 
 	if err != nil {
 		return nil, 0, err
@@ -35,6 +36,7 @@ func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Pla
 	return response.Results, response.Count, nil
 }
 
+// Get a list of parent platforms
 func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) ([]*Platform, int, error) {
 	path := "/platforms/lists/parents"
 	data := map[string]interface{}{
@@ -46,7 +48,7 @@ func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) 
 		data["ordering"] = ordering
 	}
 
-	body, err := api.NewRequest(path, http.MethodGet, data)
+	body, err := api.newRequest(path, http.MethodGet, data)
 
 	if err != nil {
 		return nil, 0, err
@@ -64,9 +66,10 @@ func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) 
 	return response.Results, response.Count, nil
 }
 
+// Get details of the platform
 func (api *Client) GetPlatform(id int) (*PlatformDetailed, error) {
 	path := fmt.Sprintf("/platforms/%d", id)
-	body, err := api.NewRequest(path, http.MethodGet, nil)
+	body, err := api.newRequest(path, http.MethodGet, nil)
 
 	if err != nil {
 		return nil, err

@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"encoding/json"
@@ -6,13 +6,14 @@ import (
 	"net/http"
 )
 
+// Get a list of video game publishers
 func (api *Client) GetPublishers(page int, pageSize int) ([]*Publisher, int, error) {
 	path := "/publishers"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.NewRequest(path, http.MethodGet, data)
+	body, err := api.newRequest(path, http.MethodGet, data)
 
 	if err != nil {
 		return nil, 0, err
@@ -30,9 +31,10 @@ func (api *Client) GetPublishers(page int, pageSize int) ([]*Publisher, int, err
 	return response.Results, response.Count, nil
 }
 
+// Get details of the publisher
 func (api *Client) GetPublisher(id int) (*PublisherDetailed, error) {
 	path := fmt.Sprintf("/publishers/%d", id)
-	body, err := api.NewRequest(path, http.MethodGet, nil)
+	body, err := api.newRequest(path, http.MethodGet, nil)
 
 	if err != nil {
 		return nil, err

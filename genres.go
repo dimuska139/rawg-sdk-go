@@ -1,4 +1,4 @@
-package rawg_sdk_go
+package rawgSdkGo
 
 import (
 	"encoding/json"
@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// Get a list of video game genres
 func (api *Client) GetGenres(page int, pageSize int, ordering string) ([]*Genre, int, error) {
 	path := "/genres"
 	data := map[string]interface{}{
@@ -17,7 +18,7 @@ func (api *Client) GetGenres(page int, pageSize int, ordering string) ([]*Genre,
 		data["ordering"] = ordering
 	}
 
-	body, err := api.NewRequest(path, http.MethodGet, data)
+	body, err := api.newRequest(path, http.MethodGet, data)
 
 	if err != nil {
 		return nil, 0, err
@@ -35,9 +36,10 @@ func (api *Client) GetGenres(page int, pageSize int, ordering string) ([]*Genre,
 	return response.Results, response.Count, nil
 }
 
+// Get details of the genre
 func (api *Client) GetGenre(id int) (*GenreDetailed, error) {
 	path := fmt.Sprintf("/genres/%d", id)
-	body, err := api.NewRequest(path, http.MethodGet, nil)
+	body, err := api.newRequest(path, http.MethodGet, nil)
 
 	if err != nil {
 		return nil, err
