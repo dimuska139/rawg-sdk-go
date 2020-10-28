@@ -28,7 +28,7 @@ import (
 
 func main() {
     config := rawg.Config{
-        ApiKey:  "YourAppName", // 'YourAppName' will be set as User-Agent header
+        ApiKey:  "yourapikey", // Your personal API key (see https://rawg.io/apidocs)
         Language: "ru",
         Rps:      5,
     }
