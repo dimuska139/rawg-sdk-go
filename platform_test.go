@@ -15,12 +15,12 @@ func TestClient_GetPlatform(t *testing.T) {
 
 	platformID := 1
 	responseBody, _ := ioutil.ReadFile("./testdata/platform.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/platforms/%d?lang=ru", apiBaseUrl, platformID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/platforms/%d?key=test&lang=ru", apiBaseUrl, platformID),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -35,12 +35,12 @@ func TestClient_GetPlatform_HttpError(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	platformID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/platforms/%d?lang=ru", apiBaseUrl, platformID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/platforms/%d?key=test&lang=ru", apiBaseUrl, platformID),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -57,12 +57,12 @@ func TestClient_GetPlatform_InvalidJson(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	platformID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/platforms/%d?lang=ru", apiBaseUrl, platformID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/platforms/%d?key=test&lang=ru", apiBaseUrl, platformID),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

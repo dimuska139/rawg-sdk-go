@@ -14,12 +14,12 @@ func TestClient_GetGenres(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	responseBody, _ := ioutil.ReadFile("./testdata/genres.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/genres?lang=ru&ordering=-name&page=1&page_size=2", apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/genres?key=test&lang=ru&ordering=-name&page=1&page_size=2", apiBaseUrl),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -35,12 +35,12 @@ func TestClient_GetGenres_HttpError(t *testing.T) {
 	httpmock.Activate()
 	defer httpmock.DeactivateAndReset()
 
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/genres?lang=ru&ordering=-name&page=1&page_size=2", apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/genres?key=test&lang=ru&ordering=-name&page=1&page_size=2", apiBaseUrl),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -58,12 +58,12 @@ func TestClient_GetGenres_InvalidJson(t *testing.T) {
 	httpmock.Activate()
 	defer httpmock.DeactivateAndReset()
 
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/genres?lang=ru&ordering=-name&page=1&page_size=2", apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/genres?key=test&lang=ru&ordering=-name&page=1&page_size=2", apiBaseUrl),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

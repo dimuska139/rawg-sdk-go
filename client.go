@@ -55,6 +55,7 @@ func (api *Client) newRequest(path string, method string, data map[string]interf
 		q.Add(param, fmt.Sprintf("%v", value))
 	}
 
+	q.Add("key", api.config.ApiKey)
 	q.Add("lang", api.config.Language)
 
 	method = strings.ToUpper(method)
@@ -76,8 +77,6 @@ func (api *Client) newRequest(path string, method string, data map[string]interf
 	} else {
 		req.Header.Set("Content-Type", "application/x-www-form-urlencoded; param=value")
 	}
-
-	req.Header.Add("User-Agent", api.config.AppName)
 
 	resp, err := api.client.Do(req)
 	if err != nil {

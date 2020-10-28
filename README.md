@@ -28,7 +28,7 @@ import (
 
 func main() {
     config := rawg.Config{
-        AppName:  "YourAppName", // 'YourAppName' will be set as User-Agent header
+        ApiKey:  "YourAppName", // 'YourAppName' will be set as User-Agent header
         Language: "ru",
         Rps:      5,
     }

@@ -14,12 +14,12 @@ func TestClient_GetCreators(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	responseBody, _ := ioutil.ReadFile("./testdata/creators.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators?lang=ru&page=1&page_size=2", apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators?key=test&lang=ru&page=1&page_size=2", apiBaseUrl),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -35,12 +35,12 @@ func TestClient_GetCreators_HttpError(t *testing.T) {
 	httpmock.Activate()
 	defer httpmock.DeactivateAndReset()
 
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators?lang=ru&page=1&page_size=2", apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators?key=test&lang=ru&page=1&page_size=2", apiBaseUrl),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -58,12 +58,12 @@ func TestClient_GetCreators_InvalidJson(t *testing.T) {
 	httpmock.Activate()
 	defer httpmock.DeactivateAndReset()
 
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators?lang=ru&page=1&page_size=2", apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators?key=test&lang=ru&page=1&page_size=2", apiBaseUrl),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

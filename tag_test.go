@@ -15,12 +15,12 @@ func TestClient_GetTag(t *testing.T) {
 
 	tagID := 1
 	responseBody, _ := ioutil.ReadFile("./testdata/tag.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/tags/%d?lang=ru", apiBaseUrl, tagID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/tags/%d?key=test&lang=ru", apiBaseUrl, tagID),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -35,12 +35,12 @@ func TestClient_GetTag_HttpError(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	tagID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/tags/%d?lang=ru", apiBaseUrl, tagID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/tags/%d?key=test&lang=ru", apiBaseUrl, tagID),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -57,12 +57,12 @@ func TestClient_GetTag_InvalidJson(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	tagID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/tags/%d?lang=ru", apiBaseUrl, tagID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/tags/%d?key=test&lang=ru", apiBaseUrl, tagID),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

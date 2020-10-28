@@ -14,7 +14,7 @@ func TestClient_GetGames(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	responseBody, _ := ioutil.ReadFile("./testdata/games.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf(`%s/games?lang=ru&page=1&page_size=2&search=gta5`, apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf(`%s/games?key=test&lang=ru&page=1&page_size=2&search=gta5`, apiBaseUrl),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
@@ -43,7 +43,7 @@ func TestClient_GetGames(t *testing.T) {
 	SetDates()*/
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -59,7 +59,7 @@ func TestClient_GetGames_HttpError(t *testing.T) {
 	httpmock.Activate()
 	defer httpmock.DeactivateAndReset()
 
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf(`%s/games?lang=ru&page=1&page_size=2&search=gta5`, apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf(`%s/games?key=test&lang=ru&page=1&page_size=2&search=gta5`, apiBaseUrl),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
@@ -69,7 +69,7 @@ func TestClient_GetGames_HttpError(t *testing.T) {
 		SetSearch("gta5")
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -87,7 +87,7 @@ func TestClient_GetGames_InvalidJson(t *testing.T) {
 	httpmock.Activate()
 	defer httpmock.DeactivateAndReset()
 
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf(`%s/games?lang=ru&page=1&page_size=2&search=gta5`, apiBaseUrl),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf(`%s/games?key=test&lang=ru&page=1&page_size=2&search=gta5`, apiBaseUrl),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
@@ -97,7 +97,7 @@ func TestClient_GetGames_InvalidJson(t *testing.T) {
 		SetSearch("gta5")
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

@@ -15,12 +15,12 @@ func TestClient_GetStore(t *testing.T) {
 
 	storeID := 1
 	responseBody, _ := ioutil.ReadFile("./testdata/store.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?lang=ru", apiBaseUrl, storeID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?key=test&lang=ru", apiBaseUrl, storeID),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -35,12 +35,12 @@ func TestClient_GetStore_HttpError(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	storeID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?lang=ru", apiBaseUrl, storeID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?key=test&lang=ru", apiBaseUrl, storeID),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -57,12 +57,12 @@ func TestClient_GetStore_InvalidJson(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	storeID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?lang=ru", apiBaseUrl, storeID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?key=test&lang=ru", apiBaseUrl, storeID),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

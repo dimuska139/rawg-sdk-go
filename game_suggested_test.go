@@ -15,12 +15,12 @@ func TestClient_GetGameSuggested(t *testing.T) {
 
 	gameID := 1
 	responseBody, _ := ioutil.ReadFile("./testdata/game_suggested.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d/suggested?lang=ru", apiBaseUrl, gameID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d/suggested?key=test&lang=ru", apiBaseUrl, gameID),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -36,12 +36,12 @@ func TestClient_GetGameSuggested_HttpError(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	gameID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d/suggested?lang=ru", apiBaseUrl, gameID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d/suggested?key=test&lang=ru", apiBaseUrl, gameID),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -59,12 +59,12 @@ func TestClient_GetGameSuggested_InvalidJson(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	gameID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d/suggested?lang=ru", apiBaseUrl, gameID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d/suggested?key=test&lang=ru", apiBaseUrl, gameID),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

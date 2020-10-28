@@ -15,12 +15,12 @@ func TestClient_GetDeveloper(t *testing.T) {
 
 	developerID := 1
 	responseBody, _ := ioutil.ReadFile("./testdata/developer.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/developers/%d?lang=ru", apiBaseUrl, developerID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/developers/%d?key=test&lang=ru", apiBaseUrl, developerID),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -35,12 +35,12 @@ func TestClient_GetDeveloper_HttpError(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	developerID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/developers/%d?lang=ru", apiBaseUrl, developerID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/developers/%d?key=test&lang=ru", apiBaseUrl, developerID),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -57,12 +57,12 @@ func TestClient_GetDeveloper_InvalidJson(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	developerID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/developers/%d?lang=ru", apiBaseUrl, developerID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/developers/%d?key=test&lang=ru", apiBaseUrl, developerID),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

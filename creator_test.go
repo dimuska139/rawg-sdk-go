@@ -15,12 +15,12 @@ func TestClient_GetCreator(t *testing.T) {
 
 	creatorID := 1
 	responseBody, _ := ioutil.ReadFile("./testdata/creator.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators/%d?lang=ru", apiBaseUrl, creatorID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators/%d?key=test&lang=ru", apiBaseUrl, creatorID),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -35,12 +35,12 @@ func TestClient_GetCreator_HttpError(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	creatorID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators/%d?lang=ru", apiBaseUrl, creatorID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators/%d?key=test&lang=ru", apiBaseUrl, creatorID),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -57,12 +57,12 @@ func TestClient_GetCreator_InvalidJson(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	creatorID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators/%d?lang=ru", apiBaseUrl, creatorID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/creators/%d?key=test&lang=ru", apiBaseUrl, creatorID),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}

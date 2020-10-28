@@ -15,12 +15,12 @@ func TestClient_GetPublisher(t *testing.T) {
 
 	publisherID := 1
 	responseBody, _ := ioutil.ReadFile("./testdata/publisher.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?lang=ru", apiBaseUrl, publisherID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?key=test&lang=ru", apiBaseUrl, publisherID),
 		httpmock.NewBytesResponder(http.StatusOK, responseBody),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -35,12 +35,12 @@ func TestClient_GetPublisher_HttpError(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	publisherID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?lang=ru", apiBaseUrl, publisherID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?key=test&lang=ru", apiBaseUrl, publisherID),
 		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
@@ -57,12 +57,12 @@ func TestClient_GetPublisher_InvalidJson(t *testing.T) {
 	defer httpmock.DeactivateAndReset()
 
 	publisherID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?lang=ru", apiBaseUrl, publisherID),
+	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?key=test&lang=ru", apiBaseUrl, publisherID),
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
 	config := Config{
-		AppName:  "Test",
+		ApiKey:   "test",
 		Language: "ru",
 		Rps:      5,
 	}
