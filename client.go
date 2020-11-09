@@ -9,7 +9,6 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-	"time"
 )
 
 const apiBaseUrl = "https://api.rawg.io/api"
@@ -44,7 +43,7 @@ func NewClient(client *http.Client, config *Config) *Client {
 	return &Client{
 		client:      client,
 		config:      config,
-		rateLimiter: rate.NewLimiter(rate.Every(1*time.Second), rps),
+		rateLimiter: rate.NewLimiter(rate.Limit(rps), rps),
 	}
 }
 
