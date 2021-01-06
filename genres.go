@@ -1,9 +1,7 @@
 package rawg
 
 import (
-	"encoding/json"
 	"fmt"
-	"net/http"
 )
 
 // GetGenres returns a list of video game genres
@@ -18,19 +16,13 @@ func (api *Client) GetGenres(page int, pageSize int, ordering string) ([]*Genre,
 		data["ordering"] = ordering
 	}
 
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
-
 	var response struct {
 		Results []*Genre `json:"results"`
 		Count   int      `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -39,16 +31,10 @@ func (api *Client) GetGenres(page int, pageSize int, ordering string) ([]*Genre,
 // GetGenre returns details of the genre
 func (api *Client) GetGenre(id int) (*GenreDetailed, error) {
 	path := fmt.Sprintf("/genres/%d", id)
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
-
 	var genre GenreDetailed
 
-	if err := json.Unmarshal(body, &genre); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &genre); err != nil {
+		return nil, err
 	}
 
 	return &genre, nil

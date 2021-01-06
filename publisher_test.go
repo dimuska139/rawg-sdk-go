@@ -1,75 +1,14 @@
 package rawg
 
-import (
-	"fmt"
-	"github.com/jarcoal/httpmock"
-	"github.com/stretchr/testify/assert"
-	"io/ioutil"
-	"net/http"
-	"testing"
-)
-
-func TestClient_GetPublisher(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	publisherID := 1
-	responseBody, _ := ioutil.ReadFile("./testdata/publisher.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?key=test&lang=ru", apiBaseUrl, publisherID),
-		httpmock.NewBytesResponder(http.StatusOK, responseBody),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	publisher, err := client.GetPublisher(publisherID)
-	assert.NoError(t, err)
-	assert.Equal(t, "Electronic Arts", publisher.Name)
+func (suite *RAWGTestSuite) TestGetPublisher() {
+	publisher, err := suite.client.GetPublisher(3)
+	suite.NoError(err)
+	suite.Equal("Juicy Beast Studio", publisher.Name)
 }
 
-func TestClient_GetPublisher_HttpError(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	publisherID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?key=test&lang=ru", apiBaseUrl, publisherID),
-		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	publisher, err := client.GetPublisher(publisherID)
-	assert.Error(t, err)
-	_, isResponseError := err.(*RawgError)
-	assert.True(t, isResponseError)
-	assert.Nil(t, publisher)
-}
-
-func TestClient_GetPublisher_InvalidJson(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	publisherID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/publishers/%d?key=test&lang=ru", apiBaseUrl, publisherID),
-		httpmock.NewStringResponder(http.StatusOK, ""),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	publisher, err := client.GetPublisher(publisherID)
-	assert.Error(t, err)
-	_, isResponseError := err.(*RawgError)
-	assert.True(t, isResponseError)
-	assert.Nil(t, publisher)
+func (suite *RAWGTestSuite) TestGetPublisherFailed() {
+	suite.client.baseUrl = ""
+	publisher, err := suite.client.GetPublisher(3)
+	suite.Error(err)
+	suite.Nil(publisher)
 }

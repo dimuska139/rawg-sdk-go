@@ -1,75 +1,14 @@
 package rawg
 
-import (
-	"fmt"
-	"github.com/jarcoal/httpmock"
-	"github.com/stretchr/testify/assert"
-	"io/ioutil"
-	"net/http"
-	"testing"
-)
-
-func TestClient_GetStore(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	storeID := 1
-	responseBody, _ := ioutil.ReadFile("./testdata/store.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?key=test&lang=ru", apiBaseUrl, storeID),
-		httpmock.NewBytesResponder(http.StatusOK, responseBody),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	store, err := client.GetStore(storeID)
-	assert.NoError(t, err)
-	assert.Equal(t, "Steam", store.Name)
+func (suite *RAWGTestSuite) TestGetStore() {
+	store, err := suite.client.GetStore(1)
+	suite.NoError(err)
+	suite.Equal("Steam", store.Name)
 }
 
-func TestClient_GetStore_HttpError(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	storeID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?key=test&lang=ru", apiBaseUrl, storeID),
-		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	store, err := client.GetStore(storeID)
-	assert.Error(t, err)
-	_, isResponseError := err.(*RawgError)
-	assert.True(t, isResponseError)
-	assert.Nil(t, store)
-}
-
-func TestClient_GetStore_InvalidJson(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	storeID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/stores/%d?key=test&lang=ru", apiBaseUrl, storeID),
-		httpmock.NewStringResponder(http.StatusOK, ""),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	store, err := client.GetStore(storeID)
-	assert.Error(t, err)
-	_, isResponseError := err.(*RawgError)
-	assert.True(t, isResponseError)
-	assert.Nil(t, store)
+func (suite *RAWGTestSuite) TestGetStoreFailed() {
+	suite.client.baseUrl = ""
+	store, err := suite.client.GetStore(1)
+	suite.Error(err)
+	suite.Nil(store)
 }

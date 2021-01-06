@@ -1,5 +1,10 @@
 package rawg
 
+type Roles struct {
+	Results []*Role `json:"results"`
+	Count   int     `json:"count"`
+}
+
 // Role is a position (job) of the video game creator
 type Role struct {
 	ID   int    `json:"id"`
@@ -223,14 +228,15 @@ type Game struct {
 	Metacritic       int            `json:"metacritic"`
 	Playtime         int            `json:"playtime"`
 	SuggestionsCount int            `json:"suggestions_count"`
+	Updated          DateTime       `json:"updated"`
 	ReviewsCount     int            `json:"reviews_count"`
 	SaturatedColor   string         `json:"saturated_color"`
 	DominantColor    string         `json:"dominant_color"`
+	AlternativeNames []string       `json:"alternative_names"`
 	Platforms        []*struct {
-		Platform       *Platform    `json:"platform"`
-		ReleasedAt     DateTime     `json:"released_at"`
-		RequirementsEn *Requirement `json:"requirements_en"`
-		RequirementsRu *Requirement `json:"requirements_ru"`
+		Platform     *Platform    `json:"platform"`
+		ReleasedAt   DateTime     `json:"released_at"`
+		Requirements *Requirement `json:"requirements"`
 	} `json:"platforms"`
 	ParentPlatforms []*struct {
 		Platform struct {

@@ -1,22 +1,15 @@
 package rawg
 
 import (
-	"encoding/json"
 	"fmt"
-	"net/http"
 )
 
 // GetCreatorRoles returns a list of creator positions (jobs)
 func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error) {
 	path := "/creator-roles"
-	data := map[string]interface{}{
+	params := map[string]interface{}{
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
-	}
-
-	body, err := api.newRequest(path, http.MethodGet, data)
-	if err != nil {
-		return nil, 0, err
 	}
 
 	var response struct {
@@ -24,8 +17,8 @@ func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error)
 		Count   int     `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, params, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -38,19 +31,14 @@ func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) 
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
 
 	var response struct {
 		Results []*Creator `json:"results"`
 		Count   int        `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -59,16 +47,10 @@ func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) 
 // GetCreator returns details of the creator
 func (api *Client) GetCreator(id int) (*CreatorDetailed, error) {
 	path := fmt.Sprintf("/creators/%d", id)
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
-
 	var creator CreatorDetailed
 
-	if err := json.Unmarshal(body, &creator); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &creator); err != nil {
+		return nil, err
 	}
 
 	return &creator, nil

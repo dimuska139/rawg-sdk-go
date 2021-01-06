@@ -25,13 +25,18 @@ type GamesFilter struct {
 	genres            []interface{}
 	tags              []interface{}
 	creators          []interface{}
-	dates             []*DateRange
+	dates             []DateRange
 	platformsCount    int
 	excludeCollection int
 	excludeAdditions  bool
 	excludeParents    bool
 	excludeGameSeries bool
+	searchPrecise     bool
+	searchExact       bool
 	ordering          string
+	metacriticFrom    int
+	metacriticTo      int
+	updated           []time.Time
 }
 
 // NewGamesFilter creates filter
@@ -105,9 +110,22 @@ func (filter *GamesFilter) SetCreators(creators ...interface{}) *GamesFilter {
 	return filter
 }
 
+// SetMetacritic sets "metacritic" parameter
+func (filter *GamesFilter) SetMetacritic(from int, to int) *GamesFilter {
+	filter.metacriticFrom = from
+	filter.metacriticTo = to
+	return filter
+}
+
 // SetDates sets "dates" parameter
-func (filter *GamesFilter) SetDates(ranges ...*DateRange) *GamesFilter {
+func (filter *GamesFilter) SetDates(ranges ...DateRange) *GamesFilter {
 	filter.dates = ranges
+	return filter
+}
+
+// SetUpdated sets "updated" parameter
+func (filter *GamesFilter) SetUpdated(dates ...time.Time) *GamesFilter {
+	filter.updated = dates
 	return filter
 }
 
@@ -198,12 +216,21 @@ func (filter *GamesFilter) GetParams() map[string]interface{} {
 	}
 
 	if len(filter.dates) != 0 {
-		parts := make([]string, 0)
-		for _, dateRange := range filter.dates {
-			parts = append(parts, dateRange.From.Format("2006-01-02")+","+dateRange.To.Format("2006-01-02"))
+		parts := make([]string, len(filter.dates))
+		for i, dateRange := range filter.dates {
+			parts[i] = dateRange.From.Format("2006-01-02") + "," + dateRange.To.Format("2006-01-02")
 		}
 
 		params["dates"] = strings.Join(parts, ".")
+	}
+
+	if len(filter.updated) != 0 {
+		parts := make([]string, len(filter.updated))
+		for i, d := range filter.updated {
+			parts[i] = d.Format("2006-01-02")
+		}
+
+		params["updated"] = strings.Join(parts, ",")
 	}
 
 	if filter.platformsCount != 0 {
@@ -228,6 +255,10 @@ func (filter *GamesFilter) GetParams() map[string]interface{} {
 
 	if filter.ordering != "" {
 		params["ordering"] = filter.ordering
+	}
+
+	if filter.metacriticFrom != 0 || filter.metacriticTo != 0 {
+		params["metacritic"] = fmt.Sprintf("%d,%d", filter.metacriticFrom, filter.metacriticTo)
 	}
 
 	return params

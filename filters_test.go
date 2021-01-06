@@ -21,6 +21,9 @@ func TestNewGamesFilter(t *testing.T) {
 		To:   to2,
 	}
 
+	updated1, _ := time.Parse("2006-01-02", "2020-01-01")
+	updated2, _ := time.Parse("2006-01-02", "2020-10-15")
+
 	filter := NewGamesFilter().
 		SetPage(1).
 		SetPageSize(2).
@@ -33,13 +36,15 @@ func TestNewGamesFilter(t *testing.T) {
 		SetGenres(9, "action", "indie").
 		SetTags("singleplayer", 31).
 		SetCreators(28, "mike-morasky").
-		SetDates(&dateRangeFirst, &dateRangeSecond).
+		SetDates(dateRangeFirst, dateRangeSecond).
+		SetUpdated(updated1, updated2).
 		SetPlatformsCount(10).
 		ExcludeCollection(123).
 		WithoutAdditions().
 		WithoutParents().
 		WithoutGameSeries().
-		SetOrdering("-name")
+		SetOrdering("-name").
+		SetMetacritic(20, 80)
 
 	assert.Equal(t, map[string]interface{}{
 		"creators":            "28,mike-morasky",
@@ -60,6 +65,8 @@ func TestNewGamesFilter(t *testing.T) {
 		"search":              "gta5",
 		"stores":              "5,6",
 		"tags":                "singleplayer,31",
+		"metacritic":          "20,80",
+		"updated":             "2020-01-01,2020-10-15",
 	}, filter.GetParams())
 
 }

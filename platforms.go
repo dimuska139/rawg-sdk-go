@@ -1,9 +1,7 @@
 package rawg
 
 import (
-	"encoding/json"
 	"fmt"
-	"net/http"
 )
 
 // GetPlatforms returns a list of video game platforms
@@ -18,19 +16,13 @@ func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Pla
 		data["ordering"] = ordering
 	}
 
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
-
 	var response struct {
 		Results []*Platform `json:"results"`
 		Count   int         `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -48,19 +40,13 @@ func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) 
 		data["ordering"] = ordering
 	}
 
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
-
 	var response struct {
 		Results []*Platform `json:"results"`
 		Count   int         `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -69,16 +55,11 @@ func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) 
 // GetPlatform returns details of the platform
 func (api *Client) GetPlatform(id int) (*PlatformDetailed, error) {
 	path := fmt.Sprintf("/platforms/%d", id)
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
 
 	var platform PlatformDetailed
 
-	if err := json.Unmarshal(body, &platform); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &platform); err != nil {
+		return nil, err
 	}
 
 	return &platform, nil

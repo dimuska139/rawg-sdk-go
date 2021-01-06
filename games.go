@@ -1,27 +1,20 @@
 package rawg
 
 import (
-	"encoding/json"
 	"fmt"
-	"net/http"
 )
 
 // GetGames returns a list of games
 func (api *Client) GetGames(filter *GamesFilter) ([]*Game, int, error) {
 	path := "/games"
-	body, err := api.newRequest(path, http.MethodGet, filter.GetParams())
-
-	if err != nil {
-		return nil, 0, err
-	}
 
 	var response struct {
 		Results []*Game `json:"results"`
 		Count   int     `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, filter.GetParams(), &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -35,19 +28,14 @@ func (api *Client) GetGameAdditions(gameID int, page int, pageSize int) ([]*Game
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
 
 	var response struct {
 		Results []*Game `json:"results"`
 		Count   int     `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -65,19 +53,13 @@ func (api *Client) GetGameDevelopmentTeam(gameID int, page int, pageSize int, or
 		data["ordering"] = ordering
 	}
 
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
-
 	var response struct {
 		Results []*GameDeveloper `json:"results"`
 		Count   int              `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -91,19 +73,14 @@ func (api *Client) GetGameSeries(gameID int, page int, pageSize int) ([]*Game, i
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
 
 	var response struct {
 		Results []*Game `json:"results"`
 		Count   int     `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -117,19 +94,14 @@ func (api *Client) GetParentGames(gameID int, page int, pageSize int) ([]*Game, 
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
 
 	var response struct {
 		Results []*Game `json:"results"`
 		Count   int     `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -143,19 +115,14 @@ func (api *Client) GetGameScreenshots(gameID int, page int, pageSize int) ([]*Sc
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
 
 	var response struct {
 		Results []*Screenshot `json:"results"`
 		Count   int           `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -169,19 +136,14 @@ func (api *Client) GetGameStores(gameID int, page int, pageSize int) ([]*GameSto
 		"page":      fmt.Sprint(page),
 		"page_size": fmt.Sprint(pageSize),
 	}
-	body, err := api.newRequest(path, http.MethodGet, data)
-
-	if err != nil {
-		return nil, 0, err
-	}
 
 	var response struct {
 		Results []*GameStore `json:"results"`
 		Count   int          `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, 0, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, data, &response); err != nil {
+		return nil, 0, err
 	}
 
 	return response.Results, response.Count, nil
@@ -190,149 +152,108 @@ func (api *Client) GetGameStores(gameID int, page int, pageSize int) ([]*GameSto
 // GetGame returns details of the game
 func (api *Client) GetGame(id int) (*GameDetailed, error) {
 	path := fmt.Sprintf("/games/%d", id)
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
 
 	var platform GameDetailed
 
-	if err := json.Unmarshal(body, &platform); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &platform); err != nil {
+		return nil, err
 	}
 
 	return &platform, nil
 }
 
 // GetGameAchievements returns a list of game achievements
-func (api *Client) GetGameAchievements(id int) ([]*Achievement, error) {
+func (api *Client) GetGameAchievements(id int) ([]*Achievement, int, error) {
 	path := fmt.Sprintf("/games/%d/achievements", id)
-
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
 
 	var response struct {
 		Results []*Achievement `json:"results"`
 		Count   int            `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &response); err != nil {
+		return nil, 0, err
 	}
 
-	return response.Results, nil
+	return response.Results, response.Count, nil
 }
 
 // GetGameMovies returns a list of game trailers
-func (api *Client) GetGameMovies(id int) ([]*Movie, error) {
+func (api *Client) GetGameMovies(id int) ([]*Movie, int, error) {
 	path := fmt.Sprintf("/games/%d/movies", id)
-
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
 
 	var response struct {
 		Results []*Movie `json:"results"`
 		Count   int      `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &response); err != nil {
+		return nil, 0, err
 	}
 
-	return response.Results, nil
+	return response.Results, response.Count, nil
 }
 
 // GetGameReddit returns a list of most recent posts from the game's subreddit
-func (api *Client) GetGameReddit(id int) ([]*Reddit, error) {
+func (api *Client) GetGameReddit(id int) ([]*Reddit, int, error) {
 	path := fmt.Sprintf("/games/%d/reddit", id)
-
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
 
 	var response struct {
 		Results []*Reddit `json:"results"`
 		Count   int       `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &response); err != nil {
+		return nil, 0, err
 	}
 
-	return response.Results, nil
+	return response.Results, response.Count, nil
 }
 
 // GetGameSuggested returns a list of visually similar games
-func (api *Client) GetGameSuggested(id int) ([]*Game, error) {
+func (api *Client) GetGameSuggested(id int) ([]*Game, int, error) {
 	path := fmt.Sprintf("/games/%d/suggested", id)
-
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
 
 	var response struct {
 		Results []*Game `json:"results"`
 		Count   int     `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &response); err != nil {
+		return nil, 0, err
 	}
 
-	return response.Results, nil
+	return response.Results, response.Count, nil
 }
 
 // GetGameTwitch returns streams on Twitch associated with the game
-func (api *Client) GetGameTwitch(id int) ([]*Twitch, error) {
+func (api *Client) GetGameTwitch(id int) ([]*Twitch, int, error) {
 	path := fmt.Sprintf("/games/%d/twitch", id)
-
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
 
 	var response struct {
 		Results []*Twitch `json:"results"`
 		Count   int       `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &response); err != nil {
+		return nil, 0, err
 	}
 
-	return response.Results, nil
+	return response.Results, response.Count, nil
 }
 
 // GetGameYoutube returns videos from YouTube associated with the game
-func (api *Client) GetGameYoutube(id int) ([]*Youtube, error) {
+func (api *Client) GetGameYoutube(id int) ([]*Youtube, int, error) {
 	path := fmt.Sprintf("/games/%d/youtube", id)
-
-	body, err := api.newRequest(path, http.MethodGet, nil)
-
-	if err != nil {
-		return nil, err
-	}
 
 	var response struct {
 		Results []*Youtube `json:"results"`
 		Count   int        `json:"count"`
 	}
 
-	if err := json.Unmarshal(body, &response); err != nil {
-		return nil, &RawgError{HttpCode: http.StatusOK, Url: path, Body: string(body), Message: err.Error()}
+	if err := api.get(path, nil, &response); err != nil {
+		return nil, 0, err
 	}
 
-	return response.Results, nil
+	return response.Results, response.Count, nil
 }

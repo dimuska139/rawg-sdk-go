@@ -1,75 +1,14 @@
 package rawg
 
-import (
-	"fmt"
-	"github.com/jarcoal/httpmock"
-	"github.com/stretchr/testify/assert"
-	"io/ioutil"
-	"net/http"
-	"testing"
-)
-
-func TestClient_GetGame(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	gameID := 1
-	responseBody, _ := ioutil.ReadFile("./testdata/game.json")
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d?key=test&lang=ru", apiBaseUrl, gameID),
-		httpmock.NewBytesResponder(http.StatusOK, responseBody),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	game, err := client.GetGame(gameID)
-	assert.NoError(t, err)
-	assert.Equal(t, "Full Throttle Remastered", game.Name)
+func (suite *RAWGTestSuite) TestGetGame() {
+	game, err := suite.client.GetGame(1)
+	suite.NoError(err)
+	suite.Equal("D/Generation HD", game.Name)
 }
 
-func TestClient_GetGame_HttpError(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	gameID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d?key=test&lang=ru", apiBaseUrl, gameID),
-		httpmock.NewStringResponder(http.StatusInternalServerError, ""),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	game, err := client.GetGame(gameID)
-	assert.Error(t, err)
-	_, isResponseError := err.(*RawgError)
-	assert.True(t, isResponseError)
-	assert.Nil(t, game)
-}
-
-func TestClient_GetGame_InvalidJson(t *testing.T) {
-	httpmock.Activate()
-	defer httpmock.DeactivateAndReset()
-
-	gameID := 1
-	httpmock.RegisterResponder(http.MethodGet, fmt.Sprintf("%s/games/%d?key=test&lang=ru", apiBaseUrl, gameID),
-		httpmock.NewStringResponder(http.StatusOK, ""),
-	)
-
-	config := Config{
-		ApiKey:   "test",
-		Language: "ru",
-		Rps:      5,
-	}
-	client := NewClient(http.DefaultClient, &config)
-	game, err := client.GetGame(gameID)
-	assert.Error(t, err)
-	_, isResponseError := err.(*RawgError)
-	assert.True(t, isResponseError)
-	assert.Nil(t, game)
+func (suite *RAWGTestSuite) TestGetGameFailed() {
+	suite.client.baseUrl = ""
+	game, err := suite.client.GetGame(1)
+	suite.Error(err)
+	suite.Nil(game)
 }

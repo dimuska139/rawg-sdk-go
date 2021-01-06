@@ -1,14 +1,13 @@
 package rawg
 
 import (
-	"bytes"
 	"context"
+	"encoding/json"
 	"fmt"
 	"golang.org/x/time/rate"
 	"io/ioutil"
 	"net/http"
-	"net/url"
-	"strings"
+	"regexp"
 )
 
 const apiBaseUrl = "https://api.rawg.io/api"
@@ -28,6 +27,7 @@ func (e *RawgError) Error() string {
 
 // Client to interract with RAWG API
 type Client struct {
+	baseUrl     string
 	client      *http.Client
 	config      *Config
 	rateLimiter *rate.Limiter
@@ -35,63 +35,73 @@ type Client struct {
 
 // NewClient creates new Client to interract with RAWG API
 func NewClient(client *http.Client, config *Config) *Client {
-	rps := config.Rps
-	if rps == 0 {
-		rps = 5
+	if config.Rps == 0 {
+		config.Rps = 5
+	}
+
+	if config.Language == "" {
+		config.Language = "en"
 	}
 
 	return &Client{
+		baseUrl:     apiBaseUrl,
 		client:      client,
 		config:      config,
-		rateLimiter: rate.NewLimiter(rate.Limit(rps), rps),
+		rateLimiter: rate.NewLimiter(rate.Limit(config.Rps), config.Rps),
 	}
 }
 
-// newRequest: Makes request with appending required params
-func (api *Client) newRequest(path string, method string, data map[string]interface{}) ([]byte, error) {
-	q := url.Values{}
-	for param, value := range data {
-		q.Add(param, fmt.Sprintf("%v", value))
-	}
-
-	q.Add("key", api.config.ApiKey)
-	q.Add("lang", api.config.Language)
-
-	method = strings.ToUpper(method)
-	fullPath := apiBaseUrl + path
+func (api *Client) get(path string, params map[string]interface{}, responseModel interface{}) error {
+	fullPath := api.baseUrl + path
 
 	ctx := context.Background()
 	if err := api.rateLimiter.Wait(ctx); err != nil {
-		return nil, err
+		return err
 	}
 
-	req, e := http.NewRequest(method, fullPath, bytes.NewBufferString(q.Encode()))
+	req, e := http.NewRequest(http.MethodGet, fullPath, nil)
 	if e != nil {
-		return nil, e
+		return e
 	}
+	req.Header.Add("content-type", "application/json;charset=utf-8")
+	q := req.URL.Query()
 
-	if method == http.MethodGet {
-		req.URL.RawQuery = q.Encode()
-		req.Body = nil
-	} else {
-		req.Header.Set("Content-Type", "application/x-www-form-urlencoded; param=value")
+	// Workaround to switch to using API key (not all methods of the RAWG API support it)
+	suggestedURLr, _ := regexp.Compile("/games/[0-9+]/suggested")
+	twitchURLr, _ := regexp.Compile("/games/[0-9+]/twitch")
+	youtubeURLr, _ := regexp.Compile("/games/[0-9+]/youtube")
+	if !suggestedURLr.MatchString(path) && !twitchURLr.MatchString(path) && !youtubeURLr.MatchString(path) {
+		q.Add("key", api.config.ApiKey)
 	}
+	//////////////////////////////////////////////////////////////////////////////////////
 
+	q.Add("lang", api.config.Language)
+	for param, value := range params {
+		q.Add(param, fmt.Sprintf("%v", value))
+	}
+	req.URL.RawQuery = q.Encode()
 	resp, err := api.client.Do(req)
 	if err != nil {
-		return nil, &RawgError{http.StatusServiceUnavailable, path, "", err.Error()}
+		return &RawgError{http.StatusServiceUnavailable, path, "", err.Error()}
 	}
 
-	defer resp.Body.Close()
+	if resp != nil {
+		defer resp.Body.Close()
+	}
 
 	body, err := ioutil.ReadAll(resp.Body)
+
 	if err != nil {
-		return nil, &RawgError{resp.StatusCode, path, string(body), err.Error()}
+		return &RawgError{resp.StatusCode, path, string(body), err.Error()}
 	}
 
 	if resp.StatusCode != http.StatusOK {
-		return nil, &RawgError{resp.StatusCode, path, string(body), ""}
+		return &RawgError{resp.StatusCode, path, string(body), ""}
 	}
 
-	return body, nil
+	if err := json.Unmarshal(body, responseModel); err != nil {
+		return fmt.Errorf("could not decode the data: %s", err)
+	}
+
+	return nil
 }
