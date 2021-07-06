@@ -261,5 +261,13 @@ func (filter *GamesFilter) GetParams() map[string]interface{} {
 		params["metacritic"] = fmt.Sprintf("%d,%d", filter.metacriticFrom, filter.metacriticTo)
 	}
 
+	if filter.searchExact {
+		params["search_exact"] = filter.searchExact
+	}
+
+	if filter.searchPrecise {
+		params["search_precise"] = filter.searchPrecise
+	}
+
 	return params
 }
