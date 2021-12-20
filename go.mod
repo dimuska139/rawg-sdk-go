@@ -1,4 +1,4 @@
-module github.com/dimuska139/rawg-sdk-go
+module github.com/dimuska139/rawg-sdk-go/v3
 
 go 1.15
 

@@ -20,10 +20,12 @@ go get github.com/dimuska139/rawg-sdk-go
 package main
 
 import (
+    "context"
     "fmt"
     "net/http"
     "strings"
-    "github.com/dimuska139/rawg-sdk-go"
+    "time"
+    "github.com/dimuska139/rawg-sdk-go/v3"
 )
 
 func main() {
@@ -41,7 +43,9 @@ func main() {
         ExcludeCollection(1).
         WithoutParents()
     
-    data, total, err := client.GetGames(filter)
+    ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Millisecond*500))
+    defer cancel()
+    data, total, err := client.GetGames(ctx, filter)
 
     ...
 }
