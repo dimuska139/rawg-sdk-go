@@ -1,6 +1,7 @@
 package rawg
 
 import (
+	"context"
 	"fmt"
 	"github.com/jarcoal/httpmock"
 	"net/http"
@@ -42,7 +43,7 @@ func (suite *RAWGTestSuite) TestHttpError() {
 		httpmock.NewStringResponder(badStatusCode, ""),
 	)
 
-	err := client.get("/test", nil, nil)
+	err := client.get(context.Background(), "/test", nil, nil)
 	suite.Error(err)
 	_, isResponseError := err.(*RawgError)
 	suite.True(isResponseError)
@@ -62,7 +63,7 @@ func (suite *RAWGTestSuite) TestInvalidJsonError() {
 		httpmock.NewStringResponder(http.StatusOK, ""),
 	)
 
-	err := client.get("/test", nil, nil)
+	err := client.get(context.Background(), "/test", nil, nil)
 	suite.Error(err)
 	_, isResponseError := err.(*RawgError)
 	suite.False(isResponseError)

@@ -1,11 +1,12 @@
 package rawg
 
 import (
+	"context"
 	"fmt"
 )
 
 // GetStores returns a list of video game storefronts
-func (api *Client) GetStores(page int, pageSize int, ordering string) ([]*Store, int, error) {
+func (api *Client) GetStores(ctx context.Context, page int, pageSize int, ordering string) ([]*Store, int, error) {
 	path := "/stores"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),
@@ -21,7 +22,7 @@ func (api *Client) GetStores(page int, pageSize int, ordering string) ([]*Store,
 		Count   int      `json:"count"`
 	}
 
-	if err := api.get(path, data, &response); err != nil {
+	if err := api.get(ctx, path, data, &response); err != nil {
 		return nil, 0, err
 	}
 
@@ -29,11 +30,11 @@ func (api *Client) GetStores(page int, pageSize int, ordering string) ([]*Store,
 }
 
 // GetStore returns details of the store
-func (api *Client) GetStore(id int) (*StoreDetailed, error) {
+func (api *Client) GetStore(ctx context.Context, id int) (*StoreDetailed, error) {
 	path := fmt.Sprintf("/stores/%d", id)
 	var store StoreDetailed
 
-	if err := api.get(path, nil, &store); err != nil {
+	if err := api.get(ctx, path, nil, &store); err != nil {
 		return nil, err
 	}
 

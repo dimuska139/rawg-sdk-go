@@ -1,11 +1,12 @@
 package rawg
 
 import (
+	"context"
 	"fmt"
 )
 
 // GetPlatforms returns a list of video game platforms
-func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Platform, int, error) {
+func (api *Client) GetPlatforms(ctx context.Context, page int, pageSize int, ordering string) ([]*Platform, int, error) {
 	path := "/platforms"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),
@@ -21,7 +22,7 @@ func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Pla
 		Count   int         `json:"count"`
 	}
 
-	if err := api.get(path, data, &response); err != nil {
+	if err := api.get(ctx, path, data, &response); err != nil {
 		return nil, 0, err
 	}
 
@@ -29,7 +30,7 @@ func (api *Client) GetPlatforms(page int, pageSize int, ordering string) ([]*Pla
 }
 
 // GetParentsPlatforms returns a list of parent platforms
-func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) ([]*Platform, int, error) {
+func (api *Client) GetParentsPlatforms(ctx context.Context, page int, pageSize int, ordering string) ([]*Platform, int, error) {
 	path := "/platforms/lists/parents"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),
@@ -45,7 +46,7 @@ func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) 
 		Count   int         `json:"count"`
 	}
 
-	if err := api.get(path, data, &response); err != nil {
+	if err := api.get(ctx, path, data, &response); err != nil {
 		return nil, 0, err
 	}
 
@@ -53,14 +54,12 @@ func (api *Client) GetParentsPlatforms(page int, pageSize int, ordering string) 
 }
 
 // GetPlatform returns details of the platform
-func (api *Client) GetPlatform(id int) (*PlatformDetailed, error) {
+func (api *Client) GetPlatform(ctx context.Context, id int) (*PlatformDetailed, error) {
 	path := fmt.Sprintf("/platforms/%d", id)
 
 	var platform PlatformDetailed
-
-	if err := api.get(path, nil, &platform); err != nil {
+	if err := api.get(ctx, path, nil, &platform); err != nil {
 		return nil, err
 	}
-
 	return &platform, nil
 }

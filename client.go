@@ -50,15 +50,14 @@ func NewClient(client *http.Client, config *Config) *Client {
 	}
 }
 
-func (api *Client) get(path string, params map[string]interface{}, responseModel interface{}) error {
+func (api *Client) get(ctx context.Context, path string, params map[string]interface{}, responseModel interface{}) error {
 	fullPath := api.baseUrl + path
 
-	ctx := context.Background()
 	if err := api.rateLimiter.Wait(ctx); err != nil {
 		return err
 	}
 
-	req, e := http.NewRequest(http.MethodGet, fullPath, nil)
+	req, e := http.NewRequestWithContext(ctx, http.MethodGet, fullPath, nil)
 	if e != nil {
 		return e
 	}

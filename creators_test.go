@@ -1,7 +1,9 @@
 package rawg
 
+import "context"
+
 func (suite *RAWGTestSuite) TestGetCreators() {
-	creators, total, err := suite.client.GetCreators(1, 2)
+	creators, total, err := suite.client.GetCreators(context.Background(), 1, 2)
 	suite.NoError(err)
 	suite.Equal(2, len(creators))
 	suite.NotEqual(0, total)
@@ -9,7 +11,7 @@ func (suite *RAWGTestSuite) TestGetCreators() {
 
 func (suite *RAWGTestSuite) TestGetCreatorsFailed() {
 	suite.client.baseUrl = ""
-	creators, total, err := suite.client.GetCreators(1, 2)
+	creators, total, err := suite.client.GetCreators(context.Background(), 1, 2)
 	suite.Error(err)
 	suite.Equal(0, len(creators))
 	suite.Equal(0, total)

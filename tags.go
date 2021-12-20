@@ -1,11 +1,12 @@
 package rawg
 
 import (
+	"context"
 	"fmt"
 )
 
 // GetTags returns a list of tags
-func (api *Client) GetTags(page int, pageSize int) ([]*Tag, int, error) {
+func (api *Client) GetTags(ctx context.Context, page int, pageSize int) ([]*Tag, int, error) {
 	path := "/tags"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),
@@ -17,7 +18,7 @@ func (api *Client) GetTags(page int, pageSize int) ([]*Tag, int, error) {
 		Count   int    `json:"count"`
 	}
 
-	if err := api.get(path, data, &response); err != nil {
+	if err := api.get(ctx, path, data, &response); err != nil {
 		return nil, 0, err
 	}
 
@@ -25,11 +26,11 @@ func (api *Client) GetTags(page int, pageSize int) ([]*Tag, int, error) {
 }
 
 // GetTag returns details of the tag
-func (api *Client) GetTag(id int) (*TagDetailed, error) {
+func (api *Client) GetTag(ctx context.Context, id int) (*TagDetailed, error) {
 	path := fmt.Sprintf("/tags/%d", id)
 	var tag TagDetailed
 
-	if err := api.get(path, nil, &tag); err != nil {
+	if err := api.get(ctx, path, nil, &tag); err != nil {
 		return nil, err
 	}
 

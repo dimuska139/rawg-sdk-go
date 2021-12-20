@@ -1,11 +1,12 @@
 package rawg
 
 import (
+	"context"
 	"fmt"
 )
 
 // GetCreatorRoles returns a list of creator positions (jobs)
-func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error) {
+func (api *Client) GetCreatorRoles(ctx context.Context, page int, pageSize int) ([]*Role, int, error) {
 	path := "/creator-roles"
 	params := map[string]interface{}{
 		"page":      fmt.Sprint(page),
@@ -17,7 +18,7 @@ func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error)
 		Count   int     `json:"count"`
 	}
 
-	if err := api.get(path, params, &response); err != nil {
+	if err := api.get(ctx, path, params, &response); err != nil {
 		return nil, 0, err
 	}
 
@@ -25,7 +26,7 @@ func (api *Client) GetCreatorRoles(page int, pageSize int) ([]*Role, int, error)
 }
 
 // GetCreators returns a list of game creators
-func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) {
+func (api *Client) GetCreators(ctx context.Context, page int, pageSize int) ([]*Creator, int, error) {
 	path := "/creators"
 	data := map[string]interface{}{
 		"page":      fmt.Sprint(page),
@@ -37,7 +38,7 @@ func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) 
 		Count   int        `json:"count"`
 	}
 
-	if err := api.get(path, data, &response); err != nil {
+	if err := api.get(ctx, path, data, &response); err != nil {
 		return nil, 0, err
 	}
 
@@ -45,11 +46,11 @@ func (api *Client) GetCreators(page int, pageSize int) ([]*Creator, int, error) 
 }
 
 // GetCreator returns details of the creator
-func (api *Client) GetCreator(id int) (*CreatorDetailed, error) {
+func (api *Client) GetCreator(ctx context.Context, id int) (*CreatorDetailed, error) {
 	path := fmt.Sprintf("/creators/%d", id)
 	var creator CreatorDetailed
 
-	if err := api.get(path, nil, &creator); err != nil {
+	if err := api.get(ctx, path, nil, &creator); err != nil {
 		return nil, err
 	}
 
