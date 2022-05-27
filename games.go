@@ -151,8 +151,8 @@ func (api *Client) GetGameStores(ctx context.Context, gameID int, page int, page
 }
 
 // GetGame returns details of the game
-func (api *Client) GetGame(ctx context.Context, id int) (*GameDetailed, error) {
-	path := fmt.Sprintf("/games/%d", id)
+func (api *Client) GetGame(ctx context.Context, idOrSlug string) (*GameDetailed, error) {
+	path := fmt.Sprintf("/games/%s", idOrSlug)
 
 	var platform GameDetailed
 
