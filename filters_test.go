@@ -44,7 +44,9 @@ func TestNewGamesFilter(t *testing.T) {
 		WithoutParents().
 		WithoutGameSeries().
 		SetOrdering("-name").
-		SetMetacritic(20, 80)
+		SetMetacritic(20, 80).
+		WithSearchExact().
+		WithSearchPrecise()
 
 	assert.Equal(t, map[string]interface{}{
 		"creators":            "28,mike-morasky",
@@ -54,6 +56,8 @@ func TestNewGamesFilter(t *testing.T) {
 		"exclude_collection":  123,
 		"exclude_game_series": true,
 		"exclude_parents":     true,
+		"search_exact":        true,
+		"search_precise":      true,
 		"genres":              "9,action,indie",
 		"ordering":            "-name",
 		"page":                1,
