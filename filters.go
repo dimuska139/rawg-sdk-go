@@ -159,6 +159,18 @@ func (filter *GamesFilter) WithoutGameSeries() *GamesFilter {
 	return filter
 }
 
+// WithSearchExact sets "search_exact" parameter
+func (filter *GamesFilter) WithSearchExact() *GamesFilter {
+	filter.searchExact = true
+	return filter
+}
+
+// WithSearchPrecise sets "search_precise" parameter
+func (filter *GamesFilter) WithSearchPrecise() *GamesFilter {
+	filter.searchPrecise = true
+	return filter
+}
+
 // SetOrdering sets results ordering
 func (filter *GamesFilter) SetOrdering(ordering string) *GamesFilter {
 	filter.ordering = ordering
